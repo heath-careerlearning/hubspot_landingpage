@@ -1,0 +1,27 @@
+{% set basePrice = module.price %}
+{% set currencySymbol = module.currency_symbol %}
+{% set buttonText = module.button_text %}
+
+<div class="quantity-selector-wrapper">
+  <div class="price-display">
+    <span class="currency">{{ currencySymbol }}</span>
+    <span class="amount" data-base-price="{{ basePrice }}">{{ basePrice }}</span>
+  </div>
+  
+  <div class="quantity-controls">
+    <button class="qty-btn decrease" aria-label="Decrease quantity">-</button>
+    <input type="number" 
+           class="quantity-input" 
+           value="1" 
+           min="{{ module.min_quantity }}" 
+           max="{{ module.max_quantity }}"
+           aria-label="Quantity">
+    <button class="qty-btn increase" aria-label="Increase quantity">+</button>
+  </div>
+  
+  {% module_attribute "button" %}
+    type="button"
+    class="cta_button"
+  {% end_module_attribute %}
+  {{ buttonText }}
+</div> 

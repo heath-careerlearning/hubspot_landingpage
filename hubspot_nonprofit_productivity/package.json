@@ -1,0 +1,15 @@
+{
+  "name": "hubspot_module_uploader",
+  "version": "1.0.0",
+  "description": "A tool to upload HubSpot modules via the API.",
+  "main": "upload_module.js",
+  "scripts": {
+    "upload": "node upload_module.js"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "archiver": "^5.3.1",
+    "form-data": "^4.0.0",
+    "js-yaml": "^4.1.0"
+  }
+}

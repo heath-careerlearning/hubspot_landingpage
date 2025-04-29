@@ -1,0 +1,161 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Leave of Absence Certification
+-->
+<!doctype html>
+<html lang="en">
+<head>
+    {{ standard_header_includes }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ content.name }} - CareerLearning</title>
+    <meta name="description" content="Leave of Absence Certification for HR. Optimize leave request management with compliance insights. Live & on-demand.">
+    
+    {{ require_css("@hubspot/base_styles/main.css") }}
+    {{ require_css("@hubspot/careers/careers.css") }}
+    
+    <style>
+        :root {
+            --primary-color: #1f60ae;
+            --secondary-color: #00b0f0;
+            --text-dark: #2B2B5E;
+            --text-light: #84848C;
+        }
+        
+        .course-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+        .course-main {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .course-sidebar {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            position: sticky;
+            top: 2rem;
+            height: fit-content;
+        }
+        
+        .price-box {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+        
+        .enroll-button {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+        
+        .enroll-button:hover {
+            background: var(--secondary-color);
+        }
+        
+        .course-features {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+        
+        .course-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .course-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    {% module "header" path="@hubspot/header" %}
+    
+    <main class="course-container">
+        <div class="course-main">
+            <h1>Leave of Absence Certification</h1>
+            <div class="course-overview">
+                <p>{{ module_attribute "course_intro" }}</p>
+                
+                <h2>Training Overview</h2>
+                <div class="overview-content">
+                    {{ module_attribute "training_overview" }}
+                </div>
+                
+                <h2>Who Should Attend?</h2>
+                <ul class="attendee-list">
+                    {% for attendee in module_attribute "attendees" %}
+                        <li>{{ attendee }}</li>
+                    {% endfor %}
+                </ul>
+                
+                <h2>Course Topics</h2>
+                <div class="topics-grid">
+                    {% for topic in module_attribute "course_topics" %}
+                        <div class="topic-item">
+                            <h3>{{ topic.title }}</h3>
+                            <p>{{ topic.description }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        
+        <div class="course-sidebar">
+            <div class="price-box">
+                <h3>Course Details</h3>
+                <p class="price">${{ module_attribute "course_price" }}</p>
+                <p class="duration">{{ module_attribute "course_duration" }}</p>
+                <ul class="course-features">
+                    <li><i class="hs-icon certificate"></i> Professional Certification</li>
+                    <li><i class="hs-icon video"></i> Live & On-demand Sessions</li>
+                    <li><i class="hs-icon materials"></i> Complete Course Materials</li>
+                    <li><i class="hs-icon support"></i> Expert Support</li>
+                </ul>
+                <a href="#" class="enroll-button">Enroll Now</a>
+            </div>
+            
+            {% module "course_registration_form"
+                path="@hubspot/form"
+                label="Course Registration"
+            %}
+        </div>
+    </main>
+
+    {% module "footer" path="@hubspot/footer" %}
+    {{ standard_footer_includes }}
+</body>
+</html>

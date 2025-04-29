@@ -1,0 +1,486 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Course Landing Page Template
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ content.name }}</title>
+  {{ standard_header_includes }}
+  
+  <style>
+    /* Global Styles */
+    :root {
+      --primary-color: #1f60ae;
+      --secondary-color: #00b0f0;
+      --text-dark: #2d3748;
+      --text-light: #4a5568;
+      --background-light: #f8f9fa;
+      --border-color: #e2e8f0;
+      --border-radius: 8px;
+      --badge-radius: 50px;
+    }
+    
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: var(--text-dark);
+      background-color: var(--background-light);
+    }
+    
+    .course-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    
+    .breadcrumb {
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--text-light);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .breadcrumb a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+    
+    .breadcrumb .separator {
+      color: var(--text-light);
+    }
+    
+    .course-content {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 2rem;
+    }
+    
+    /* Left Column */
+    .course-details {
+      background: white;
+      border-radius: var(--border-radius);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    
+    h1 {
+      font-size: 2.25rem;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      color: var(--text-dark);
+    }
+    
+    .instructor {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .instructor-image {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 0.75rem;
+      object-fit: cover;
+    }
+    
+    .instructor-name {
+      font-weight: 600;
+      color: var(--primary-color);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+    
+    .course-description {
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+    
+    .learning-outcomes h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    
+    .learning-outcomes ul {
+      padding-left: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .learning-outcomes li {
+      margin-bottom: 0.75rem;
+      line-height: 1.5;
+    }
+    
+    /* Right Column */
+    .course-sidebar {
+      background: white;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    
+    .course-image {
+      position: relative;
+    }
+    
+    .course-image img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+    
+    .course-badges {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      display: flex;
+      gap: 0.5rem;
+    }
+    
+    .badge {
+      background: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--badge-radius);
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    
+    .badge.live {
+      background-color: #f0f9ff;
+      color: #0369a1;
+    }
+    
+    .badge.certification {
+      background-color: #f0fdf4;
+      color: #16a34a;
+    }
+    
+    .badge.on-demand {
+      background-color: #fef2f2;
+      color: #dc2626;
+    }
+    
+    .course-registration {
+      padding: 1.5rem;
+    }
+    
+    .session-info {
+      margin-bottom: 1.5rem;
+    }
+    
+    .session-info h3 {
+      font-size: 1.25rem;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    
+    .session-info p {
+      margin: 0.25rem 0;
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+    
+    .date-options {
+      margin-bottom: 1.5rem;
+    }
+    
+    .date-options h3 {
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-light);
+      font-weight: normal;
+    }
+    
+    .date-selector {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .date-option {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .date-option:hover {
+      border-color: var(--primary-color);
+    }
+    
+    .date-option input {
+      margin-right: 0.75rem;
+    }
+    
+    .date-label {
+      font-size: 0.9rem;
+    }
+    
+    .pricing {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .price {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+    
+    .quantity {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+    
+    .quantity span {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      margin-right: 0.25rem;
+    }
+    
+    .qty-btn {
+      width: 28px;
+      height: 28px;
+      border: 1px solid var(--border-color);
+      background: white;
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: var(--text-dark);
+    }
+    
+    .qty-input {
+      width: 40px;
+      height: 28px;
+      text-align: center;
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      font-size: 0.9rem;
+    }
+    
+    .purchase-options {
+      margin-bottom: 1.5rem;
+    }
+    
+    .option {
+      margin-bottom: 0.75rem;
+      position: relative;
+    }
+    
+    .option-label {
+      display: flex;
+      align-items: flex-start;
+      padding: 0.75rem;
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .option-label:hover {
+      border-color: var(--primary-color);
+    }
+    
+    .option-label input {
+      margin-right: 0.75rem;
+      margin-top: 0.25rem;
+    }
+    
+    .option-content {
+      flex: 1;
+    }
+    
+    .option-text {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+    }
+    
+    .option-price {
+      display: block;
+      font-weight: 600;
+      color: var(--primary-color);
+      font-size: 0.9rem;
+    }
+    
+    .add-to-cart-btn {
+      width: 100%;
+      padding: 0.9rem;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: var(--border-radius);
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 1rem;
+    }
+    
+    .add-to-cart-btn:hover {
+      background: #1751a6;
+    }
+    
+    /* Additional Course Sections */
+    .course-sections {
+      margin-top: 2rem;
+    }
+    
+    .section {
+      background: white;
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    
+    .section h2 {
+      font-size: 1.5rem;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .course-content {
+        grid-template-columns: 1fr;
+      }
+      
+      h1 {
+        font-size: 1.75rem;
+      }
+      
+      .price {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  {{ standard_header }}
+  
+  <div class="course-container">
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb">
+      <a href="/">HOME</a>
+      <span class="separator">/</span>
+      <a href="{{ module_attribute "category_url" }}">{{ module_attribute "category_name" }}</a>
+      <span class="separator">/</span>
+      <span>{{ module_attribute "course_short_name" }}</span>
+    </div>
+    
+    <div class="course-content">
+      <!-- Left Column: Course Details -->
+      <div class="course-details">
+        <div style="padding: 2rem;">
+          <h1>{{ module_attribute "course_title" }}</h1>
+          
+          <div class="instructor">
+            <img src="{{ module_attribute "instructor_image" }}" alt="{{ module_attribute "instructor_name" }}" class="instructor-image">
+            <span class="instructor-name">{{ module_attribute "instructor_name" }}</span>
+          </div>
+          
+          <div class="course-description">
+            {{ module_attribute "course_description" }}
+          </div>
+          
+          <div class="learning-outcomes">
+            <h2>{{ module_attribute "outcomes_title" }}</h2>
+            {{ module_attribute "learning_outcomes" }}
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Column: Course Registration -->
+      <div class="course-sidebar">
+        <div class="course-image">
+          <img src="{{ module_attribute "course_image" }}" alt="{{ module_attribute "course_title" }}">
+          <div class="course-badges">
+            {% for badge in module_attribute "course_badges" %}
+              <span class="badge {{ badge.type }}">{{ badge.text }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        
+        <div class="course-registration">
+          <div class="session-info">
+            <h3>{{ module_attribute "sessions_count" }} Live Sessions</h3>
+            <p>{{ module_attribute "session_duration" }}</p>
+            <p>{{ module_attribute "session_days" }}</p>
+            <p>{{ module_attribute "session_features" }}</p>
+          </div>
+          
+          <div class="date-options">
+            <h3>Date Options</h3>
+            <div class="date-selector">
+              {% for date in module_attribute "session_dates" %}
+                <label class="date-option">
+                  <input type="radio" name="session-date" value="{{ date.value }}" {% if date.selected %}checked{% endif %}>
+                  <span class="date-label">{{ date.text }}</span>
+                </label>
+              {% endfor %}
+            </div>
+          </div>
+          
+          <div class="pricing">
+            <h2 class="price">${{ module_attribute "course_price" }}</h2>
+            <div class="quantity">
+              <span>Qty</span>
+              <button class="qty-btn decrease">-</button>
+              <input type="text" value="1" class="qty-input">
+              <button class="qty-btn increase">+</button>
+            </div>
+          </div>
+          
+          <div class="purchase-options">
+            {% for option in module_attribute "purchase_options" %}
+              <div class="option">
+                <label class="option-label">
+                  <input type="radio" name="purchase-option" value="{{ option.value }}" {% if option.selected %}checked{% endif %}>
+                  <div class="option-content">
+                    <span class="option-text">{{ option.text }}</span>
+                    <span class="option-price">{{ option.price }}</span>
+                  </div>
+                </label>
+              </div>
+            {% endfor %}
+          </div>
+          
+          <button class="add-to-cart-btn">{{ module_attribute "button_text" }}</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Additional Course Sections -->
+    <div class="course-sections">
+      {% for section in module_attribute "additional_sections" %}
+        <div class="section">
+          <h2>{{ section.title }}</h2>
+          {{ section.content }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  
+  {{ standard_footer }}
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "price": {
+    "name": "price",
+    "label": "Base Price",
+    "required": true,
+    "type": "number",
+    "display": "text",
+    "default": 0
+  },
+  "currency_symbol": {
+    "name": "currency_symbol",
+    "label": "Currency Symbol",
+    "required": true,
+    "type": "text",
+    "default": "$",
+    "display": "text"
+  },
+  "button_text": {
+    "name": "button_text",
+    "label": "Button Text",
+    "required": true,
+    "type": "text",
+    "default": "Add to Cart",
+    "display": "text"
+  },
+  "min_quantity": {
+    "name": "min_quantity",
+    "label": "Minimum Quantity",
+    "required": true,
+    "type": "number",
+    "display": "text",
+    "default": 1
+  },
+  "max_quantity": {
+    "name": "max_quantity",
+    "label": "Maximum Quantity",
+    "required": true,
+    "type": "number",
+    "display": "text",
+    "default": 99
+  }
+} 

@@ -1,0 +1,1196 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+    label: Nonprofit Employee Productivity Course Landing Page
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to Increase Nonprofit Employee Productivity and Satisfaction: Best Practices and Pitfalls</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    {{ require_css(get_asset_url("../../css/styles.css")) }}
+    <style>
+        /* Custom styles */
+        :root {
+            --primary-color: #2E475D;
+            --secondary-color: #1B8FE4;
+            --text-color: #333333;
+            --light-bg: #F5F8FA;
+            --heading-color: rgb(74, 92, 154);
+            --page-margin: 1320px; /* Slightly reduced from 1440px for better margins */
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+        }
+
+        .top-header {
+            background: white;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .header-container {
+            max-width: var(--page-margin);
+            margin: 0 auto;
+            padding: 0 1.5rem;  /* Slightly increased padding */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section img {
+            height: 40px;
+            width: auto;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .logo-tagline {
+            color: #666;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+
+        .top-nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 4px;
+            padding: 0.5rem 1rem;
+            width: 300px;
+        }
+
+        .search-bar input {
+            border: none;
+            width: 100%;
+            font-size: 0.95rem;
+            color: var(--primary-color);
+            outline: none;
+        }
+
+        .search-bar svg {
+            width: 20px;
+            height: 20px;
+            color: #6b7280;
+            flex-shrink: 0;
+        }
+
+        .phone-number {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .account-links {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .account-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+        }
+
+        .main-nav {
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 1rem 0;
+        }
+
+        .nav-menu {
+            max-width: var(--page-margin);
+            margin: 0 auto;
+            padding: 0 1.5rem;  /* Slightly increased padding */
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            justify-content: center;
+        }
+
+        .nav-link {
+            color: rgba(18, 18, 18, 0.75);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.5rem 0;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: var(--secondary-color);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .course-info {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-top: -3rem;
+            position: relative;
+        }
+
+        .price-card {
+            background: var(--light-bg);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .session-block {
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .cta-button {
+            background: var(--secondary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .presenter-card {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .main-content {
+            max-width: var(--page-margin);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 0;
+            display: grid;
+            grid-template-columns: 1.85fr 1.15fr;
+            gap: 8rem;  /* Significantly increased gap between columns */
+            align-items: start;
+            position: relative;
+        }
+
+        .content-left {
+            padding-top: 0;
+        }
+
+        .content-left::before {
+            content: '';
+            position: absolute;
+            top: -50px;  /* Adjust to move it up behind the title */
+            right: 0;
+            width: 600px;  /* Fixed width for the circular element */
+            height: 600px;  /* Fixed height for the circular element */
+            background-image: url('https://careerlearning.com/cdn/shop/files/Art.svg?v=1688471716');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            opacity: 0.1;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .content-right {
+            background: white;
+            padding: 0;
+            border-radius: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 2rem;
+        }
+
+        .course-image-container {
+            position: relative;
+            margin-bottom: 0;
+        }
+
+        .course-image {
+            width: 100%;
+            border-radius: 24px 24px 0 0;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+        }
+
+        .course-tags {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .course-tag {
+            background: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: rgb(74, 92, 154);
+        }
+
+        .course-tag::after {
+            content: "•";
+            margin-left: 0.25rem;
+        }
+
+        .course-tag:last-child::after {
+            display: none;
+        }
+
+        .course-details {
+            padding: 1.5rem 0 2rem;
+        }
+
+        .session-info-container {
+            margin: 0;
+            padding: 0.5rem 2rem 1rem;
+            border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+        }
+
+        .date-options-label {
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 0.875rem;
+            font-weight: 400;
+            margin: 0 0 0.5rem;
+            text-align: center;
+        }
+
+        .columns-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .session-info {
+            width: 40%;
+        }
+
+        .date-options {
+            width: 60%;
+            text-align: right;
+        }
+
+        .session-info h3 {
+            font-size: 1.25rem;
+            color: rgb(74, 92, 154);
+            margin: 0;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        .session-info p {
+            font-size: 1rem;
+            color: rgb(74, 92, 154);
+            margin: 0;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+
+        .session-info p:last-child {
+            color: rgba(74, 92, 154, 0.6);
+        }
+
+        .date-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .date-button {
+            width: 100%;
+            padding: 0.75rem;
+            background: rgb(241, 245, 249);
+            border: none;
+            border-radius: 100px;
+            color: rgb(74, 92, 154);
+            font-size: 0.875rem;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .pricing {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+        }
+
+        .price {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: rgb(74, 92, 154);
+            margin: 0;
+        }
+
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin: 0;
+        }
+
+        .quantity-label {
+            font-size: 0.875rem;
+            color: rgba(18, 18, 18, 0.75);
+        }
+
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            background: rgb(241, 245, 249);
+            border-radius: 100px;
+            padding: 0.25rem;
+        }
+
+        .quantity-btn {
+            border: none;
+            background: none;
+            color: rgb(74, 92, 154);
+            font-size: 1rem;
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .quantity-input {
+            width: 1.5rem;
+            text-align: center;
+            border: none;
+            background: none;
+            font-size: 0.875rem;
+            color: rgba(18, 18, 18, 0.75);
+        }
+
+        .add-on-options {
+            padding: 0;
+        }
+
+        .add-on-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .add-on-option:first-of-type {
+            border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+        }
+
+        .add-on-option:last-of-type {
+            padding-bottom: 0.25rem;
+            border-bottom: none;
+        }
+
+        .add-on-text {
+            font-size: 0.875rem;
+            color: rgba(18, 18, 18, 0.75);
+            max-width: 70%;
+            line-height: 1.4;
+        }
+
+        .add-on-price {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .toggle-switch {
+            width: 2.5rem;
+            height: 1.5rem;
+            background: #E2E8F0;
+            border-radius: 100px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .toggle-switch::before {
+            content: '';
+            position: absolute;
+            width: 1.25rem;
+            height: 1.25rem;
+            background: white;
+            border-radius: 50%;
+            top: 0.125rem;
+            left: 0.125rem;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .recordings-wrapper {
+            border-bottom: none;
+        }
+
+        .recordings-only {
+            color: rgb(74, 92, 154);
+            font-size: 0.75rem;
+            opacity: 0.6;
+            font-style: italic;
+            margin: 0;
+            padding: 0 2rem;
+        }
+
+        .add-to-cart {
+            width: 80%;
+            padding: 1rem;
+            background: rgb(74, 92, 154);
+            color: white;
+            border: none;
+            border-radius: 100px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: block;
+            margin: 2rem auto 0;
+        }
+
+        .main-heading {
+            font-family: 'Raleway', sans-serif;
+            font-size: 38px;
+            color: rgb(74, 92, 154);
+            line-height: 1.2;
+            margin-top: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .presenter-tag {
+            display: inline-flex;
+            align-items: center;
+            background: white;
+            padding: 0.5rem;
+            border-radius: 100px;
+            gap: 0.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .presenter-tag img {
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .presenter-tag span {
+            font-weight: 600;
+            color: rgb(74, 92, 154);
+            font-size: 0.875rem;
+            letter-spacing: 0.5px;
+            padding-right: 0.75rem;
+        }
+
+        .date-time {
+            font-weight: 700;
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.1rem;
+            margin: 1rem 0;
+        }
+
+        .course-description {
+            color: #4a5568;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin: 2rem 0;
+        }
+
+        .section-heading {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: rgba(18, 18, 18, 0.75);
+            margin: 2rem 0 1rem;
+            text-transform: none;  /* Reset text transform for regular headings */
+        }
+
+        .learning-outcomes {
+            margin: 1rem 0;
+        }
+
+        .learning-outcomes ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .learning-outcomes li {
+            margin: 0.75rem 0;
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .learning-outcomes p {
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .dates, .format {
+            margin: 2rem 0;
+        }
+
+        .dates h3, .format h3 {
+            font-weight: 700;
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .dates p {
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin: 0.5rem 0;
+        }
+
+        .format ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .format li {
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin: 0.5rem 0;
+        }
+
+        .session-block {
+            margin: 2rem 0;
+        }
+
+        .session-block h3 {
+            font-weight: 700;
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .session-block ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .session-block li {
+            margin: 0.5rem 0;
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.1rem;
+        }
+
+        .who-attend-heading {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2rem;
+            color: rgb(74, 92, 154);
+            margin: 0 0 1rem;
+            line-height: 1.2;
+        }
+
+        .section-heading.recommended {
+            font-size: 0.875rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: rgb(74, 92, 154);
+            margin: 4rem 0 0.75rem;
+        }
+
+        .who-attend-list {
+            margin-bottom: 4rem;
+        }
+
+        .who-attend-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .who-attend-list li {
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.1rem;
+            margin: 0.75rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .who-attend-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: rgba(18, 18, 18, 0.75);
+        }
+
+        .instructor-profile {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 3rem;
+        }
+
+        .instructor-header {
+            text-align: center;
+        }
+
+        .instructor-name-section {
+            margin-top: 1.5rem;
+        }
+
+        .instructor-about {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1rem;
+            color: rgb(74, 92, 154);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .instructor-name {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.75rem;
+            color: rgb(74, 92, 154);
+            line-height: 1.3;
+            margin: 0;
+        }
+
+        .instructor-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+        }
+
+        .instructor-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .instructor-achievements ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .instructor-achievements li {
+            color: rgb(74, 92, 154);
+            font-size: 1.1rem;
+            margin: 0.75rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .instructor-achievements li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: rgb(74, 92, 154);
+        }
+
+        .instructor-achievements li.highlight {
+            color: rgba(74, 92, 154, 0.5);
+        }
+
+        .instructor-bio {
+            color: #4a5568;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .instructor-bio p {
+            margin: 1rem 0;
+        }
+
+        .instructor-bio a {
+            color: rgb(74, 92, 154);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .instructor-bio a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background: rgb(67, 56, 202);
+            color: white;
+            padding: 4rem 0;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: var(--page-margin);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 4rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .footer-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-nav li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        .footer-nav a:hover {
+            opacity: 1;
+        }
+
+        .contact-info {
+            margin-bottom: 0.75rem;
+            opacity: 0.8;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 100px;
+            font-size: 1rem;
+            outline: none;
+            background: white;
+        }
+
+        .newsletter-button {
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 100px;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .newsletter-button:hover {
+            background: #333;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        .social-links a:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header class="top-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="/">
+                    <img src="https://www.careerlearning.com/cdn/shop/files/main-logo.png?v=1728661137&width=600" alt="NonProfitWebAdvisor">
+                </a>
+            </div>
+            <div class="top-nav">
+                <div class="search-bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                    <input type="text" placeholder="Search">
+                </div>
+                <a href="tel:8009447668" class="phone-number">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    800.944.7668
+                </a>
+                <div class="account-links">
+                    <a href="/account" class="account-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        Account
+                    </a>
+                    <a href="/checkout" class="account-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        Check out
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul class="nav-menu">
+            <li><a href="#" class="nav-link">Human Resources</a></li>
+            <li><a href="#" class="nav-link">Education</a></li>
+            <li><a href="#" class="nav-link">Nonprofits</a></li>
+            <li><a href="#" class="nav-link">Project Management Institute</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="content-left">
+            <h1 class="main-heading">How to Increase Nonprofit Employee Productivity and Satisfaction: Best Practices and Pitfalls</h1>
+            <div class="presenter-tag">
+                <img src="https://careerlearning.com/cdn/shop/files/Brad_Lebowsky_32x32.png?v=1721309952" alt="Brad Lebowsky">
+                <span>BRAD LEBOWSKY</span>
+            </div>
+            <div class="date-time">01-28-2025 to 01-31-2025 2:00 PM EST.</div>
+            <div class="course-description">
+                Nonprofits are at a disadvantage when it comes to attracting and retaining the best talent. Salary levels are often below market, stress and burnout is significant, and there are unavoidable budget constraints employees must learn to deal with. Don't give up! The success of your organization depends on hiring and retaining the best talent. Over their careers, your employees will go through five separate employment phases: hiring, retention, performance, and separation or retirement. There are best practices associated with each of the 5 phases, and when management implements those, the improvements in employee productivity and satisfaction can be significant. There are, also, pitfalls and risks that occur each step along the employee lifecycle. If you follow the best practices and can avoid the pitfalls, however, your number one asset, your employees, will do the rest for you.
+            </div>
+
+            <h2 class="section-heading">What You'll Learn</h2>
+            <div class="learning-outcomes">
+                <p>Discuss the recruitment and retention tactics used by nonprofit and for-profit industry professionals who have led the way.</p>
+                <ul>
+                    <li>Discover innovative approaches to managing your valuable human resources through each stage of the nonprofit employment life cycle.</li>
+                    <li>Find out which tools are effective and tailored specifically for nonprofits.</li>
+                    <li>Find out what risks await you at each phase of the lifecycle and how to avoid them</li>
+                    <li>Gain valuable advice on creating a workplace culture that fosters loyalty, satisfaction, and long-term commitment.</li>
+                    <li>Exchange ideas, experiences, and solutions with your peer nonprofit leaders and human resource experts during the question-and-answer sessions.</li>
+                    <li>Find out how to attract candidates who align with your mission and values through recruitment best practices.</li>
+                    <li>Keep your team motivated, engaged, and committed with best practice retention strategies.</li>
+                    <li>Gain guidance on how to build a positive and productive work environment through leadership development.</li>
+                    <li>Learn how to create an inclusive workplace that values and leverages diversity.</li>
+                </ul>
+            </div>
+
+            <div class="dates">
+                <h3>Course Dates</h3>
+                <p>January 28-31, 2025</p>
+                <p>2:00 PM EST Daily</p>
+            </div>
+
+            <div class="format">
+                <h3>Format</h3>
+                <ul>
+                    <li>4 Live Sessions</li>
+                    <li>90 Minutes Each</li>
+                    <li>Q&A Included</li>
+                </ul>
+            </div>
+
+            <h2 class="section-heading">Outline</h2>
+            <div class="session-block">
+                <h3>Session 1: Hiring</h3>
+                <ul>
+                    <li>Understanding Nonprofit Hiring Needs</li>
+                    <li>Diversity, Equity, and Inclusion in Hiring</li>
+                    <li>Effective Interview Techniques</li>
+                    <li>Legal and Ethical Considerations in Hiring</li>
+                    <li>Hiring Fundraising Professionals</li>
+                    <li>Remote Work and Hybrid Models</li>
+                    <li>Passive versus active recruiting</li>
+                    <li>Follow best practices</li>
+                    <li>Avoid the risks</li>
+                    <li>What's your hiring plan?</li>
+                </ul>
+            </div>
+
+            <div class="session-block">
+                <h3>Session 2: Retention</h3>
+                <ul>
+                    <li>Introduction to Employee Retention for Nonprofits</li>
+                    <li>Creating a Positive Organizational Culture</li>
+                    <li>Professional Development and Career Growth Opportunities</li>
+                    <li>Implementing recognition and reward programs</li>
+                    <li>Work-Life Balance and Employee Well-being</li>
+                    <li>Encouraging employee input and feedback</li>
+                    <li>Managing Change and Transitions</li>
+                    <li>Building a Retention-Focused HR Strategy</li>
+                    <li>Legal and Ethical Considerations in Employee Retention</li>
+                    <li>Case Studies and Success Stories</li>
+                    <li>Follow best practices</li>
+                    <li>Avoid the risks</li>
+                    <li>What's your employee retention plan?</li>
+                </ul>
+            </div>
+
+            <div class="session-block">
+                <h3>Session 3: Performance</h3>
+                <ul>
+                    <li>Management</li>
+                    <li>Understanding Performance Management</li>
+                    <li>Establishing Clear Goals and Objectives</li>
+                    <li>Developing Performance Indicators</li>
+                    <li>Implementing a Performance Management System</li>
+                    <li>Employee Development and Support</li>
+                    <li>Handling Performance Issues</li>
+                    <li>Follow best practices</li>
+                    <li>Avoid the risks</li>
+                    <li>What's your performance management plan?</li>
+                </ul>
+            </div>
+
+            <div class="session-block">
+                <h3>Session 4: Separation or Retirement</h3>
+                <ul>
+                    <li>Understanding Separation and Termination</li>
+                    <li>Retirement is the end of a long career</li>
+                    <li>Preparation for Employee Separation</li>
+                    <li>Voluntary Separation</li>
+                    <li>Involuntary Termination</li>
+                    <li>Communication Strategies</li>
+                    <li>Post-Termination Procedures</li>
+                    <li>Case Studies and Best Practices</li>
+                    <li>Follow best practices</li>
+                    <li>Avoid the risks</li>
+                    <li>What's your separation and/or retirement plan?</li>
+                </ul>
+            </div>
+
+            <h2 class="section-heading recommended">RECOMMENDED AUDIENCE</h2>
+            <h3 class="who-attend-heading">Who Should Attend?</h3>
+            <div class="who-attend-list">
+                <ul>
+                    <li>CEOs/Executive directors/Presidents</li>
+                    <li>Board members</li>
+                    <li>In-house legal counsel</li>
+                    <li>Senior and middle management</li>
+                    <li>CFOs/controllers</li>
+                    <li>Fundraising/development staff</li>
+                    <li>Human Resources</li>
+                    <li>Recruiting</li>
+                    <li>Payroll</li>
+                    <li>Employee benefits</li>
+                </ul>
+            </div>
+
+            <h2 class="section-heading">About the Instructor</h2>
+            <div class="instructor-profile">
+                <div class="instructor-header">
+                    <img src="https://careerlearning.com/cdn/shop/files/Brad_Lebowsky.png?v=1721309952&width=1920" alt="Brad Lebowsky" class="instructor-image">
+                    <div class="instructor-name-section">
+                        <div class="instructor-about">ABOUT —</div>
+                        <h3 class="instructor-name">Expert Presenter<br>BRAD LEBOWSKY</h3>
+                    </div>
+                </div>
+                <div class="instructor-content">
+                    <div class="instructor-achievements">
+                        <ul>
+                            <li>MBA in nonprofit management specializing in finance and budgeting</li>
+                            <li>Over 25 years of experience in nonprofit management</li>
+                            <li>Podcast host of the NEA Podcast</li>
+                            <li class="highlight">Expert in budgeting and finance, grant writing, strategic planning, board training, donor management, employee management, and volunteer retention</li>
+                        </ul>
+                    </div>
+                    <div class="instructor-bio">
+                        <p>Brad earned his MBA with an emphasis on nonprofit management specializing in finance and budgeting. He has more than 25 years of nonprofit management experience and is a sought-after speaker, author, and nonprofit consultant. His areas of expertise include budgeting, finance, grant writing, strategic planning, board training, and retention of donors, employees, volunteers, and professional development.</p>
+                        <p>Brad has worked with dozens of nonprofit organizations, helping them improve their performance and better fulfill their missions. In the current period of economic uncertainty, Brad has a demonstrated track record of assisting his clients in improving their operations and identifying and taking advantage of new opportunities as they arise.</p>
+                        <p>Brad can be reached at <a href="mailto:Brad@4NEA.com">Brad@4NEA.com</a>. As a speaker, author, consultant, or podcast host of the NEA Podcast on iTunes and wherever you find your podcasts, his overriding goals are to grow people, communities, and resources for nonprofit organizations nationwide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="course-image-container">
+                <img src="https://careerlearning.com/cdn/shop/files/shutterstock_2353012835.jpg?height=600&v=1721315323&width=900" alt="Absent from work sign" class="course-image">
+                <div class="course-tags">
+                    <span class="course-tag">LIVE SESSION</span>
+                    <span class="course-tag">CERTIFICATION</span>
+                    <span class="course-tag">ON-DEMAND</span>
+                </div>
+            </div>
+            <div class="course-details">
+                <div class="session-info-container">
+                    <div class="date-options-label">Date Options</div>
+                    <div class="columns-container">
+                        <div class="session-info">
+                            <h3>5 Live Sessions</h3>
+                            <p>Each 90 Minutes</p>
+                            <p>Monday - Friday</p>
+                            <p>Q&A; Included</p>
+                        </div>
+
+                        <div class="date-options">
+                            <div class="date-buttons">
+                                <button class="date-button">Sept 9 - Sept 13 - 1:00 PM EST</button>
+                                <button class="date-button">Oct 28 - Nov 1 - 2:00 PM EST</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing">
+                    <div class="price">$1,374.00</div>
+                    <div class="quantity-selector">
+                        <span class="quantity-label">Qty</span>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn">−</button>
+                            <input type="text" class="quantity-input" value="1" readonly>
+                            <button class="quantity-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add-on-options">
+                    <div class="add-on-option">
+                        <span class="add-on-text">Add On Demand Recordings to your Live Sessions</span>
+                        <div class="add-on-price">
+                            <div class="toggle-switch"></div>
+                            <span>+$275</span>
+                        </div>
+                    </div>
+
+                    <div class="add-on-option">
+                        <span class="add-on-text">On Demand Recordings only</span>
+                        <div class="add-on-price">
+                            <div class="toggle-switch"></div>
+                            <span>$1,374</span>
+                        </div>
+                    </div>
+                    <p class="recordings-only">(Available now)</p>
+                </div>
+
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul class="footer-nav">
+                    <li><a href="#">Human Resources</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Nonprofits</a></li>
+                    <li><a href="#">Project Management Institute</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick links</h3>
+                <ul class="footer-nav">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">How To Become a Presenter</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Articles and Resources</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="contact-info">16 Dalfonso Road</div>
+                <div class="contact-info">Newburgh, NY 12550</div>
+                <div class="contact-info">support@careerlearning.com</div>
+                <div class="contact-info">9:00-5:00 PM EST</div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Stay Informed</h3>
+                <p style="opacity: 0.8; margin-bottom: 1rem;">Subscribe to our newsletter for the latest updates, exclusive offers, and expert insights delivered right to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email address" class="newsletter-input">
+                    <button type="submit" class="newsletter-button">→</button>
+                </form>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    {{ require_js(get_asset_url("../../js/main.js")) }}
+</body>
+</html> 

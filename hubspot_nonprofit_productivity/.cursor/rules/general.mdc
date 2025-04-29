@@ -1,0 +1,17 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+We are primarily developing for HubSpot, especially LANDING PAGES (not website pages) and creating modules.
+
+It is CRITICAL that you keep in mind that HubSpot is not easy for you as how you guess it will work is almost NEVER the way it actually works. The goal is to think carefully about what you are doing based on the extensive documentation.
+
+https://developers.hubspot.com/docs/
+
+# Your rule content
+- YOU MUST read the api documentation for everything you plan to do
+- YOU MUST check the documenation after every failure for it to work
+- YOU MUST extensively document the approaches that are throwing you off in the code
+- YOU MUST NOT try more than three times if something has failed

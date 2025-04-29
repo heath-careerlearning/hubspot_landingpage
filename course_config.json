@@ -1,0 +1,59 @@
+{
+  "templates": {
+    "default": "@hubspot/growth/templates/paid-consultation.html",
+    "course": "custom/course_landing_template.html"
+  },
+  "courses": {
+    "leave_of_absence": {
+      "course_title": "Leave of Absence Certification",
+      "category_name": "COMPLIANCE",
+      "category_url": "/compliance",
+      "course_short_name": "LEAVE OF ABSENCE CERTI...",
+      "instructor_name": "TERI MORNING",
+      "instructor_image": "https://f.hubspotusercontent10.net/hubfs/21151322/teri-morning.jpg",
+      "course_description": "FMLA expert Teri Morning will teach you everything you need to know about leaves of absence in just one week. As leave requests increase and rules evolve, this training will help you perform your job better, support employees, and protect your employer.",
+      "outcomes_title": "What You'll Learn",
+      "learning_outcomes": "<ul><li>Protect your organization from potential legal liability</li><li>Help colleagues who request leaves</li><li>Expand your professional knowledge and propel your career</li><li>Prove your knowledge with a certificate</li><li>All courses include a PDF version of the presentation slides along with any additional materials or resources provided by the presenter</li><li>One certification exam attempt is included</li></ul>",
+      "course_image": "https://f.hubspotusercontent10.net/hubfs/21151322/absent-from-work.jpg",
+      "course_badges": [
+        {"type": "live", "text": "LIVE SESSION"},
+        {"type": "certification", "text": "CERTIFICATION"},
+        {"type": "on-demand", "text": "ON-DEMAND"}
+      ],
+      "sessions_count": "5",
+      "session_duration": "Each 90 Minutes",
+      "session_days": "Monday - Friday",
+      "session_features": "Q&A; Included",
+      "session_dates": [
+        {"value": "sept", "text": "Sept 9 - Sept 13 - 1:00 PM EST", "selected": true},
+        {"value": "oct", "text": "Oct 28 - Nov 1 - 2:00 PM EST", "selected": false}
+      ],
+      "course_price": "1,374.00",
+      "purchase_options": [
+        {
+          "value": "add-recordings",
+          "text": "Add On Demand Recordings to your Live Sessions",
+          "price": "+$275",
+          "selected": false
+        },
+        {
+          "value": "recordings-only",
+          "text": "On Demand Recordings only (Available now)",
+          "price": "$1,374",
+          "selected": false
+        }
+      ],
+      "button_text": "Add to cart",
+      "additional_sections": [
+        {
+          "title": "Training Overview",
+          "content": "<p>Comprehensive training on managing leave requests and compliance requirements.</p>"
+        },
+        {
+          "title": "Who Should Attend?",
+          "content": "<ul><li>HR Managers</li><li>Benefits Administrators</li><li>Leave Coordinators</li><li>HR Business Partners</li></ul>"
+        }
+      ]
+    }
+  }
+}
