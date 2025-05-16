@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compliant PIP Process Flowchart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Basic styling for flowchart elements */
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background-color: #f9fafb; /* Light gray background */
+        }
+        .step, .decision, .outcome, .connector, .process-end, .process-start {
+            border: 1px solid #9ca3af; /* Gray border */
+            background-color: #ffffff; /* White background */
+            padding: 10px 15px;
+            margin: 15px auto; /* Centered with vertical margin */
+            border-radius: 8px; /* Rounded corners */
+            text-align: center;
+            max-width: 400px; /* Limit width for better readability */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+        }
+        .decision {
+            background-color: #eff6ff; /* Light blue for decisions */
+            border-color: #60a5fa; /* Blue border */
+        }
+        .outcome {
+             background-color: #f0fdf4; /* Light green for outcomes */
+             border-color: #4ade80; /* Green border */
+        }
+         .process-end {
+             background-color: #fef2f2; /* Light red for end points */
+             border-color: #f87171; /* Red border */
+             font-weight: bold;
+         }
+         .process-start {
+             background-color: #f0f9ff; /* Lighter blue for start */
+             border-color: #7dd3fc; /* Sky blue border */
+             font-weight: bold;
+         }
+        .connector {
+            border: none;
+            background-color: transparent;
+            font-size: 1.5em; /* Larger arrow */
+            color: #6b7280; /* Gray arrow color */
+            margin: 5px auto; /* Reduced margin */
+            padding: 0;
+            box-shadow: none;
+        }
+        .decision-branch {
+            display: flex;
+            justify-content: space-around; /* Space out branches */
+            align-items: flex-start;
+            margin-top: 10px;
+            border: none;
+            padding: 0;
+            background: none;
+            box-shadow: none;
+            max-width: 500px; /* Wider container for branches */
+        }
+        .branch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%; /* Width for each branch */
+        }
+        .branch-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #4b5563; /* Darker gray label */
+        }
+        .consult-hr {
+            font-style: italic;
+            font-size: 0.9em;
+            color: #ef4444; /* Red text for emphasis */
+            margin-top: 5px;
+        }
+         .step-details {
+            font-size: 0.9em;
+            color: #6b7280; /* Gray for details */
+            margin-top: 5px;
+            text-align: left;
+            padding-left: 10px;
+         }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <div class="process-start">1. Identify Performance/Conduct Concern</div>
+    <div class="step-details">
+        - Manager observes/receives info.<br>
+        - Gather objective facts, data, examples.
+    </div>
+    <div class="connector">↓</div>
+
+    <div class="step">2. Initial Informal Coaching & Feedback</div>
+     <div class="step-details">
+        - Informal conversation, clarify expectations, offer support.<br>
+        - Document coaching notes. Monitor.
+    </div>
+    <div class="connector">↓</div>
+
+    <div class="decision">3. Evaluate Progress After Coaching</div>
+    <div class="decision-branch">
+        <div class="branch">
+            <div class="branch-label">IF YES (Improved & Sustained)</div>
+            <div class="connector">↓</div>
+            <div class="outcome">Provide positive feedback. Continue monitoring.</div>
+            <div class="connector">↓</div>
+            <div class="process-end">END (for this issue)</div>
+        </div>
+        <div class="branch">
+            <div class="branch-label">IF NO</div>
+            <div class="connector">↓</div>
+            <div class="step">(Proceed to Step 4)</div>
+        </div>
+    </div>
+    <div class="connector">↓ (From NO branch)</div>
+
+    <div class="step">4. Consider Formal Warning (Optional/Recommended)</div>
+     <div class="step-details">
+        - Issue written warning (if appropriate per policy/severity).<br>
+        - Document issue, expectations, consequences. Hold meeting. Monitor.
+    </div>
+    <div class="connector">↓</div>
+
+    <div class="decision">5. Evaluate Progress After Warning (If Applicable)</div>
+     <div class="decision-branch">
+        <div class="branch">
+            <div class="branch-label">IF YES (Improved)</div>
+            <div class="connector">↓</div>
+            <div class="outcome">Acknowledge improvement. Continue monitoring.</div>
+            <div class="connector">↓</div>
+            <div class="process-end">END (for this issue)</div>
+        </div>
+        <div class="branch">
+            <div class="branch-label">IF NO / Severe / Pattern</div>
+            <div class="connector">↓</div>
+             <div class="step">(Proceed to Step 6)</div>
+        </div>
+    </div>
+     <div class="connector">↓ (From NO branch)</div>
+
+    <div class="decision">6. Determine if PIP is Warranted <span class="consult-hr">(Consult HR)</span></div>
+     <div class="decision-branch">
+        <div class="branch">
+            <div class="branch-label">IF YES</div>
+            <div class="connector">↓</div>
+            <div class="step">(Proceed to Step 7)</div>
+        </div>
+        <div class="branch">
+            <div class="branch-label">IF NO (e.g., Severe Misconduct)</div>
+            <div class="connector">↓</div>
+            <div class="process-end">Follow Discipline/Termination Process <span class="consult-hr">(Consult HR)</span></div>
+        </div>
+    </div>
+    <div class="connector">↓ (From YES branch)</div>
+
+    <div class="step">7. Draft the PIP Document <span class="consult-hr">(Review with HR)</span></div>
+     <div class="step-details">
+        - Use Checklist: Deficiencies, SMART goals, Action Plan, Support, Timeline, Check-ins, Consequences.
+    </div>
+    <div class="connector">↓</div>
+
+    <div class="step">8. Conduct the PIP Meeting</div>
+     <div class="step-details">
+        - Meet privately. Explain PIP factually. Discuss expectations/support/consequences. Listen. Get signature.
+    </div>
+    <div class="connector">↓</div>
+
+    <div class="step">9. Monitor Progress & Conduct Regular Check-ins</div>
+     <div class="step-details">
+        - Hold scheduled meetings. Give specific, documented feedback. Offer support. Document observations.
+    </div>
+    <div class="connector">↓</div>
+
+    <div class="step">10. Mid-PIP Review (Optional/Recommended)</div>
+     <div class="step-details">
+        - Assess progress. Adjust support if needed <span class="consult-hr">(Consult HR)</span>. Reinforce expectations.
+    </div>
+    <div class="connector">↓</div>
+
+    <div class="decision">11. Final PIP Review Meeting</div>
+     <div class="step-details">
+        - Review performance against PIP goals.
+    </div>
+    <div class="decision-branch">
+        <div class="branch">
+            <div class="branch-label">IF YES (Consistently Met Requirements)</div>
+            <div class="connector">↓</div>
+             <div class="step">(Proceed to Step 12)</div>
+        </div>
+        <div class="branch">
+            <div class="branch-label">IF NO</div>
+            <div class="connector">↓</div>
+            <div class="step">(Proceed to Step 13)</div>
+        </div>
+    </div>
+     <div class="connector">↓ (From YES branch)</div>
+
+    <div class="outcome">12. Outcome: Successful Completion</div>
+     <div class="step-details">
+        - Document success. Communicate to employee. Explain sustained performance is required. Continue monitoring.
+    </div>
+    <div class="connector">↓</div>
+    <div class="process-end">END PIP PROCESS</div>
+
+    <div class="connector">↓ (From Step 11 NO branch)</div>
+
+    <div class="decision">13. Outcome: Failure to Meet PIP Requirements <span class="consult-hr">(Consult HR)</span></div>
+     <div class="decision-branch">
+        <div class="branch">
+            <div class="branch-label">IF YES (Extension Approved)</div>
+            <div class="connector">↓</div>
+            <div class="step">Document extension. Set new timeframe.</div>
+             <div class="connector">↺ (Return to Step 9)</div> </div>
+        <div class="branch">
+            <div class="branch-label">IF NO (Extension Denied)</div>
+            <div class="connector">↓</div>
+            <div class="step">(Proceed to Step 14)</div>
+        </div>
+    </div>
+     <div class="connector">↓ (From NO Extension branch)</div>
+
+     <div class="process-end">14. Further Action <span class="consult-hr">(Consult HR/Legal)</span></div>
+      <div class="step-details">
+        - Determine next step per PIP/policy (e.g., Demotion, Transfer, Termination).<br>
+        - Ensure documentation complete. Follow process.
+    </div>
+
+</body>
+</html>

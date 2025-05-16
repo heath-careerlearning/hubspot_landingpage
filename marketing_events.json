@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "eventName": "Test Event",
+      "eventType": "WEBINAR",
+      "startDateTime": "2025-01-10T21:00:00Z",
+      "endDateTime": "2025-01-10T22:00:00Z",
+      "eventOrganizer": "blake@careerlearning.com",
+      "eventDescription": null,
+      "eventUrl": "https://zoom.us/webinar/92569973301",
+      "eventCancelled": false,
+      "eventCompleted": false,
+      "customProperties": [],
+      "objectId": "396169646379",
+      "externalEventId": "92569973301-1736542076000",
+      "eventStatus": "UPCOMING",
+      "appInfo": {
+        "id": "178192",
+        "name": "Zoom"
+      },
+      "registrants": 0,
+      "attendees": 0,
+      "cancellations": 0,
+      "noShows": 0,
+      "createdAt": "2025-01-10T20:48:00.274Z",
+      "updatedAt": "2025-01-10T20:48:00.882Z"
+    },
+    {
+      "eventName": "Human Resources Manager Certification",
+      "eventType": "On-Demand",
+      "startDateTime": "2025-05-05T10:30:00Z",
+      "endDateTime": "2025-05-09T12:00:00Z",
+      "eventOrganizer": "Michele Mathews, MBA-HR, PHR, SHRM-SCP",
+      "eventDescription": "Confidently Navigate Complex HR Challenges, Drive Employee Success, and Become an Indispensable Leader.",
+      "eventUrl": null,
+      "eventCancelled": false,
+      "eventCompleted": false,
+      "customProperties": [
+        {
+          "name": "brand",
+          "value": "HR"
+        },
+        {
+          "name": "class_id",
+          "value": "4771124,4771125,4771129,4771132,4771134"
+        },
+        {
+          "name": "website_url",
+          "value": "https://l.careerlearning.com/human-resources-manager-certification"
+        }
+      ],
+      "objectId": "426278126638",
+      "externalEventId": null,
+      "eventStatus": "UPCOMING",
+      "appInfo": null,
+      "registrants": null,
+      "attendees": null,
+      "cancellations": null,
+      "noShows": 0,
+      "createdAt": "2025-04-30T13:11:49.633Z",
+      "updatedAt": "2025-04-30T13:47:37.751Z"
+    }
+  ]
+}

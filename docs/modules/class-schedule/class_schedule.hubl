@@ -1,0 +1,34 @@
+{# Table Structure #}
+<table style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr style="background-color: #8a00c4">
+      <th style="padding: 12px; text-align: left; color: white;">Program Date</th>
+      <th style="padding: 12px; text-align: left; color: white;">Program Time</th>
+      <th style="padding: 12px; text-align: left; color: white;">Program Name</th>
+      <th style="padding: 12px; text-align: left; color: white;">Description</th>
+      <th style="padding: 12px; text-align: left; color: white;">Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for event in module.event %}
+      {% set class_id = event.customProperties|selectattr('name', '==', 'class_id')|map(attribute='value')|first %}
+      {% set website_url = event.customProperties|selectattr('name', '==', 'website_url')|map(attribute='value')|first %}
+      {% set utm_params = "?utm_source=email&utm_medium=class_schedule&utm_campaign=" ~ class_id %}
+      <tr>
+        <td style="padding: 12px; border-bottom: 1px solid #e0e0e0;">{{ event.startDateTime|datetimeformat('%m/%d') }}</td>
+        <td style="padding: 12px; border-bottom: 1px solid #e0e0e0;">{{ event.startDateTime|datetimeformat('%I:%M %p') }}</td>
+        <td style="padding: 12px; border-bottom: 1px solid #e0e0e0;">
+          {% if website_url %}
+            <a href="{{ website_url }}{{ utm_params }}" style="color: #0066cc; text-decoration: underline;">
+              {{ event.eventName }}
+            </a>
+          {% else %}
+            {{ event.eventName }}
+          {% endif %}
+        </td>
+        <td style="padding: 12px; border-bottom: 1px solid #e0e0e0;">{{ event.eventDescription }}</td>
+        <td style="padding: 12px; border-bottom: 1px solid #e0e0e0;">{{ event.eventType }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table> 
