@@ -187,18 +187,19 @@
 
         .featured-section-header {
             font-family: 'Raleway', sans-serif;
-            font-size: 1.5rem;
-            color: #888;
-            font-weight: 500;
-            margin: 0 0 1.25rem 0;
-            letter-spacing: 0.04em;
+            font-size: 0.95rem;
+            color: #b0b0b0;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 0.01em;
+            text-align: left;
+            padding: 0.7rem 1.5rem 0;
         }
         .featured-section-divider {
             border: none;
             border-top: 2px solid #ececec;
-            margin: 0 0 2rem 0;
+            margin: 0 1.5rem 0.2rem 0;
         }
-
         .content-left {
             padding-top: 0;
             background-image: url('https://careerlearning.com/cdn/shop/files/Art.svg?v=1688471716');
@@ -225,7 +226,7 @@
         .content-right {
             background: white;
             padding: 0;
-            border-radius: 24px;
+            border-radius: 0;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
             position: sticky;
             top: 2rem;
@@ -508,7 +509,6 @@
             font-weight: 500;
             cursor: pointer;
             display: block;
-            margin: 2rem 0;
         }
 
         /* Trusted logos row styles */
@@ -917,8 +917,8 @@
             background: white;
             border-radius: 24px;
             padding: 3rem;
-            margin: 4rem 0;
-            width: 100%;
+            margin: 4rem auto;
+            max-width: 700px;
         }
 
         .benefits h2 {
@@ -1313,7 +1313,6 @@
             font-family: 'Raleway', sans-serif;
             font-size: 1.25rem;
             color: rgb(74, 92, 154);
-            text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 2rem;
             font-weight: 600;
@@ -1540,6 +1539,120 @@
         .story-block p {
             line-height: 2;
         }
+
+        .what-to-expect-box {
+            background: #fff;
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .what-to-expect-section {
+            max-width: 700px;
+            margin: 4rem auto;
+            background: #f5f8fa;
+            padding: 2.5rem 0;
+            border-radius: 20px;
+        }
+        .what-to-expect-point {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            background: none;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0;
+        }
+        .what-to-expect-point:last-child {
+            margin-bottom: 0;
+        }
+        .what-to-expect-check {
+            color: #22c55e;
+            font-size: 1rem;
+            margin-right: 1rem;
+            margin-top: 0.2rem;
+            flex-shrink: 0;
+            align-self: flex-start;
+        }
+        .what-to-expect-title {
+            font-weight: 700;
+            color: var(--heading-color);
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .what-to-expect-box ul {
+            margin: 0 0 0 1.2rem;
+            padding: 0;
+            color: var(--text-color);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        .what-to-expect-box li {
+            margin-bottom: 0.3rem;
+        }
+        .what-to-expect-intro {
+            color: var(--text-color);
+            font-size: 1.15rem;
+            margin-bottom: 2.5rem;
+            text-align: left;
+        }
+
+        .what-to-expect-heading, .resources-heading {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2rem;
+            color: rgb(74, 92, 154);
+            margin-bottom: 2rem;
+            font-weight: 700;
+            text-align: left;
+        }
+        .featured-header {
+            font-weight: bold;
+            font-size: 1.35rem;
+            margin: 1rem 0 0.1rem 0;
+            text-align: center;
+            padding: 0;
+        }
+        .featured-stars {
+            color: #FFB800;
+            font-size: 1.3rem;
+            margin-bottom: 0.1rem;
+            text-align: center;
+        }
+        .featured-reviews {
+            color: #6B6B8A;
+            font-size: 1rem;
+            margin-bottom: 0.7rem;
+            text-align: center;
+        }
+        .content-right {
+            background: white;
+            padding: 1rem;
+            border-radius: 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            position: sticky;
+        }
+        .featured-section-header {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.95rem;
+            color: #b0b0b0;
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+            letter-spacing: 0.01em;
+            text-align: left;
+        }
+        .featured-section-divider {
+            border: none;
+            border-top: 2px solid #ececec;
+            width: 100%;
+        }
+
+        .benefit-check {
+          display: flex;
+          align-items: flex-start;
+          margin-top: 0.1em;
+          margin-right: 0.75rem;
+        }
     </style>
   </head>
   <body>
@@ -1708,25 +1821,6 @@
                      <b>Ensure your critical HR updates are implemented correctly and compliantly.</b>
                 </p>
             </section>
-
-            <button class="syllabus-button hs-cta-trigger-button hs-cta-trigger-button-189739571755">Download Syllabus</button>
-
-            <h2 id="course-date" class="section-heading">Course Outcomes</h2>
-            <div class="learning-outcomes">
-                <ul>
-                    <li>Develop Winning Project Plans</li>
-                    <li>Optimize Project Execution</li>
-                    <li>Lead Teams with Confidence</li>
-                    <li>Master Stakeholder Communication</li>
-                    <li>Control Budgets & Schedules</li>
-                    <li>Gain Practical Tools & Templates</li>
-                    <li>Enhance Workplace Efficiency</li>
-                    <li>Mitigate Common Project Risks</li>
-                    <li>Earn valuable HR credits</li>
-                    <li>One certification exam attempt is included</li>
-                </ul>
-            </div>
-
             
             <div class="resources-section">
                 <h2 class="resources-heading">Key Tools & Resources Included</h2>
@@ -1804,29 +1898,51 @@
                 </div>
             </div>
 
-            <div class="stats-section">
-                <div class="stats-container">
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <div class="stat-number">4.53</div>
-                            <div class="stat-stars">★★★★★</div>
-                            <div class="stat-subtext">(50+)</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">525+</div>
-                            <div class="stat-text">people have taken this course</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">100%</div>
-                            <div class="stat-text">found this course to be helpful in their workplace</div>
+            <section class="what-to-expect-section">
+                <h2 class="what-to-expect-heading">Here's What You Can Expect</h2>
+                <p class="what-to-expect-intro">This course is built for HR professionals and team leaders who want to deliver projects on time, on budget, and with confidence. You'll gain practical tools, expert guidance, and a proven framework to make every project a success—no matter your experience level.</p>
+                <div class="what-to-expect-box">
+                    <div class="what-to-expect-point">
+                        <span class="what-to-expect-check">✅</span>
+                        <div>
+                            <span class="what-to-expect-title">Project Planning Mastery:</span>
+                            <ul>
+                                <li>Develop clear, actionable project plans</li>
+                                <li>Accelerate project kickoff and execution</li>
+                                <li>Apply proven frameworks for HR projects</li>
+                                <li>Boost team alignment and buy-in</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="stats-sidebar"></div>
+                    <div class="what-to-expect-point">
+                        <span class="what-to-expect-check">✅</span>
+                        <div>
+                            <span class="what-to-expect-title">Stakeholder Communication:</span>
+                            <ul>
+                                <li>Engage all key voices early and effectively</li>
+                                <li>Reduce confusion and last-minute surprises</li>
+                                <li>Build trust and clarity across departments</li>
+                                <li>Minimize project risk and compliance issues</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="what-to-expect-point">
+                        <span class="what-to-expect-check">✅</span>
+                        <div>
+                            <span class="what-to-expect-title">Sustained Results:</span>
+                            <ul>
+                                <li>Maintain momentum after launch</li>
+                                <li>Support ongoing improvement and learning</li>
+                                <li>Earn recognition and professional credits</li>
+                                <li>Access resources for continued success</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
 
             <div class="testimonials-section">
-                <h2 class="testimonials-heading">What Our Students Say</h2>
+                <h2 class="testimonials-heading">CareerLearning's PM Certification for HR Has Helped Thousands Conquer Project Failure</h2>
                 <div class="testimonials-grid">
                     <div class="testimonial">
                         <div class="testimonial-header">
@@ -1863,51 +1979,6 @@
                 </div>
             </div>
 
-            <h2 id="instructors" class="who-attend-heading">Your Instructor</h2>
-            <div class="instructor-profile">
-                <div class="instructor-header">
-                    <img src="https://www.careerlearning.com/cdn/shop/collections/Jami_Yazdani_7c48c76c-8272-46d5-b50d-45ab5100f1ab_medium.png?v=1728571558" alt="TERI MORNING" class="instructor-image">
-                    <div class="instructor-name-section">
-                        <div class="instructor-about">ABOUT —</div>
-                        <h3 class="instructor-name">Expert Presenter<br>JAMI YAZDANI, PMP, DASM</h3>
-                    </div>
-                </div>
-                <div class="instructor-content">
-                    <div class="instructor-achievements">
-                        <ul>
-                            <li>Experienced project and planning consultant (15+ years).</li>
-                            <li>PMP and DASM certified leadership expertise.</li>
-                            <li>Helps mission-driven organizations achieve impactful projects.</li>
-                            <li>Passionate about collaboration and team growth.</li>
-                        </ul>
-                    </div>
-                    <div class="instructor-bio">
-                        <p>Jami Yazdani is a results-driven consultant with 15+ years leading impactful projects. Her expertise spans business, higher education (libraries, tech), holding PMP & DASM certifications. She is passionate about collaborative success, coaching teams, and fostering growth. She founded Yazdani Consulting & Facilitation to bring clarity and impact to mission-driven organizations' projects and planning.</p>
-
-                        <p>She is PMP certified with 17+ years' experience in innovative project and planning management. Her diverse career includes leadership roles in various sectors. Founded Yazdani Consulting & Facilitation in 2018, aiding mission-driven organizations. Holds DASM, change management certifications, and two Master's degrees. Active in nonprofits and professional associations.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="certification-badges">
-                <div class="badge-container">
-                    <div class="badge-row">
-                        <img src="https://www.careerlearning.com/cdn/shop/files/2025_HRCI_Recertification_Provider_Seal.png?v=1739824049&width=540" alt="HRCI Certification" />
-                    </div>
-                    <div class="badge-row">
-                        <img src="https://www.careerlearning.com/cdn/shop/files/Shrm.png?v=1739824056&width=540" alt="SHRM Certification" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="section-anchors">
-                <div class="section-anchors-heading">Jump to Section</div>
-                <a href="#course-date">Course Details</a>
-                <a href="#outline">Course Outline</a>
-                <a href="#who-should-attend">Who Should Attend</a>
-                <a href="#instructors">Your Instructors</a>
-            </div>
-
             <!--- {% comment %} <div class="video-section">
                 <h3 class="video-title">Watch Michele Answer Some Common HR Questions</h3>
                 <div class="video-container">
@@ -1922,6 +1993,25 @@
                 <div class="certification-info">
                     <h2>Earn Your Certification</h2>
                     <p>Each certification is hosted on CareerLearning's website ensuring its authenticity with hiring managers.</p>
+                </div>
+            </div>
+
+            <div class="section-anchors">
+                <div class="section-anchors-heading">Jump to Section</div>
+                <a href="#course-date">She Thought She Had Everything Under Control</a>
+                <a href="#course-date">The #1 Reason It's So Hard to Lose In Your 40s</a>
+                <a href="#outline">Here's What You Can Expect</a>
+                <a href="#who-should-attend">Who Should Attend</a>
+                <a href="#who-should-attend">CareerLearning's PM Certification for HR Has Helped Thousands Conquer Project Failure</a>
+                <a href="#instructors">Your Instructors</a>
+            </div>
+
+            <div class="certification-badges">
+                <div class="badge-container">
+                    <div class="badge-row">
+                        <img src="https://www.careerlearning.com/cdn/shop/files/2025_HRCI_Recertification_Provider_Seal.png?v=1739824049&width=540" alt="HRCI Certification" />
+                        <img src="https://www.careerlearning.com/cdn/shop/files/Shrm.png?v=1739824056&width=540" alt="SHRM Certification" />
+                    </div>
                 </div>
             </div>
 
@@ -1964,59 +2054,44 @@
         <div class="content-right">
             <div class="featured-section-header">Featured</div>
             <hr class="featured-section-divider" />
-            <div class="course-image-container">
-                <img src="https://www.careerlearning.com/cdn/shop/files/Performance_Management_Certification_Structuring_Reviews_PIPs_and_Disciplinary_Actions.jpg?v=1744631151" alt="Absent from work sign" class="course-image" style="object-fit: cover; object-position: left top;">
-                <div class="course-tags">
-                    <span class="course-tag">RECOMMENDED</span>
-                </div>
-            </div>
-            <div class="course-details">
-                <div class="session-info-container">
-                    <div class="date-options-label">Date Options</div>
-                    <div class="columns-container">
-
-                        <div class="date-options">
-                            <div class="date-buttons">
-                                <button class="date-button selected" data-variant-id="49899304517949">May 12 - May 16 - 1:00 PM EST</button>
-                                <button class="date-button" data-variant-id="49971312918845">July 21 - July 25 - 1:00 PM EST</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pricing">
-                    <div class="price">$769.00</div>
-                    <div class="quantity-selector">
-                        <span class="quantity-label">Qty</span>
-                        <div class="quantity-controls">
-                            <button class="quantity-btn">−</button>
-                            <input type="text" class="quantity-input" value="1" readonly>
-                            <button class="quantity-btn">+</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="add-on-options">
-                    <div class="add-on-option" data-price="769">
-                        <span class="add-on-text">Live Sessions with Recordings</span>
-                        <div class="add-on-price">
-                            <div class="toggle-switch active"></div>
-                            <span>$769</span>
-                        </div>
-                    </div>
-
-                    <div class="add-on-option" data-price="712" data-variant-id="49699608789309">
-                        <span class="add-on-text">On Demand Recordings only</span>
-                        <div class="add-on-price">
-                            <div class="toggle-switch"></div>
-                            <span>$712</span>
-                        </div>
-                    </div>
-                    <p class="recordings-only">(Available now)</p>
-                </div>
-
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
+            <div>
+                <div class="featured-header">Recommended</div>
+                <div class="featured-stars">★★★★★</div>
+                <div class="featured-reviews">4.8 | 1,897 Reviews</div>
+                <img src="https://www.careerlearning.com/cdn/shop/files/Performance_Management_Certification_Structuring_Reviews_PIPs_and_Disciplinary_Actions.jpg?v=1744631151" alt="Product" style="width: 100%; border-radius: 12px; margin-bottom: 1.25rem;">
+                <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0;">
+                  <li style="display: flex; align-items: flex-start; margin-bottom: 1rem;">
+                    <span class="benefit-check" aria-hidden="true">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" style="display:block" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="14" cy="14" r="12" stroke="#22c55e" stroke-width="2"/>
+                        <path d="M9 14.5l3.5 3L19 11" stroke="#22c55e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    <span>Master project planning and execution for HR initiatives.</span>
+                  </li>
+                  <li style="display: flex; align-items: flex-start; margin-bottom: 1rem;">
+                    <span class="benefit-check" aria-hidden="true">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" style="display:block" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="14" cy="14" r="12" stroke="#22c55e" stroke-width="2"/>
+                        <path d="M9 14.5l3.5 3L19 11" stroke="#22c55e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    <span>Communicate and engage effectively with all stakeholders.</span>
+                  </li>
+                  <li style="display: flex; align-items: flex-start;">
+                    <span class="benefit-check" aria-hidden="true">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" style="display:block" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="14" cy="14" r="12" stroke="#22c55e" stroke-width="2"/>
+                        <path d="M9 14.5l3.5 3L19 11" stroke="#22c55e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    <span>Reduce risk and ensure compliance in every project.</span>
+                  </li>
+                </ul>
+                <button  class="syllabus-button hs-cta-trigger-button hs-cta-trigger-button-189739571755" style="width: 100%; background: #22C55E; color: #fff; font-weight: bold; font-size: 1.1rem; border: none; border-radius: 16px; padding: 1rem 0; margin-top: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); cursor: pointer;">
+                  Download [resource] For Free!
+                </button>
+              </div>
         </div>
     </main>
 
