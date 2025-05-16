@@ -35,3 +35,4 @@ var/
 # Environment variables
 .env
 .env.local hubspot_api/hubspot.config.yml
+hubspot_api/hubspot.config.yml
