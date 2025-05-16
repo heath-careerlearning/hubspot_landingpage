@@ -1,0 +1,2183 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Manager Certification: Performance Management</title>
+    <meta name="description" content="Master HR performance management with our comprehensive certification course. Learn best practices, legal compliance, and strategic approaches.">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        :root {
+            --primary-color: #2E475D;
+            --secondary-color: #1B8FE4;
+            --text-color: #333333;
+            --light-bg: #F5F8FA;
+            --heading-color: rgb(74, 92, 154);
+            --page-margin: 1320px; /* Slightly reduced from 1440px for better margins */
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+        }
+
+        .top-header {
+            background: white;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .header-container {
+            max-width: var(--page-margin);
+            margin: 0 auto;
+            padding: 0 1.5rem;  /* Slightly increased padding */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-section img {
+            height: 40px;
+            width: auto;
+        }
+
+        .logo {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .logo-tagline {
+            color: #666;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+
+        .top-nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 4px;
+            padding: 0.5rem 1rem;
+            width: 300px;
+        }
+
+        .search-bar input {
+            border: none;
+            width: 100%;
+            font-size: 0.95rem;
+            color: var(--primary-color);
+            outline: none;
+        }
+
+        .search-bar svg {
+            width: 20px;
+            height: 20px;
+            color: #6b7280;
+            flex-shrink: 0;
+        }
+
+        .phone-number {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .account-links {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .account-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+        }
+
+        .main-nav {
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 1rem 0;
+        }
+
+        .nav-menu {
+            max-width: var(--page-margin);
+            margin: 0 auto;
+            padding: 0 1.5rem;  /* Slightly increased padding */
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            justify-content: center;
+        }
+
+        .nav-link {
+            color: rgba(18, 18, 18, 0.75);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.5rem 0;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: var(--secondary-color);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .course-info {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-top: -3rem;
+            position: relative;
+        }
+
+        .price-card {
+            background: var(--light-bg);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .session-block {
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .cta-button {
+            background: var(--secondary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .presenter-card {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .main-content {
+            max-width: var(--page-margin);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 0;
+            display: grid;
+            grid-template-columns: 1.85fr 1.15fr;
+            gap: 8rem;  /* Significantly increased gap between columns */
+            align-items: start;
+            position: relative;
+        }
+
+        .content-left {
+            padding-top: 0;
+            background-image: url('https://careerlearning.com/cdn/shop/files/Art.svg?v=1688471716');
+            background-repeat: no-repeat;
+            background-position-x: right;
+        }
+
+        .content-left::before {
+            content: '';
+            position: absolute;
+            top: -50px;  /* Adjust to move it up behind the title */
+            right: 0;
+            width: 600px;  /* Fixed width for the circular element */
+            height: 600px;  /* Fixed height for the circular element */
+            background-image: url('https://careerlearning.com/cdn/shop/files/Art.svg?v=1688471716');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            opacity: 0.1;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .content-right {
+            background: white;
+            padding: 0;
+            border-radius: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 2rem;
+        }
+
+        .course-image-container {
+            position: relative;
+            margin-bottom: 0;
+        }
+
+        .course-image {
+            width: 100%;
+            border-radius: 24px 24px 0 0;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            object-position: left top;
+        }
+
+        .course-tags {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .course-tag {
+            background: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: rgb(74, 92, 154);
+        }
+
+        .course-tag::after {
+            content: "•";
+            margin-left: 0.25rem;
+            color: #22c55e;  /* Nice green color */
+        }
+
+        .course-tag:last-child::after {
+            display: none;
+        }
+
+        .course-details {
+            padding: 1.5rem 0 2rem;
+        }
+
+        .session-info-container {
+            margin: 0;
+            padding: 0.5rem 2rem 1rem;
+            border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+        }
+
+        .date-options-label {
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 0.875rem;
+            font-weight: 400;
+            margin: 0 0 0.5rem;
+            text-align: center;
+        }
+
+        .columns-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .session-info {
+            width: 40%;
+        }
+
+        .date-options {
+            width: 60%;
+            text-align: right;
+        }
+
+        .session-info h3 {
+            font-size: 1.25rem;
+            color: rgb(74, 92, 154);
+            margin: 0;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        .session-info p {
+            font-size: 1rem;
+            color: rgb(74, 92, 154);
+            margin: 0;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+
+        .session-info p:last-child {
+            color: rgba(74, 92, 154, 0.6);
+        }
+
+        .date-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .date-button {
+            width: 100%;
+            padding: 0.75rem;
+            background: rgb(241, 245, 249);
+            border: none;
+            border-radius: 100px;
+            color: rgb(74, 92, 154);
+            font-size: 0.875rem;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .date-button.selected {
+            background: #22C55E;
+            color: white;
+        }
+
+        .pricing {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+        }
+
+        .price {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: rgb(74, 92, 154);
+            margin: 0;
+        }
+
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin: 0;
+        }
+
+        .quantity-label {
+            font-size: 0.875rem;
+            color: rgba(18, 18, 18, 0.75);
+        }
+
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            background: rgb(241, 245, 249);
+            border-radius: 100px;
+            padding: 0.25rem;
+        }
+
+        .quantity-btn {
+            border: none;
+            background: none;
+            color: rgb(74, 92, 154);
+            font-size: 1rem;
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .quantity-input {
+            width: 1.5rem;
+            text-align: center;
+            border: none;
+            background: none;
+            font-size: 0.875rem;
+            color: rgba(18, 18, 18, 0.75);
+        }
+
+        .add-on-options {
+            padding: 0;
+        }
+
+        .add-on-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            cursor: pointer;
+        }
+
+        .add-on-option:first-of-type {
+            border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+        }
+
+        .add-on-option:last-of-type {
+            padding-bottom: 0.25rem;
+            border-bottom: none;
+        }
+
+        .add-on-text {
+            font-size: 0.875rem;
+            color: rgba(18, 18, 18, 0.75);
+            max-width: 70%;
+            line-height: 1.4;
+        }
+
+        .add-on-price {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .toggle-switch {
+            width: 2.5rem;
+            height: 1.5rem;
+            background: #E2E8F0;
+            border-radius: 100px;
+            position: relative;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle-switch.active {
+            background: #22C55E; /* Green color */
+        }
+
+        .toggle-switch::before {
+            content: '';
+            position: absolute;
+            width: 1.25rem;
+            height: 1.25rem;
+            background: white;
+            border-radius: 50%;
+            top: 0.125rem;
+            left: 0.125rem;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .toggle-switch.active::before {
+            transform: translateX(1rem);
+        }
+
+        .recordings-wrapper {
+            border-bottom: none;
+        }
+
+        .recordings-only {
+            color: rgb(74, 92, 154);
+            font-size: 0.75rem;
+            opacity: 0.6;
+            font-style: italic;
+            margin: 0;
+            padding: 0 2rem;
+        }
+
+        .add-to-cart {
+            width: 80%;
+            padding: 1rem;
+            background: rgb(74, 92, 154);
+            color: white;
+            border: none;
+            border-radius: 100px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: block;
+            margin: 2rem auto 0;
+        }
+
+        .syllabus-button {
+            width: 40%;
+            padding: 1rem;
+            background: rgb(74, 92, 154);
+            color: white;
+            border: none;
+            border-radius: 100px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: block;
+            margin: 2rem 0;
+        }
+
+        .trusted-logos {
+            background: white;
+            margin: 2rem -100vw;
+            padding: 2rem calc(100vw - 50%);
+            position: relative;
+            left: 50%;
+            right: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 4rem;
+        }
+
+        .trusted-logos img {
+            height: 30px;
+            width: auto;
+            object-fit: contain;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        .trusted-logos img:first-child {
+            height: 20px;
+        }
+
+        .section-anchors {
+            display: flex;
+            flex-direction: column;
+            margin: 2rem 0;
+            max-width: fit-content;
+        }
+
+        .section-anchors-heading {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.875rem;
+            color: rgb(74, 92, 154);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0 0 0.5rem;
+            font-weight: 600;
+        }
+
+        .section-anchors a {
+            color: rgb(74, 92, 154);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 0.25rem 0;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-anchors a::before {
+            content: "→";
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+
+        .section-anchors a:hover {
+            padding-left: 0.5rem;
+        }
+
+        .section-anchors a.active {
+            background: rgb(74, 92, 154);
+            color: white;
+        }
+
+        .trusted-text {
+            color: rgb(74, 92, 154);
+            font-size: 1.25rem;
+            font-weight: 600;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .main-heading {
+            font-family: 'Raleway', sans-serif;
+            font-size: 38px;
+            color: rgb(74, 92, 154);
+            line-height: 1.2;
+            margin-top: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .sub-heading {
+            font-family: 'Raleway', sans-serif;
+            font-size: 24px;
+            color: rgb(74, 92, 154);
+            line-height: 1.4;
+            margin: 1rem 0 2rem;
+            font-weight: 500;
+            position: relative;
+            z-index: 1;
+        }
+
+        .presenter-tag {
+            display: inline-flex;
+            align-items: center;
+            background: white;
+            padding: 0.5rem;
+            border-radius: 100px;
+            gap: 0.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .presenter-tag img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .presenter-tag span {
+            font-weight: 600;
+            color: rgb(74, 92, 154);
+            font-size: 0.875rem;
+            letter-spacing: 0.5px;
+            padding-right: 0.75rem;
+        }
+
+        .certification-credits {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 1rem 0;
+            font-weight: 600;
+            color: rgb(74, 92, 154);
+            font-size: 0.875rem;
+        }
+
+        .certification-credits svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .date-time {
+            font-weight: 700;
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.1rem;
+            margin: 1rem 0;
+        }
+
+        .course-description {
+            color: #4a5568;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin: 2rem 0;
+        }
+
+        .section-heading {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: rgba(18, 18, 18, 0.75);
+            margin: 2rem 0 1rem;
+            text-transform: none;  /* Reset text transform for regular headings */
+        }
+
+        .learning-outcomes {
+            margin: 1rem 0;
+        }
+
+        .learning-outcomes ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .learning-outcomes li {
+            margin: 0.75rem 0;
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .learning-outcomes p {
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .dates, .format {
+            margin: 2rem 0;
+        }
+
+        .dates h3, .format h3 {
+            font-weight: 700;
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .dates p {
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin: 0.5rem 0;
+        }
+
+        .format ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .format li {
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin: 0.5rem 0;
+        }
+
+        .session-block {
+            margin: 2rem 0;
+        }
+
+        .session-block h3 {
+            font-weight: 700;
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .session-block ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .session-block li {
+            margin: 0.5rem 0;
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.1rem;
+        }
+
+        .who-attend-heading {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2rem;
+            color: rgb(74, 92, 154);
+            margin: 0 0 1rem;
+            line-height: 1.2;
+        }
+
+        .section-heading.recommended {
+            font-size: 0.875rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: rgb(74, 92, 154);
+            margin: 4rem 0 0.75rem;
+        }
+
+        .who-attend-list {
+            margin-bottom: 4rem;
+        }
+
+        .who-attend-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .who-attend-list li {
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.1rem;
+            margin: 0.75rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .who-attend-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: rgba(18, 18, 18, 0.75);
+        }
+
+        .instructor-profile {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .instructor-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .instructor-image {
+            width: 120px;  /* Reduced from 200px */
+            height: 120px;  /* Reduced from 200px */
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0;  /* Remove margin */
+        }
+
+        .instructor-name-section {
+            margin: 0;  /* Remove margin */
+        }
+
+        .instructor-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .instructor-achievements {
+            width: 100%;  /* Full width */
+        }
+
+        .instructor-bio {
+            width: 100%;  /* Full width */
+        }
+
+        .instructor-about {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1rem;
+            color: rgb(74, 92, 154);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .instructor-name {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.75rem;
+            color: rgb(74, 92, 154);
+            line-height: 1.3;
+            margin: 0;
+        }
+
+        .instructor-achievements ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .instructor-achievements li {
+            color: rgb(74, 92, 154);
+            font-size: 1.1rem;
+            margin: 0.75rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .instructor-achievements li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: rgb(74, 92, 154);
+        }
+
+        .instructor-achievements li.highlight {
+            color: rgba(74, 92, 154, 0.5);
+        }
+
+        .instructor-bio p {
+            margin: 0.5rem 0;
+        }
+
+        .instructor-bio a {
+            color: rgb(74, 92, 154);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .instructor-bio a:hover {
+            text-decoration: underline;
+        }
+
+        .why-section {
+            background: white;
+            border-radius: 24px;
+            padding: 3rem;
+            margin: 4rem 0;
+            width: 100%;
+        }
+
+        .benefits h2 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2.5rem;
+            color: rgb(74, 92, 154);
+            margin: 0 0 2rem;
+        }
+
+        .benefits-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .benefits-list li {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.5rem;
+            color: rgb(74, 92, 154);
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .benefits-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0.2rem;
+            color: rgb(74, 92, 154);
+            font-weight: bold;
+        }
+
+        .benefit-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+            color: rgb(74, 92, 154);
+        }
+
+        .benefit-description {
+            color: rgb(107, 114, 128);
+            line-height: 1.5;
+        }
+
+        .certification-showcase {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin: 4rem 0;
+        }
+
+        .certificate-image {
+            width: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background: #f8f8f8;
+            aspect-ratio: 1.4/1;
+            overflow: hidden;
+        }
+
+        .certificate-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .certification-info {
+            padding-right: 2rem;
+        }
+
+        .certification-info h2 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2.5rem;
+            color: rgb(74, 92, 154);
+            margin: 0 0 1.5rem;
+            line-height: 1.2;
+        }
+
+        .certification-info p {
+            font-size: 1.25rem;
+            color: rgb(74, 92, 154);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .certification-badges {
+            background: white;
+            margin: 4rem -100vw;
+            padding: 2rem calc(100vw - 50%);  /* Reduced padding */
+            position: relative;
+            left: 50%;
+            right: 50%;
+        }
+
+        .badge-container {
+            max-width: var(--page-margin);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: grid;
+            gap: 1rem;  /* Reduced gap */
+        }
+
+        .badge-row {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding: 0;
+            margin: 0;
+            border-bottom: 1px solid rgba(74, 92, 154, 0.1);
+            margin-left: -5rem;
+        }
+
+        .badge-row:first-child {
+            margin-bottom: 1.5rem;  /* Add margin below first badge */
+        }
+
+        .badge-row:last-child {
+            border-bottom: none;
+            margin-top: -1rem;  /* Pull up the second row */
+        }
+
+        .badge-row img {
+            width: 100px;
+            height: auto;
+            flex-shrink: 0;
+            object-fit: contain;
+            margin: 0;
+        }
+
+        .badge-row:first-child img {
+            margin-bottom: 1.5rem;
+        }
+
+        .badge-content {
+            flex: 1;
+            max-width: 600px;
+            display: flex;
+            align-items: center;
+            padding: 0;  /* Remove padding */
+            margin: 0;  /* Remove margin */
+        }
+
+        .badge-content p {
+            font-size: 1.1rem;
+            color: rgb(74, 92, 154);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .badge-content a {
+            color: #1B8FE4;
+            text-decoration: none;
+        }
+
+        .badge-content a:hover {
+            text-decoration: underline;
+        }
+
+        .reviews-section {
+            text-align: right;
+        }
+
+        .reviews-section p {
+            font-size: 1.25rem;
+            color: rgb(74, 92, 154);
+            margin: 0 0 1rem;
+        }
+
+        .reviews-section .number {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .star-rating {
+            color: #FFB800;
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+
+        .reviews-logo {
+            height: 40px;
+            margin-top: 1rem;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background: rgb(60, 60, 153);
+            color: white;
+            padding: 4rem 0;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: var(--page-margin);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 4rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .footer-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-nav li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        .footer-nav a:hover {
+            opacity: 1;
+        }
+
+        .contact-info {
+            margin-bottom: 0.75rem;
+            opacity: 0.8;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 100px;
+            font-size: 1rem;
+            outline: none;
+            background: white;
+        }
+
+        .newsletter-button {
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 100px;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .newsletter-button:hover {
+            background: #333;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.2s, transform 0.2s;
+        }
+
+        .social-links a:hover {
+            opacity: 1;
+            transform: translateY(-2px);
+        }
+
+        .social-links svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .video-section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-title {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.25rem;
+            color: rgb(74, 92, 154);
+            margin: 0 0 1rem;
+            font-weight: 600;
+        }
+
+        .stats-section {
+            background: white;
+            margin: 4rem -100vw;
+            padding: 3rem calc(100vw - 50%);
+            position: relative;
+            left: 50%;
+            right: 50%;
+        }
+
+        .stats-container {
+            max-width: var(--page-margin);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: 1.85fr 1.15fr;  /* Match the main content grid */
+            gap: 8rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin-left: -9rem;  /* Increased negative margin from -5rem to -7rem */
+        }
+
+        .stats-sidebar {
+            /* Empty column to match main layout */
+        }
+
+        .stat-item {
+            text-align: center;
+            position: relative;
+        }
+
+        .stat-number {
+            font-size: 2.8rem;  /* Reduced from 3.5rem */
+            font-weight: 700;
+            color: rgb(17, 24, 39);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .stat-text {
+            font-size: 0.9rem;  /* Reduced from 1.125rem */
+            color: rgb(55, 65, 81);
+            line-height: 1.4;
+        }
+
+        .stat-stars {
+            color: rgb(74, 92, 154);  /* Changed from rgb(220, 38, 38) to our theme blue */
+            font-size: 1.25rem;
+            margin: 0.5rem 0;
+        }
+
+        .stat-subtext {
+            color: rgb(107, 114, 128);
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+
+        .resources-section {
+            margin: 4rem 0;
+        }
+
+        .resources-heading {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.25rem;
+            color: rgb(74, 92, 154);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .resource-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .resource-icon {
+            width: 48px;
+            height: 48px;
+            background: rgb(241, 245, 249);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .resource-icon svg {
+            width: 24px;
+            height: 24px;
+            color: rgb(74, 92, 154);
+        }
+
+        .resource-content h3 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.25rem;
+            color: rgb(46, 16, 101);
+            margin: 0 0 0.5rem;
+            font-weight: 600;
+        }
+
+        .resource-content p {
+            color: rgb(107, 114, 128);
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .footer-bottom {
+            background: rgb(16, 18, 25);
+            padding: 1rem 0;
+        }
+
+        .footer-bottom .container {
+            max-width: var(--page-margin);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .footer-bottom-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-info-block {
+            display: flex;
+            align-items: center;
+        }
+
+        .copyright-block {
+            flex: 1;
+            justify-content: center;
+        }
+
+        .copyright-text {
+            color: white;
+            margin: 0;
+            font-size: 0.875rem;
+        }
+
+        .footer-logo img {
+            height: 62px;
+            width: auto;
+        }
+
+        .payment-icons-list {
+            display: flex;
+            gap: 0.75rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .payment-icons-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .payment-icons-item .icon {
+            width: 38px;
+            height: 24px;
+        }
+
+        .testimonials-section {
+            margin: 4rem 0;
+            padding: 3rem;
+            background: white;
+        }
+
+        .testimonials-heading {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2rem;
+            color: rgb(74, 92, 154);
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .testimonials-grid {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .testimonial {
+            background: white;
+            border-bottom: 1px solid #eee;
+            padding: 2rem 0;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial:last-child {
+            border-bottom: none;
+        }
+
+        .testimonial-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-name {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.25rem;
+            color: rgb(17, 24, 39);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .verified-tag {
+            background: rgb(236, 253, 245);
+            color: rgb(6, 95, 70);
+            font-size: 0.875rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 100px;
+            font-weight: 500;
+        }
+
+        .testimonial-stars {
+            color: #FFB800;
+            font-size: 1.25rem;
+        }
+
+        .testimonial-content {
+            color: rgb(55, 65, 81);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 1rem 0;
+        }
+
+        .testimonial-date {
+            color: rgb(107, 114, 128);
+            font-size: 0.875rem;
+            margin-top: 1rem;
+        }
+    </style>
+  </head>
+  <body>
+    <header class="top-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="https://www.careerlearning.com">
+                    <img src="https://www.careerlearning.com/cdn/shop/files/main-logo.png?v=1728661137&width=600" alt="CareerLearning logo">
+                </a>
+            </div>
+            <div class="top-nav">
+                <a href="tel:8456225003" class="phone-number">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    (845) 622-5003
+                </a>
+                <div class="account-links">
+                    <a href="https://www.careerlearning.com/account" class="account-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        Account
+                    </a>
+                    <a href="https://www.careerlearning.com/checkout" class="account-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        Check out
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+      <ul class="nav-menu">
+        <li><a href="https://www.careerlearning.com/collections/human-resources" class="nav-link">Human Resources</a></li>
+        <li><a href="https://www.careerlearning.com/collections/education" class="nav-link">Education</a></li>
+        <li><a href="https://www.careerlearning.com/collections/nonprofits" class="nav-link">Nonprofits</a></li>
+        <li><a href="https://www.careerlearning.com/pages/project-management-institute" class="nav-link">Project Management Institute</a></li>        
+      </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="content-left">
+            <h1 class="main-heading">Human Resources Manager Certification</h1>
+            <h2 class="sub-heading">Confidently Navigate Complex HR Challenges, Drive Employee Success, and Become an Indispensable Leader.</h2>
+            <div class="certification-credits">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 7h-3V4c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zM9 4h6v3H9V4zm11 14H4V9h16v9z"/>
+                    <path d="M12 12l-2 3h4l-2-3z"/>
+                </svg>
+                Approved for HRCI and SHRM recertification credits
+            </div>
+            <div class="presenter-tag">
+                <img src="https://www.careerlearning.com/cdn/shop/collections/Michele_Mathews_7e220ec3-e222-4fdb-b4ab-9199748fec54_medium.jpg?v=1728571576" alt="MICHELE MATHEWS profile image">
+                <span>MICHELE MATHEWS, MBA-HR, PHR, SHRM-SCP</span>
+            </div>
+            <div class="course-description">
+                Ready to level up from HR task-juggler to strategic powerhouse? This certification is your key! We dive deep into everything that matters: mastering compliance laws, attracting and keeping amazing talent, boosting team engagement that drives results, and navigating tricky employee relations issues with confidence. Gain the practical skills and certified expertise to not just do HR, but to truly lead it and make a real impact. Curious about the specific skills you'll master?
+            </div>
+            <button class="syllabus-button" onclick="window.location.href='/assets/syllabus.pdf'">Download Syllabus</button>
+
+            <div class="trusted-logos">
+                <img src="https://www.careerlearning.com/cdn/shop/files/WebMD_logo_5_1.png?v=1726240159" alt="WebMD">
+                <img src="https://www.careerlearning.com/cdn/shop/files/Unknown4_5_1.png?v=1726240160" alt="Company Logo">
+                <img src="https://www.careerlearning.com/cdn/shop/files/United-States-Postal-Service-Logo_5_1.png?v=1726240159" alt="USPS">
+                <img src="https://www.careerlearning.com/cdn/shop/files/image_3_1.png?v=1726240160" alt="Company Logo">
+                <img src="https://www.careerlearning.com/cdn/shop/files/lululemon.png?v=1726240159" alt="Lululemon">
+                <img src="https://www.careerlearning.com/cdn/shop/files/ymca.png?v=1726240159" alt="YMCA">
+                <img src="https://www.careerlearning.com/cdn/shop/files/wells.png?v=1726240148" alt="Wells Fargo">
+            </div>
+
+            <div class="section-anchors">
+                <div class="section-anchors-heading">Jump to Section</div>
+                <a href="#course-date">Course Details</a>
+                <a href="#outline">Course Outline</a>
+                <a href="#who-should-attend">Who Should Attend</a>
+                <a href="#instructors">Your Instructors</a>
+            </div>
+
+            <h2 id="course-date" class="section-heading">Course Outcomes</h2>
+            <div class="learning-outcomes">
+                <ul>
+                    <li>Navigate Key Employment Laws</li>
+                    <li>Implement Compliant Hiring Practices</li>
+                    <li>Manage Employee Leave Effectively</li>
+                    <li>Conduct Effective Workplace Investigations</li>
+                    <li>Ensure Wage & Hour Compliance</li>
+                    <li>Strengthen Performance Management & Discipline</li>
+                    <li>Execute Lawful Terminations</li>
+                    <li>One certification exam attempt is included</li>
+                </ul>
+            </div>
+
+            <div class="dates">
+                <h3>Course Dates</h3>
+                <p>May 5 - May 9, 2024</p>
+                <p>12:30 PM EST Daily</p>
+            </div>
+
+            <div class="format">
+                <h3>Format</h3>
+                <ul>
+                    <li>5 Live Sessions</li>
+                    <li>90 Minutes Each</li>
+                    <li>Q&A Included</li>
+                </ul>
+            </div>
+
+            <div class="certification-badges">
+                <div class="badge-container">
+                    
+                    <div class="badge-row">
+                        <img src="https://www.careerlearning.com/cdn/shop/files/2025_HRCI_Recertification_Provider_Seal.png?v=1739824049&width=540" alt="HRCI Certification">
+                        <div class="badge-content">
+                            <p>Earn 7.5 HRCI® recertification credits. Pre-approved for PHR®, SPHR®, and GPHR® credentials, helping you maintain your certification while mastering hr manager competencies.</p>
+                        </div>
+                    </div>
+                    <div class="badge-row">
+                        <img src="https://www.careerlearning.com/cdn/shop/files/Shrm.png?v=1739824056&width=540" alt="SHRM Certification">
+                        <div class="badge-content">
+                            <p>Earn 7.5 SHRM PDCs towards your SHRM-CP® or SHRM-SCP® recertification while expanding your hr expertise.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="outline" class="who-attend-heading">Outline</h2>
+
+            <p class="course-description">This comprehensive cource helps you navigate the HR landscape, progressing from mastering legally sound hiring and FMLA/ADA compliance to confidently preventing harassment, ensuring FLSA/wage hour accuracy, and strategically managing performance and terminations, ultimately equipping you to minimize risk and elevate your HR impact.
+
+            <div class="session-block">
+                <h3>Session 1: Overview and Hiring – Avoiding Legal Pitfalls</h3>
+                <ul>
+                    <li>Job descriptions, interviews, and offer letters</li>
+                    <li>Background checks and FCRA compliance</li>
+                    <li>At-will employment and exempt vs. non-exempt classifications</li>
+                </ul>
+            </div>
+
+            <div class="session-block">
+                <h3>Session 2:  FMLA and ADA Compliance</h3>
+                <ul>
+                    <li>FMLA and ADA responsibilities</li>
+                    <li>Leave options, medical documentation, and employee reinstatement</li>
+                    <li>The ADA interactive process and workers' compensation</li>
+                </ul>
+            </div>
+
+            <div class="session-block">
+                <h3>Session 3: Preventing Harassment and Conducting Investigations</h3>
+                <ul>
+                    <li>Anti-harassment policies and training</li>
+                    <li>Investigation procedures and best practices</li>
+                    <li>Corrective action and the Farragher-Ellerth defense</li>
+                </ul>
+            </div>
+
+            <div class="session-block">
+                <h3>Session 4: FLSA, Wage and Hour Issues</h3>
+                <ul>
+                    <li>Employee misclassification and compensable time</li>
+                    <li>Overtime calculations and after-hours work</li>
+                    <li>Interns, volunteers, and student workers</li>
+                </ul>
+            </div>
+
+            <div class="session-block">
+                <h3>Session 5: Performance Management and Terminations</h3>
+                <ul>
+                    <li>Performance documentation and legal defense strategies</li>
+                    <li>Progressive discipline and reducing legal risk</li>
+                    <li>Termination procedures to avoid discrimination claims</li>
+                </ul>
+            </div>
+
+            <div class="resources-section">
+                <h2 class="resources-heading">Key Tools & Resources Included</h2>
+                
+                <div class="resource-item">
+                    <div class="resource-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <div class="resource-content">
+                        <h3>HR Manager Certification: 5-Day Core Concepts Cheat Sheet</h3>
+                        <p>Quick reference guide covering essential HR concepts and best practices</p>
+                    </div>
+                </div>
+
+                <div class="resource-item">
+                    <div class="resource-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                        </svg>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Essential HR Manager Resources</h3>
+                        <p>Comprehensive collection of links to authoritative sources, guidelines and requirements</p>
+                    </div>
+                </div>
+
+                <div class="resource-item">
+                    <div class="resource-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Glossary of Key HR Acronyms & Terms</h3>
+                        <p>A quick reference for terms like FLSA, FMLA, ADA, FCRA, BFOQ, At-Will, Exempt/Non-Exempt, Progressive Discipline, and more.</p>
+                    </div>
+                </div>
+
+                <div class="resource-item">
+                    <div class="resource-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Anti-Harassment Policy Checklist</h3>
+                        <p>Key components every policy should include.</p>
+                    </div>
+                </div>
+
+                <div class="resource-item">
+                    <div class="resource-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Performance Improvement Plan (PIP) Template</h3>
+                        <p>A structured form for outlining performance issues, expectations, support, and consequences.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-heading recommended">RECOMMENDED AUDIENCE</h2>
+            <h3 id="who-should-attend" class="who-attend-heading">Who Should Attend?</h3>
+            <div class="who-attend-list">
+                <ul>
+                    <li>Human resources managers</li>
+                    <li>Human resources generalist</li>
+                    <li>Finance and Accounting</li>
+                    <li>In-house counsel</li>
+                    <li>Payroll</li>
+                    <li>Employee benefits</li>
+                    <li>HR staff looking to advance their careers</li>
+                </ul>
+            </div>
+
+            <div class="stats-section">
+                <div class="stats-container">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">4.67</div>
+                            <div class="stat-stars">★★★★★</div>
+                            <div class="stat-subtext">(40+)</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-text">people have taken this course</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-text">found this course to be helpful in their workplace</div>
+                        </div>
+                    </div>
+                    <div class="stats-sidebar"></div>
+                </div>
+            </div>
+
+            <div class="testimonials-section">
+                <h2 class="testimonials-heading">What Our Students Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <div class="testimonial-header">
+                            <div class="testimonial-name">Elí Sánchez <span class="verified-tag">Verified learner</span></div>
+                            <div class="testimonial-stars">★★★★★</div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>AIHR has been a game-changer in my HR career. The courses are current, practical and taught by expert instructors. I love the interactive learning and the flexibility to learn at my own pace. The supportive community and prompt assistance enhance the experience. Since joining, I've applied new strategies at work, increasing my confidence and impact. I highly recommend AIHR to HR professionals who want to improve their skills and stay current!</p>
+                        </div>
+                        <div class="testimonial-date">Posted March 15, 2024</div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-header">
+                            <div class="testimonial-name">Lisa A Alicea <span class="verified-tag">Verified learner</span></div>
+                            <div class="testimonial-stars">★★★★★</div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>Excellent instructor! I recommend these classes for anyone interested in preparing for the Human Resource Manager Certification Exam.</p>
+                        </div>
+                        <div class="testimonial-date">Posted March 29, 2024</div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-header">
+                            <div class="testimonial-name">Amy R. Guidry <span class="verified-tag">Verified learner</span></div>
+                            <div class="testimonial-stars">★★★★★</div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>As someone new to the HR role, this course was very informative. The information covered was just right. Not too overwhelming, yet very informative.</p>
+                        </div>
+                        <div class="testimonial-date">Posted April 11, 2024</div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-header">
+                            <div class="testimonial-name">Tina Harrell <span class="verified-tag">Verified learner</span></div>
+                            <div class="testimonial-stars">★★★★★</div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>I did the On-Demand class. It was convenient and worked with my schedule. I enjoyed the presenters and the pace of the classes. It's always great to learn new information.</p>
+                        </div>
+                        <div class="testimonial-date">Posted recently</div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="instructors" class="who-attend-heading">Your Instructor</h2>
+            <div class="instructor-profile">
+                <div class="instructor-header">
+                    <img src="https://www.careerlearning.com/cdn/shop/collections/Michele_Mathews_7e220ec3-e222-4fdb-b4ab-9199748fec54_medium.jpg?v=1728571576" alt="MICHELE MATHEWS" class="instructor-image">
+                    <div class="instructor-name-section">
+                        <div class="instructor-about">ABOUT —</div>
+                        <h3 class="instructor-name">Expert Presenter<br>MICHELE MATHEWS, MBA-HR, PHR, SHRM-SCP</h3>
+                    </div>
+                </div>
+                <div class="instructor-content">
+                    <div class="instructor-achievements">
+                        <ul>
+                            <li>Proven leader with 20+ years in HR and safety.</li>
+                            <li>Equips HR managers to tackle today's complex challenges.</li>
+                            <li>Holds PHR, SHRM-CP, and OSHA Authorized Trainer certifications.</li>
+                            <li>Her passion: bringing the "human" back to Human Resources.</li>
+                            <li class="highlight">Recognized national instructor and future HR Tampa president.</li>
+                        </ul>
+                    </div>
+                    <div class="instructor-bio">
+                        <p>Michele has over 20 years of progressive human resources management, safety program development, and workforce risk mitigation experience spanning construction, education, government, healthcare, manufacturing, non-profit, and senior living industries. She started Mathews' HR & Safety Consulting Services after having an increase of business owners reaching out for guidance and assistance due to the recognition she was receiving regionally for her procedures and training. Michele is an OSHA Authorized Trainer and has both the Professional Human Resources (PHR) and Society for Human Resources Management Certified Professional (SHRM-CP) designations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-section">
+                <h3 class="video-title">Watch Michele Answer Some Common HR Questions</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/B7B9MMk4rk8" title="A few tips From HR" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="certification-showcase">
+                <div class="certificate-image">
+                    <img src="https://cdn.shopify.com/s/files/1/0894/8760/6077/files/Accredible_HR_Manager_Certificate.png?v=1745929641" alt="Full Payroll Certificate"/>
+                </div>
+                <div class="certification-info">
+                    <h2>Earn Your Certification</h2>
+                    <p>Each certification is hosted on CareerLearning's website ensuring its authenticity with hiring managers.</p>
+                </div>
+            </div>
+
+            <div class="why-section">
+                <div class="benefits">
+                    <h2>Why CareerLearning?</h2>
+                    <ul class="benefits-list">
+                        <li>
+                            <span class="benefit-title">Learn from Industry Experts</span>
+                            <span class="benefit-description">Courses are led by professionals with real-world experience, ensuring you gain practical insights and skills.</span>
+                        </li>
+                        <li>
+                            <span class="benefit-title">Focus on Practical Skills</span>
+                            <span class="benefit-description">The learning approach emphasizes skills-based education, enabling you to immediately apply what you learn to your career.</span>
+                        </li>
+                        <li>
+                            <span class="benefit-title">Tailored to Industry Needs</span>
+                            <span class="benefit-description">Programs specifically designed for various sectors like Education, HR, and Nonprofit, addressing industry-specific challenges and regulations.</span>
+                        </li>
+                        <li>
+                            <span class="benefit-title">Enhance Career Growth</span>
+                            <span class="benefit-description">Courses designed to help professionals advance their careers, improve their knowledge, and make a greater impact in their organizations.</span>
+                        </li>
+                        <li>
+                            <span class="benefit-title">Flexible Learning Options</span>
+                            <span class="benefit-description">Both live and on-demand options available, learn at a pace and time that suits your schedule.</span>
+                        </li>
+                        <li>
+                            <span class="benefit-title">Potential for Certifications</span>
+                            <span class="benefit-description">Leading certifications and third-party accreditations to help you showcase your achievements.</span>
+                        </li>
+                        <li>
+                            <span class="benefit-title">Access to Valuable Resources</span>
+                            <span class="benefit-description">Course materials and resources provided to support your learning and implementation of new skills.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="course-image-container">
+                <img src="https://www.careerlearning.com/cdn/shop/files/shutterstock_1897717783.jpg?height=500&v=1734567716&width=300" alt="Absent from work sign" class="course-image" style="object-fit: cover; object-position: left top;">
+                <div class="course-tags">
+                    <span class="course-tag">LIVE SESSION</span>
+                    <span class="course-tag">ON-DEMAND</span>
+                    <span class="course-tag">CERTIFICATION</span>
+                </div>
+            </div>
+            <div class="course-details">
+                <div class="session-info-container">
+                    <div class="date-options-label">Date Options</div>
+                    <div class="columns-container">
+                        <div class="session-info">
+                            <h3>5 Live Sessions</h3>
+                            <p>Each 90 Minutes</p>
+                            <p>Monday - Friday</p>
+                            <p>Q&A Included</p>
+                        </div>
+
+                        <div class="date-options">
+                            <div class="date-buttons">
+                                <button class="date-button selected" data-variant-id="49982587207997">May 5 - May 9 - 12:30 PM EST</button>
+                                <button class="date-button" data-variant-id="49982587240765">July 7 - July 11 - 12:30 PM EST</button>
+                                <button class="date-button" data-variant-id="49982587273533">Oct 6 - Oct 10 - 12:30 PM EST</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing">
+                    <div class="price">$999.00</div>
+                    <div class="quantity-selector">
+                        <span class="quantity-label">Qty</span>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn">−</button>
+                            <input type="text" class="quantity-input" value="1" readonly>
+                            <button class="quantity-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add-on-options">
+                    <div class="add-on-option" data-price="999">
+                        <span class="add-on-text">Live Sessions with Recordings</span>
+                        <div class="add-on-price">
+                            <div class="toggle-switch active"></div>
+                            <span>$999</span>
+                        </div>
+                    </div>
+
+                    <div class="add-on-option" data-price="945" data-variant-id="49982496801085">
+                        <span class="add-on-text">On Demand Recordings only</span>
+                        <div class="add-on-price">
+                            <div class="toggle-switch"></div>
+                            <span>$945</span>
+                        </div>
+                    </div>
+                    <p class="recordings-only">(Available now)</p>
+                </div>
+
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul class="footer-nav">
+                    <li><a href="https://www.careerlearning.com/collections/human-resources">Human Resources</a></li>
+                    <li><a href="https://www.careerlearning.com/collections/education">Education</a></li>
+                    <li><a href="https://www.careerlearning.com/collections/nonprofits">Nonprofits</a></li>
+                    <li><a href="https://www.careerlearning.com/pages/project-management-institute">Project Management Institute</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick links</h3>
+                <ul class="footer-nav">
+                    <li><a href="https://www.careerlearning.com/pages/contact">Contact Us</a></li>
+                    <li><a href="https://www.careerlearning.com/pages/faqs">FAQs</a></li>
+                    <li><a href="https://www.careerlearning.com/pages/about-us">About Us</a></li>
+                    <li><a href="https://www.careerlearning.com/pages/how-to-become-a-presenter">How To Become a Presenter</a></li>
+                    <li><a href="https://www.careerlearning.com/pages/terms-and-conditions">Terms and Conditions</a></li>
+                    <li><a href="https://www.careerlearning.com/pages/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="https://www.careerlearning.com/blogs/articles">Articles and Resources</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="contact-info">16 Dalfonso Road</div>
+                <div class="contact-info">Newburgh, NY 12550</div>
+                <div class="contact-info">support@careerlearning.com</div>
+                <div class="contact-info">9:00-5:00 PM EST</div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Stay Informed</h3>
+                <p style="opacity: 0.8; margin-bottom: 1rem;">Subscribe to our newsletter for the latest updates, exclusive offers, and expert insights delivered right to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email address" class="newsletter-input">
+                    <button type="submit" class="newsletter-button">→</button>
+                </form>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/CareerLearningWeb/" aria-label="Facebook">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/careerlearning/" aria-label="LinkedIn">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/career_learning_/" aria-label="Instagram">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/careerlearning_" aria-label="Twitter">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 00-1-.08A6.34 6.34 0 003 15.66a6.34 6.34 0 0010.86 4.48v-8.4a8.16 8.16 0 005.73 2.24V10.5c-.22.01-.43.02-.65.02l.65-.02V6.69z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@CareerLearningLLC" aria-label="YouTube">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <div class="footer-info-block">
+                    <a href="https://www.careerlearning.com" class="footer-logo">
+                        <img src="https://www.careerlearning.com/cdn/shop/files/footer-logo.png?v=1728661895&width=250" loading="lazy" width="250" height="62" alt="CareerLearning">
+                    </a>
+                </div>
+                <div class="footer-info-block copyright-block">
+                    <p class="copyright-text">Copyright© 2025 CareerLearning</p>
+                </div>
+                <div class="footer-info-block">
+                    <div class="footer-payment">
+                        <ul class="list-inline payment-icons-list">
+                            <li class="payment-icons-item">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pi-american_express" viewBox="0 0 38 24" width="38" height="24"><title id="pi-american_express">American Express</title><path fill="#000" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3Z" opacity=".07"/><path fill="#006FCF" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32Z"/><path fill="#FFF" d="M22.012 19.936v-8.421L37 11.528v2.326l-1.732 1.852L37 17.573v2.375h-2.766l-1.47-1.622-1.46 1.628-9.292-.02Z"/><path fill="#006FCF" d="M23.013 19.012v-6.57h5.572v1.513h-3.768v1.028h3.678v1.488h-3.678v1.01h3.768v1.531h-5.572Z"/><path fill="#006FCF" d="m28.557 19.012 3.083-3.289-3.083-3.282h2.386l1.884 2.083 1.89-2.082H37v.051l-3.017 3.23L37 18.92v.093h-2.307l-1.917-2.103-1.898 2.104h-2.321Z"/><path fill="#FFF" d="M22.71 4.04h3.614l1.269 2.881V4.04h4.46l.77 2.159.771-2.159H37v8.421H19l3.71-8.421Z"/><path fill="#006FCF" d="m23.395 4.955-2.916 6.566h2l.55-1.315h2.98l.55 1.315h2.05l-2.904-6.566h-2.31Zm.25 3.777.875-2.09.873 2.09h-1.748Z"/><path fill="#006FCF" d="M28.581 11.52V4.953l2.811.01L32.84 9l1.456-4.046H37v6.565l-1.74.016v-4.51l-1.644 4.494h-1.59L30.35 7.01v4.51h-1.768Z"/></svg>
+                            </li>
+                            <li class="payment-icons-item">
+                                <svg class="icon" viewBox="0 0 38 24" width="38" height="24" role="img" aria-labelledby="pi-discover" fill="none" xmlns="http://www.w3.org/2000/svg"><title id="pi-discover">Discover</title><path fill="#000" opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32z" fill="#fff"/><path d="M3.57 7.16H2v5.5h1.57c.83 0 1.43-.2 1.96-.63.63-.52 1-1.3 1-2.11-.01-1.63-1.22-2.76-2.96-2.76zm1.26 4.14c-.34.3-.77.44-1.47.44h-.29V8.1h.29c.69 0 1.11.12 1.47.44.37.33.59.84.59 1.37 0 .53-.22 1.06-.59 1.39zm2.19-4.14h1.07v5.5H7.02v-5.5zm3.69 2.11c-.64-.24-.83-.4-.83-.69 0-.35.34-.61.8-.61.32 0 .59.13.86.45l.56-.73c-.46-.4-1.01-.61-1.62-.61-.97 0-1.72.68-1.72 1.58 0 .76.35 1.15 1.35 1.51.42.15.63.25.74.31.21.14.32.34.32.57 0 .45-.35.78-.83.78-.51 0-.92-.26-1.17-.73l-.69.67c.49.73 1.09 1.05 1.9 1.05 1.11 0 1.9-.74 1.9-1.81.02-.89-.35-1.29-1.57-1.74zm1.92.65c0 1.62 1.27 2.87 2.9 2.87.46 0 .86-.09 1.34-.32v-1.26c-.43.43-.81.6-1.29.6-1.08 0-1.85-.78-1.85-1.9 0-1.06.79-1.89 1.8-1.89.51 0 .9.18 1.34.62V7.38c-.47-.24-.86-.34-1.32-.34-1.61 0-2.92 1.28-2.92 2.88zm12.76.94l-1.47-3.7h-1.17l2.33 5.64h.58l2.37-5.64h-1.16l-1.48 3.7zm3.13 1.8h3.04v-.93h-1.97v-1.48h1.9v-.93h-1.9V8.1h1.97v-.94h-3.04v5.5zm7.29-3.87c0-1.03-.71-1.62-1.95-1.62h-1.59v5.5h1.07v-2.21h.14l1.48 2.21h1.32l-1.73-2.32c.81-.17 1.26-.72 1.26-1.56zm-2.16.91h-.31V8.03h.33c.67 0 1.03.28 1.03.82 0 .55-.36.85-1.05.85z" fill="#231F20"/><path d="M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z" fill="url(#pi-paint0_linear)"/><path opacity=".65" d="M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z" fill="url(#pi-paint1_linear)"/><path d="M36.57 7.506c0-.1-.07-.15-.18-.15h-.16v.48h.12v-.19l.14.19h.14l-.16-.2c.06-.01.1-.06.1-.13zm-.2.07h-.02v-.13h.02c.06 0 .09.02.09.06 0 .05-.03.07-.09.07z" fill="#231F20"/><path d="M36.41 7.176c-.23 0-.42.19-.42.42 0 .23.19.42.42.42.23 0 .42-.19.42-.42 0-.23-.19-.42-.42-.42zm0 .77c-.18 0-.34-.15-.34-.35 0-.19.15-.35.34-.35.18 0 .33.16.33.35 0 .19-.15.35-.33.35z" fill="#231F20"/><path d="M37 12.984S27.09 19.873 8.976 23h26.023a2 2 0 002-1.984l.024-3.02L37 12.985z" fill="#F48120"/><defs><linearGradient id="pi-paint0_linear" x1="21.657" y1="12.275" x2="19.632" y2="9.104" gradientUnits="userSpaceOnUse"><stop stop-color="#F89F20"/><stop offset=".25" stop-color="#F79A20"/><stop offset=".533" stop-color="#F68D20"/><stop offset=".62" stop-color="#F58720"/><stop offset=".723" stop-color="#F48120"/><stop offset="1" stop-color="#F37521"/></linearGradient><linearGradient id="pi-paint1_linear" x1="21.338" y1="12.232" x2="18.378" y2="6.446" gradientUnits="userSpaceOnUse"><stop stop-color="#F58720"/><stop offset=".359" stop-color="#E16F27"/><stop offset=".703" stop-color="#D4602C"/><stop offset=".982" stop-color="#D05B2E"/></linearGradient></defs></svg>
+                            </li>
+                            <li class="payment-icons-item">
+                                <svg class="icon" viewBox="0 0 38 24" width="38" height="24" role="img" aria-labelledby="pi-master"><title id="pi-master">Mastercard</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><circle fill="#EB001B" cx="15" cy="12" r="7"/><circle fill="#F79E1B" cx="23" cy="12" r="7"/><path fill="#FF5F00" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"/></svg>
+                            </li>
+                            <li class="payment-icons-item">
+                                <svg class="icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pi-paypal"><title id="pi-paypal">PayPal</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"/><path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"/><path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"/></svg>
+                            </li>
+                            <li class="payment-icons-item">
+                                <svg class="icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pi-venmo"><title id="pi-venmo">Venmo</title><g fill="none" fill-rule="evenodd"><rect fill-opacity=".07" fill="#000" width="38" height="24" rx="3"/><path fill="#3D95CE" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path d="M24.675 8.36c0 3.064-2.557 7.045-4.633 9.84h-4.74L13.4 6.57l4.151-.402 1.005 8.275c.94-1.566 2.099-4.025 2.099-5.702 0-.918-.154-1.543-.394-2.058l3.78-.783c.437.738.634 1.499.634 2.46z" fill="#FFF" fill-rule="nonzero"/></g></svg>
+                            </li>
+                            <li class="payment-icons-item">
+                                <svg class="icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-visa"><title id="pi-visa">Visa</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"/></svg>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const quantityInput = document.querySelector('.quantity-input');
+            const decreaseBtn = document.querySelector('.quantity-controls .quantity-btn:first-child');
+            const increaseBtn = document.querySelector('.quantity-controls .quantity-btn:last-child');
+            const dateButtons = document.querySelectorAll('.date-button');
+            const addOnOptions = document.querySelectorAll('.add-on-option');
+            const checkoutBtn = document.querySelector('.add-to-cart');
+            const priceElement = document.querySelector('.price');
+            
+            let currentPrice = 1499.00;
+            let selectedVariantId = '123456789';
+            let isLiveSession = true;
+
+            // Function to update quantity
+            function updateQuantity(change) {
+                let currentValue = parseInt(quantityInput.value);
+                let newValue = currentValue + change;
+                if (newValue < 1) newValue = 1;
+                quantityInput.value = newValue;
+            }
+
+            // Function to update selected date
+            function updateSelectedDate(clickedButton) {
+                dateButtons.forEach(button => {
+                    button.classList.remove('selected');
+                });
+                clickedButton.classList.add('selected');
+                selectedVariantId = clickedButton.dataset.variantId;
+            }
+
+            // Function to update course option
+            function updateCourseOption(clickedOption) {
+                const isOnDemand = clickedOption === addOnOptions[1];
+                
+                addOnOptions.forEach(option => {
+                    const toggle = option.querySelector('.toggle-switch');
+                    toggle.classList.remove('active');
+                });
+                
+                clickedOption.querySelector('.toggle-switch').classList.add('active');
+                
+                if (isOnDemand) {
+                    selectedVariantId = clickedOption.dataset.variantId;
+                    currentPrice = 945;
+                    isLiveSession = false;
+                    dateButtons.forEach(button => {
+                        button.classList.remove('selected');
+                        button.disabled = true;
+                    });
+                } else {
+                    isLiveSession = true;
+                    currentPrice = 1499.00;
+                    dateButtons.forEach((button, index) => {
+                        button.disabled = false;
+                        if (index === 0) {
+                            button.classList.add('selected');
+                            selectedVariantId = button.dataset.variantId;
+                        }
+                    });
+                }
+                
+                priceElement.textContent = `$${currentPrice.toFixed(2)}`;
+            }
+
+            // Add event listeners
+            decreaseBtn.addEventListener('click', () => updateQuantity(-1));
+            increaseBtn.addEventListener('click', () => updateQuantity(1));
+
+            dateButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    if (!button.disabled) {
+                        updateSelectedDate(button);
+                    }
+                });
+            });
+
+            addOnOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    updateCourseOption(option);
+                });
+            });
+
+            // Update checkout button to use Shopify cart
+            checkoutBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const quantity = quantityInput.value;
+                
+                // Add to cart using Shopify AJAX API
+                fetch('/cart/add.js', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        id: selectedVariantId,
+                        quantity: quantity
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    window.location.href = '/cart';
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            });
+        });
+    </script>
+    {% end_dnd_area %}
+    {{ standard_footer_includes }}
+  </body>
+</html>

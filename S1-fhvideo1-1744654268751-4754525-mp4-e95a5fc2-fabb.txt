@@ -1,0 +1,496 @@
+Welcome to our online learning platform.
+We have included several widgets on the dashboard below for easy access throughout the presentation.
+Here is a quick overview of the most commonly used widgets Q and A.
+Please submit your questions into the Q and a widget at the bottom right of the screen.
+Your questions will be answered during the question and answer session.
+At the end of the presentation.
+The webinar moderator will also be monitoring the Q and A to help you with any technical difficulties.
+If you submit a question through this widget, you will see the response to your answer here as well, so please be sure to check this widget frequently.
+All resources for today's event, including a PDF version of the slides, are located in the Resources widget.
+Please click on the resource to download.
+If it is a hyperlink, you will be directed to the website for the resource.
+If at any point during today's presentation you lose audio or the slides stop transitioning, please refresh your Browser using Control F5 on a PC or Command R on a Mac Today's webinar is also a session in a certification series.
+There is a final exam which is part of the completion requirements for your certification.
+You'll receive access to the exam at the end of the final session of the series.
+We recommend purchasing our Second Chance Retake Insurance which allows you to take the exam a second time without having to retake the course.
+Should you need to retake the exam without purchasing insurance beforehand, the retake fee has an upcharge.
+Thank you and enjoy your webinar.
+Hello and thank you very much for joining Career Learning.
+Your moderator is here to help if you have any technical difficulties or questions regarding the platform during today's session.
+Your presenter for today is Jamie Yazdani.
+Jamie Yazdani is a certified Project Management professional with more than 15 years of experience managing complex projects and planning initiatives.
+Jamie founded Yazdani Consulting and facilitation in 2018 to help mission driven organizations solve management problems.
+She turned her passion for supporting the development of leaders at all levels and her experience in leading projects, teams and training into a solutions focused approach to project management and planning consulting.
+Jamie holds a Disciplined Agile Scrum Master Certification, a Master's of Technology Management from the University of Maryland Global Campus, and a Master's of Library Information Science from Louisiana State.
+I'm happy to introduce Jamie for today's webinar.
+Wonderful.
+Welcome everybody to the HR Project Manager Certification.
+I'm excited to be with you here today to get us started with session one and so what we're going to be talking about today we're going to spend a little bit of time just talking about the entire series and what you're going to be learning.
+Then we'll spend some time talking about what project management is and why it matters and why it's useful.
+We'll talk about some project management based and then I'll introduce you to a framework for managing HR projects.
+And so in terms of the series, we've really got four sessions.
+Today is that Introduction to Project Management.
+Tomorrow's session will really focus on stakeholders and communications.
+And so particularly in HR projects, stakeholders and communications are going to be critical to success.
+In the third session, we'll talk about scope, deliverables and schedule.
+And I'll be explaining what scope and deliverables are, of course.
+And then in the fourth session, we'll kind of bring it all together, talk about integrating several areas into a project plan.
+We'll also talk a little bit about budget and risk and how to close our projects and then some of the ways that we can use the skills that we've learned beyond projects and other types of collaborations.
+And so those are our four sessions over the course of this series.
+If you want to think about what you can kind of get out of this series, sort of beyond a nice certification, if you are planning for a new project or program or initiative at your company or institution or wherever it is that you're working, ideally you'd come away with a lot of ideas for planning and leading that project.
+If you have some experience with project management, we will talk a little bit about assessing sort of your current projects, or you can think about a former project and maybe spend a little bit of time reflecting on perhaps some things that you were doing really well and want to keep doing, but also things that you might do differently in another project.
+And generally, if project management is new to you, perhaps you're getting this certification so that you can start managing projects and participating in projects.
+I do hope that you'll come away with a lot of tips for improving any kind of collaboration that you're involved with.
+And so a little bit about what to expect.
+Much of what we're learning is going to be based on PMI's framework.
+PMI is the Project Management Institute.
+It's the international association for project managers.
+They set standards for project management and they're kind of the premier organization setting project management standards.
+And some of what we're learning is based on that framework.
+But I have taken a lot of that framework, which is useful across industries and gives you lots and lots of information for sort of every type of project you could manage and really distilled it down into some best practices that are going to be most useful for you in your HR projects.
+And so as a consultant, I often work with mission driven organizations, nonprofits, government, those types of organizations.
+But I also often am working with HR departments, including in businesses.
+So I'm bringing that experience of leading projects with HR folks as well as other types of really collaborative projects.
+And so I've taken PMI's very extensive framework and information about managing projects and tried to get it down to four sessions to give you the critical things that I think will be most helpful to you in managing projects in your environment.
+And so that's what we can expect from this series.
+I do hope that you'll engage throughout the series, so please feel free to put any questions you have in the Q and A box.
+I may take them as I see them.
+I may hold them until, you know, a slide or two where I might be answering your question in the content that I prepared, or I may hold them till the end of the session and answer them then.
+But please do put any questions in the Q and A.
+But I would also encourage you to engage in the attendee chat.
+So if you have comments or thoughts or other things that you'd like to share, and occasionally I will prompt you to put things in the chat.
+I want this to be as useful for you as possible.
+So feel free to share your experiences or challenges that you're having and hopefully I'm able to offer some suggestions.
+So I do hope that you'll engage throughout the series.
+All right, to get us started, I'd really love.
+Oh, and I think that last one there, I'm not sure if you can see it, but little experience I think is what it's supposed to say there on C.
+But I'd love to hear a little bit from you just to kind of see who's in the room.
+Which of these best describes your experience managing projects?
+So would you say it's significant experience?
+Maybe you're just hoping to get the certification to kind of prove you know what you're doing.
+I got my PMP that way.
+I'd been managing projects for over a decade and I wanted a certification to show I knew what I was doing.
+Maybe you have some experience.
+So maybe you've been involved in a lot of projects, maybe you've managed a project or two.
+Or, or C would be little or limited experience.
+And so maybe this is really a new skill that you are hoping to learn.
+And so I'D love to hear from you about which describes your experience.
+And so I'll give folks another moment to go ahead.
+You can also put information in the chat.
+If none of those answers really reflects what your experience is, I'd love to, like I said, know who's in the room today.
+Also, regardless of your level of experience, I think that you'll find that you'll get something out of this.
+So obviously those with some or little experience are going to learn a lot of new skills.
+But if you do have significant experience, I think it's a great opportunity to spend some time reflecting on what's working well in your projects and maybe some additional things that you can add.
+And so I see Dora is saying some experience in the chat.
+Thank you for that, Dora.
+So it looks like almost everyone has submitted the poll, so I'm going to go ahead and sort of see where we stand.
+So it looks like most of you, the vast majority, have some experience and about 20% of you have significant experience.
+So we're in a kind of a good position here to share in the chat.
+And so I do hope that as we go through, if you have experiences to share, if there are things that you do that you'll do that in the chat.
+And so great.
+So I think it's good to know that we've all got at least some or significant experience.
+Okay, so let's dive into our content.
+And so I really want to start by talking about what project management is and why it's so useful, particularly for HR environments.
+And so the Project Management Institute, again the International association for Project Managers, defines a project very broadly.
+And I find that this definition is much more broad than what we often think about as being a project, maybe in an organization.
+And so often our organizations may define a project a little more narrowly, but PMI defines it very broadly.
+They define it as a temporary endeavor undertaken to create a unique product, service, or result.
+And there's a couple of pieces to this definition that I want to point out.
+First, that it's temporary.
+Now, temporary could mean six weeks, it could mean six years.
+There are some, you know, mega projects.
+If you think about an infrastructure project, a building project, many of those things may take many years, but we are expecting the work to end.
+And so that really is one of the things that separates projects from our regular operations, is that we are planning for this work to have kind of a defined end.
+The other piece is that we're creating something unique.
+It could be a product, it could be a service.
+It could be a program, it could be some type of result, but it is unique.
+Now, unique could be unique to the world.
+You are building something no one has ever seen before.
+Most projects, though, are building something unique for our own environment.
+And so perhaps your organization is developing a new benefits program, a new leadership training program.
+It's unlikely.
+It's possible, but it's unlikely that you are the first organization to do that work.
+If you are, wonderful.
+But for most of us, it's about building something, creating something that is unique to our environment.
+This definition being really broad.
+If we really think about this definition, a lot of the work that you're doing may really fall under the definition of a project.
+And so many of our projects too often become regular operations.
+And so if you are developing a training program that may become part of your regular operations, but at the project point, it is still creating something unique.
+And so this definition is very broad.
+And the definition of project management is also pretty equally broad.
+And so PMI defines project management as the application of knowledge, skills, tools and techniques to project activities to meet the project requirements.
+Essentially, we're going to throw a bunch of strategies, tools, techniques, practices at the work of our project, all of the activities of our project to try to achieve project success.
+Now, these broad definitions really do make project management as a skill set very broadly applicable.
+And what I found in my career is that the tools and strategies and techniques of project management are really useful, of course, in projects.
+But anytime I'm working together with other folks toward any type of common goal, many of the strategies that we use in project management also become very useful.
+So whether it's a meeting, whether it's a program, whether it's a committee, whether it's just with your team or colleagues, anytime I'm working together towards some type of common goal or multiple goals with folks, many of these tools and strategies really come in very useful.
+Project management is also useful outside of a hierarchy.
+While many project management tools and techniques are built on leadership tools and techniques that you may be familiar with from your HR work, really project management does not rely on hierarchical authority to get work done.
+And so it is assumed that project managers don't have authority over their project team or their stakeholders.
+Now, you may be lucky enough to be working on a project where all of your project team members report to you, and you might have some authority over them.
+But most projects, the project manager can really only use influence.
+And so there may be folks on a project team who do report to you, but you may have members of Leadership folks in other departments, people outside of your organization that are part of the project.
+And so we have to rely on some leadership tools and techniques, of course, but we really are kind of relying on influence and some practices that really support that type of non hierarchical collaboration.
+And so because it is so broadly applicable, of course we apply it to our projects, which is what we're going to see spend the vast majority of our time talking about in this series.
+But you could also apply it to programs, initiatives, some of the operational work that you're doing if you're having meetings, if you're running committees or interest groups.
+And so anytime you're working with other folks, it's useful.
+I often joke that I project manage myself.
+And some of the tools and techniques that we'll learn are also just useful for your own time management and task management and work management.
+And so it really is a useful skill set.
+So that's what project management is in terms of what PMI says it is and why it's important.
+But what do we actually do when we're managing projects?
+And so let's talk a little bit about what's called project management processes.
+And so these processes and process groups really structure the activities that we want to be doing as a project manager from the beginning of a project to the end of a project.
+And so PMI talks about five process groups now for those of you who have significant or some experience, if you've been managing projects for a while in the past, they often talked about these SD phases of managing projects.
+They've changed the language a little bit in the last couple of years because of the incorporation of more agile techniques, which we'll talk about in a little bit.
+But because of some of the terminology in more Agile techniques, they've changed the way that they talk about these.
+So you may have seen these as phases of managing projects, but now they're called process groups.
+And so there are really five process groups.
+And we'll talk through these.
+Initiating, planning, executing, monitoring and controlling and closing.
+And so initiating is when the project begins.
+So someone somewhere has had an idea that we need to take on this project.
+And whether it's because you have a strategic goal, whether you're responding to something in the environment, and if this really depends on your organization, how this is approached.
+And we will talk more about initiation in tomorrow's session.
+But someone has decided that a project needs to happen and that work needs to begin.
+And so during the initiating process, what we're typically trying to do is determine what our requirements are what we're trying to achieve in this project, what success looks like.
+And there's usually to some initial discussions of who our stakeholders are, maybe some parameters like budget, timeline.
+And so this is really when the project begins and is initiated.
+Another process group is planning.
+And so this is often really what we think about when we think about project management and when we think about being a project manager is really planning for project success.
+And so in the planning process group, there are many activities that involve planning for how you're going to engage your stakeholders, how you're going to communicate, defining your scope, how you're going to spend your budget, how you're going to set your schedule and timeline.
+And so here we are really doing that planning for how we are going to manage the work throughout the project, how we're going to involve people and how we are going to have a successful project.
+The next group is executing.
+And so the activities in the executing process group really are about doing the work right.
+And so this is where we spend most of our time in our project.
+And so this is where our project teams and other stakeholders are building whatever it is that we're creating with that unique product, service or result.
+And so this is where the work is really happening.
+The next process group is monitoring and controlling.
+This is also where the project manager really shines as well.
+And so in the monitoring and controlling group, there are lots of activities around making sure that execution is following plan we are and if it isn't, you know, making those any needed changes.
+But also this is often where we are reporting out, whether it's reporting to leadership, reporting to our team, reporting to partners or other folks in our organization.
+A piece of this is really reporting on what is happening and what the status is of the project is.
+And then our last process group is closing.
+And so this is where we are delivering what we have created in our project.
+We are doing some final activities to sort of release our team, maybe make sure bills are paid, anything that needs to be done to really close our project.
+In the four session, we'll talk more about some of the activities that we should be doing during closing.
+But a piece of closing too is doing a bit of a retrospective documenting what went well and what didn't go well during the project so that others can learn from it later.
+And so when we think about these five process groups, we probably imagine moving through them pretty sequentially, right?
+You can imagine going from initiating to planning to executing, to monitoring and controlling and closing.
+But the reality is that we are often moving through These different process groups, sometimes many times in a project, but executing and controlling really are happening at the same time.
+Right.
+And so the entire time that we're executing, we want to be monitoring and controlling our project.
+So the reality is that it's not kind of moving from initiating to planning, to executing, to monitoring and controlling and closing.
+There's significant overlap in these different process groups.
+And not only is there overlap, but again, in some projects, we may be repeating these different activities in these process groups many times throughout a project.
+And so when we are looking at these process groups, how you move through the process groups is something called your project life cycle.
+And so different projects have different project life cycles, meaning that they're going to move through those process groups very differently.
+And when we're talking about our project life cycle, we're talking about the phases or stages of a particular project's activities.
+Again, this can differ by project.
+You could have three different projects running in your HR department, and they're all on different life cycles, but often it's by project type.
+So certain types of projects tend to have certain types of life cycles.
+I'm going to introduce you to three life cycles.
+There really are kind of three broad common life cycles that most projects move through.
+And as we're looking at those, hopefully you can see how projects that you've worked on or projects that are happening in your organization might adapt better to different life cycles.
+So again, Project lifecycle is about how we're going to move through those process groups.
+Are we going to move pretty sequentially through those five process groups?
+Are we going to repeat groups?
+And so let's talk about one of the most common life cycles.
+It's called a waterfall life cycle.
+Sometimes it's called a traditional life cycle.
+Just because it's called traditional doesn't mean that folks still aren't using it in a waterfall life cycle.
+It's called waterfall because you can kind of imagine water trickling down as you're moving through these five phases.
+And so five process groups.
+And so initiating typically leads to planning.
+We may still be doing a little bit of planning as we begin execution.
+As I said, monitoring and controlling typically is happening during execution.
+And then we close our project.
+I'll talk in a few minutes about the types of projects that typically use a waterfall or traditional life cycle.
+But it's called traditional, again, because we focus on planning for our entire project.
+We try to follow that plan, we're monitoring and controlling that plan, and then we close our project.
+Very common life cycle.
+It's Used across industries every day.
+Another more common life cycle is called an iterative or agile life cycle.
+Excuse me.
+This life cycle is newer than the traditional one, but new.
+It's probably people have been using it for 25 or 30 years, so it's not as new as it is it probably sounds.
+But iterative and agile life cycles really move through these process groups a little bit differently.
+And so there's initiation.
+At the beginning of a project, you do some general planning, but then you are planning, executing, monitoring, and controlling again and again in iterations.
+And so we'll initiate our project, we'll do some planning, executing, monitoring and controlling.
+Often we may even be doing a little bit of closing in terms of delivering something at the end of an iteration.
+We take what we learned from that iteration and repeat another iteration.
+Planning, executing, monitoring and controlling, maybe even doing a bit of closing again and again, as many iterations as we need to go through before the project is closed.
+And so these are the most common two life cycles.
+Waterfall tends to best when the outcomes that you are trying to achieve are very clear at the beginning of a project.
+And so the kind of common example of a waterfall project is a construction project.
+And so before you begin a construction or renovation project, you have to know what it is you're building, because you can't decide halfway through that you're going to add an extra floor after you've already poured the foundation.
+And so waterfall is great when you have a pretty clear idea at the beginning of the project what it is that you're going to be creating or building.
+Waterfall projects tend to have a very defined beginning and end.
+So we want this to be done in six months and a year.
+And so it's very useful if you have that very set timeline, to use a waterfall project life cycle.
+The thing about waterfall is that it is all about planning.
+And so we are planning for the entire project and then trying to follow that plan until the project closes.
+So if clear planning is either required because of what it is you're creating, or it's just desired.
+And some organizations and some organizational cultures having a very clear plan before you begin any work is going to be very important.
+And so waterfall life cycles work really well in those environments.
+Now, traditionally, in waterfall life cycles, we are only engaging our stakeholders at a couple of different points.
+Often it's at the beginning as we're making our plan, and then we may be testing something with them as part of monitoring and controlling very close to the end of the project.
+Now you can engage stakeholders multiple Times in waterfall projects.
+And if we do think about a construction or renovation type project where there might be, you know, kind of multiple checks, someone has to get a permit, maybe whoever you're building it for does a walkthrough.
+Often we are engaging our stakeholders at multiple points, but typically we're not engaging them in a way where it's going to impact the plan.
+Right?
+We're engaging them in sort of small ways throughout the project.
+Now, agile or iterative life cycles are really useful when your outcomes are not fully clear at the beginning of the project.
+And this could because maybe there's a problem you're trying to solve, or an issue you're trying to solve, but you don't know exactly what you're going to be building or what it is, the different features or elements that are going to be included in whatever it is that you're creating.
+And that's really why iterative and agile life cycles came to be waterfall.
+Traditional life cycles kind of came out of manufacturing and military environments and construction environments where you had to plan before you could create something.
+Agile and iterative life cycles came out of technology environments.
+If you think about your phone or other types of tools, technology tools that you're using, where they're constantly releasing new features and new updates, when they first started building whatever that tool was, they couldn't have imagined or couldn't have known exactly what was going to be included.
+And so because of that, they wanted to work in these iterations where they build something, see how it works, learn from it, and then add onto it in the next iteration.
+And so if you are in a situation where you need that continuous or incremental delivery, iterative tends to work really well.
+And if you're thinking in terms of hr, what would be continuous or incremental delivery?
+We're not building technology tools, so this wouldn't necessarily work for us.
+But you may have situations where you want to create something, perhaps as a demo, or you want to roll out some program to maybe one office or one small, you know, one small group of folks, one demographic of people, and then you may want to expand it based on what you've learned, then an iterative life cycle would work best.
+And in iterative life cycles, responsiveness is more important than planning.
+So what we're going to learn throughout the project, that testing that feedback is more important than planning.
+And so waterfall and iterative life cycles, very common.
+The most common life cycle these days, according to PMI though, is a hybrid life cycle and a hybrid Life cycle could look a thousand different ways, but essentially it's when waterfall and iterative don't work exactly for you, so you kind of create your own life cycle.
+And something that I see that I think is often pretty common in terms of a hybrid life cycle is you may follow a waterfall life cycle to perhaps do some research, gather information to figure out how you're going to address a problem or a challenge.
+And then once you know what it is that you might like to build or try, you may move more toward an iterative life cycle.
+And so the point with hybrid is that you don't have to stick to waterfall or iterative.
+You can really make it whatever you need it to be for your particular project.
+And so I'd love to hear a little bit from you.
+Which life cycle is most common in your organization?
+And so is it a waterfall life cycle?
+Is it an agile or iterative life cycle?
+Is it a hybrid?
+Is it something else and something that you may want to think about?
+Let's say you're, you know, as HR folks, you may have to use perhaps a more waterfall or hybrid life cycle, but most projects in your organization may run on an agile or iterative life cycle.
+And so there may be a variety of life cycles being used across your organization.
+If you work for a tech company, let's say that agile or iterative life cycle is probably the way a lot of the work is done, but there are probably some projects happening in a waterfall or traditional life cycle.
+And so I'm just curious what folks, how folks are responding here and feel free to put additional information in the chat.
+I will say that there are different types of agile and so you may be in an organization following a very specific kind of flavor of Agile.
+And so I'd love to hear about that in the chat.
+And so looks like most folks have submitted their answers, so I'm going to go ahead and see how people have voted.
+And so 60% of you are saying waterfall, which isn't surprising, 20% are hybrid and 20% are saying other.
+And so I do hope if you selected other that you'll share a little bit about that in the chat.
+And so again, it doesn't necessarily, there's no right or wrong answer here.
+The answer is about what fits your particular projects and your particular organization.
+And so when we're thinking about these process groups, even though we may move through them differently depending on the project, depending on the life cycle that's most common in our organization, they are very useful ways to think about the types of activities we need to do to manage a project.
+Now, notice these are process groups of project management, not necessarily phases that your particular project is going to do.
+And so it's a very useful way to think about what we need to be thinking about as project managers.
+And I see that Kristen is saying we' split some functions need that agile approach, and others are following the waterfall cycle.
+Yes.
+And so definitely, even in organizations where, you know, 90% of the projects may be agile, there are often things happening waterfall and vice versa.
+And many organizations are doing sort of a hybrid to kind of blend both approaches.
+And so thanks for sharing that, Kristin.
+And so when we're thinking about these process groups, they can help us think about the activities that we want to be doing as a project manager.
+Now, PMI is not super prescriptive about exactly what needs to happen in each of these process groups.
+They give lots of activities that you could be doing and that you might want to consider in each of these areas.
+But it really is a project manager is up to you to really think about what is most important, what's going to make the most sense in your organization.
+I am going to suggest that particularly for HR projects, there's a couple of things that we do want to be thinking about in each of these process groups.
+We'll be talking about these throughout the rest of the series, but we do want our initiation to be clear.
+We'll talk about this more tomorrow.
+But what often happens, particularly as project managers, we may not have been very involved initiation, and then suddenly you're sort of voluntold that you're going to be leading this project, or you're kind of brought in after leadership has made a decision to do a project, and they kind of expect you to jump right into planning.
+But we do want to make sure that we're clear about what happened initiation, what the requirements of the project are, what people are looking for.
+For planning, we want to integrate all of the different areas of planning that matter to our project.
+On the next slide, I'm going to talk through many of the areas of planning that you might want to think about.
+But as a project manager, you have to decide which areas are going to be most important to your organization, to your project.
+We want our executing to be collaborative.
+I often talk about project management as being the facilitation of collaboration.
+That really is what we're doing.
+We're trying to get folks to work together to achieve something, and so we need to be collaborative about that.
+It's also just kind of best practice in leading people and teams.
+We want to have a collaborative environment.
+We want to be strategic about what we're monitoring and controlling, Particularly in the age of project management tools and data tools and dashboards.
+You can be monitoring many things in your projects, but we want to make sure we're monitoring the things that matter most to success.
+And then closing again.
+We'll talk about closing in our last session.
+Closing, in my experience, often doesn't really happen beyond sort of delivering whatever it is that we've promised.
+Everybody just sort of goes back to everything else that they're doing.
+And I think this is particularly true in HR environments where it is probably likely that whatever project you're leading is not the only thing that you're doing right.
+You probably have lots of other responsibilities, so do your colleagues.
+Things that have to keep going regardless of this additional project or projects.
+And so often closing is forgotten.
+But we want our closing to be timely and useful.
+And so these areas and these process groups really need to work together to help us lead a successful project.
+And so ideally, if we can get really clear about what's required during initiation, we can use that to create a really effective plan.
+Even if we are only planning for an iteration.
+For our planning, we want to include all of the things that really matter to our project.
+Our planning will drive execution.
+It will also drive what we're monitoring and controlling.
+And then what we learn from monitoring and controlling can help us improve execution.
+And sometimes we have to go back to our plan.
+And so in waterfall life cycles, we may have to take what we learn to tweak a plan in iterative or agile life cycles and many hybrid life cycles.
+What you learn during monitoring and controlling is going to help you plan for that next iteration.
+And then we want our closing to be really forward thinking and help us lead better projects generally.
+And so when we're thinking about planning and monitoring and controlling in particular, but also as we're moving through all of the activities in these process groups, PMI suggests many different areas that we can be thinking about.
+They've often called these domains.
+You can think about them as areas of focus, Things that we may want to plan for, things that we may want to monitor and control.
+Things that are going to matter from initiation to closing.
+I've listed a bunch of them here.
+They're not kind of in different colors for any reason other than aesthetics.
+I'm going to talk through a couple of these and we will spend significant time on several of these throughout the rest of the series.
+And so one of the things that we're often planning for and monitoring and controlling is scope.
+This is really the purpose, the requirements, the why behind our project.
+We may be thinking about uncertainty and planning, trying to plan for, at least monitor the things we may not know.
+As we're entering planning, we may need to think about risk.
+We'll talk about risk a little bit in our four session.
+Risk could be risk if you do not achieve success during this project.
+It could be risk related to the actual work of the project itself.
+We typically have to plan for and think about cost.
+And so often projects have budgets that we need to plan for.
+We'll talk about cost management in our four session.
+We also typically need to plan for resources.
+This is related to costs in many ways.
+But resources may be things that we need to get from outside of the organization.
+But resources in project management terms also includes people.
+And so who's going to be on our team?
+Who do we need to do work during this project?
+But it could also be equipment and tools and technology.
+Procurement is something that we also often need to plan for.
+Again, very much tied to cost and resource planning.
+But when we're thinking about procurement, if you are having to go outside of your organization to spend money, that adds extra complexity to our project.
+If we're using all internal resources, then things are often a little bit simpler.
+We definitely want to think about schedule.
+We'll talk about schedule during this series.
+We typically also want to think about communication.
+And so how are we going to communicate about the project during the project?
+So how are we going to engage our staff stakeholders?
+And so we want to plan for our stakeholders.
+These are the folks who are either going to be involved in the project or impacted by the project or what the project is creating.
+We want to think about Life Cycle, which we've just talked about.
+And so I see Dina's having a bit of a challenge.
+We're just on this domain or focus area.
+Let me.
+I don't know if you're seeing me kind of move between slides a little bit there.
+Hopefully our producer, Yara can help.
+But we're just kind of sitting on this domain, our focus area presentation slide.
+So hopefully that's what you're seeing, Dina.
+And so we do want to think about Life Cycle, which we've just talked about.
+We typically want to think about quality as well.
+We'll talk a little bit about quality later in the series.
+The quality of whatever it is that we're creating.
+And also kind of as a subset of our stakeholders, we do want to think about our team, and so our core project team, how are we going to manage those folks?
+How are we going to get them to collaborate?
+And so these are some areas that we want to think about.
+And so this is a lot, right?
+If we think about all of these different areas, are you going to create plans for all of these 12 different areas?
+How much time do you need to spend on these different areas?
+And so it really does.
+As a project manager, it really is up to you to think about which of these areas are going to be most important for your project.
+Which of these areas you need to spend some time planning for, you need to spend some time monitoring and controlling throughout execution.
+And so we'll talk about many of these areas going forward, but kind of regardless of these areas, you are thinking about them throughout these process groups.
+And so there are certain ones that are going to be more important during initiation.
+You need to decide as part of your planning, which of these areas is going to be most important, which you need to plan for.
+Of course, if you're not, you know, procuring things from outside, then you won't have to plan for procurement.
+You may be doing a project with very little uncertainty, and so you won't have to spend as much time on that.
+And so it really does depend on your project.
+But it's useful to think about project management in terms of these process groups and those different areas.
+And so I'd love to hear a little bit from you.
+Which of the areas is most, is typically most important to your project and so to projects in your organization.
+And so I've listed a couple here.
+If there are other ones, feel free to put them in the chat.
+And so is it cost?
+Is it schedule?
+Is it stakeholders?
+Is it quality?
+If there's another area, maybe it is procurement, maybe it's risk, maybe it's something else.
+I'd love to hear about it in the chat.
+Okay, glad to hear that Deena's back with us.
+Sorry that you had that challenge.
+So I'd love to hear from folks, which of these areas typically is most critical to project success in your organization?
+And if it's a mix of a couple of areas, feel free to share that in the chat.
+Again, no right or wrong answers here, but it's really useful for you in managing projects to think about and really understand, particularly for your organization or for your HR team, what tends to be most important.
+Now, obviously this could change by project, but understanding the areas that you're probably going to want to put most attention to is going to be very helpful.
+And so I'm seeing here Juan is saying schedule and quality.
+Thank you for sharing, Juan.
+So quality is coming up as being very important for most folks.
+Stakeholders and schedule being a little less.
+So no one has said cost.
+And so again, no right or wrong answers here.
+But it is very useful for you to think about what's most important for your organization for most of your projects, because those areas that you're going to want to kind of lean into.
+And so if we think about project management generally, if we think about these five process groups, and as you'll see as we move through the rest of the series, that kind of regardless of which areas are most important, we really are thinking about project management in terms of proactive planning and intentional communication, two keys to good project management.
+Even if you are doing a hybrid or iterative life cycle, you are still doing planning.
+Understanding which areas are most important to your project and your organization is part of proactive planning.
+But communication and being really intentional about how we're communicating is also very important.
+We often think about cost and schedule and these other areas and planning for those, but we have to communicate those plans and throughout execution and monitoring and controlling and closing to be successful.
+All right, so that is what kind of PMI and the sort of world says about what's important in our projects.
+But let's talk about HR projects.
+And so those are all best practices and things that we want to be thinking about.
+But what matters most in HR projects and what makes HR projects a little bit different.
+And so a couple of things that I found, even though only a handful of you said stakeholders are most important to your projects, many of your projects are stakeholder centered, right?
+And so you are often creating things that are people in your organization are going to be using or are impacting people in your organization.
+And so HR projects are stakeholder centered.
+Even if it may not be maybe your most critical element in a particular project, they are stakeholder centered.
+And this could be top down that your leadership has said we need to be doing this thing.
+Sometimes it's bottom up, right?
+You see a need and you need to respond to it.
+In most HR projects, collaboration is expected.
+Again, you may be collaborating with leaders, you may be collaborating with folks from other departments, you may be collaborating with partners outside of your organization, contractors, consultants.
+And so collaboration is really expected.
+HR projects also are very outcomes and deliverables focused.
+Many, many projects are, but it's very important.
+And I think this is why many of you said quality was so critical to your Projects, it's important that you are creating things that people can use.
+Sometimes these things have to meet regulatory or policy requirements.
+And so it's very important that what you're creating is very usable and is of high quality.
+When we think about HR projects, what we really want to think about then is a couple of different areas of focus.
+And so while we want to think about clear initiation, integrated planning, collaborative execution, strategic monitoring and controlling and timely and useful closing, it's been my experience that if we focus on, or at least begin with, these five areas, particularly when it comes to planning and monitoring and controlling scope, stakeholders, schedule, deliverables and communications, our projects will run better.
+And so we're going to spend much of our time in tomorrow's session and the third session talking through these five areas.
+And so scope, stakeholders, schedule, deliverables and communications.
+Scope is really important to getting that clear initiation, to making sure people are on the same page.
+Deliverables, again, deliverables are the things that we're going to be creating during the project.
+And so it's very important we, regardless of our life cycle, come to, you know, kind of consensus or conclusion about what it is that we are creating in this project.
+We also do need to think about our stakeholders and how we're engaging our stakeholders.
+We need to think about how we're communicating, particularly because many of the things that we're creating are going to be used by people in our organization.
+We need to think about how we're bringing those folks in to our projects.
+But also we're going to have to communicate to make that happen.
+And of course, we have to think about schedule.
+And so when are we going to do all of these wonderful activities?
+Now, scope, stakeholder, schedule and communications were listed on that slide with the 12 areas that PMI says that you should think about.
+Deliverables is a bit of a mix of some of the other areas.
+And so I found that if we start planning for our deliverables, some of those other areas will become more obvious.
+And so deliverables is very tied to quality, it's tied to risk, it's tied to budget.
+And so deliverables planning will really lead us to whether or not we need to plan in some of those other areas.
+And so that's what we're going to be focusing on, at least over the next two sessions is scope, stakeholder schedule, deliverables and communications.
+In the fourth session, we'll spend a little bit of time on risk and budget.
+We will talk about quality when we talk about deliverables and so that is the content for today, as I said.
+Tomorrow we'll start on two of the five key areas for HR projects, stakeholders and communications.
+I think we often forget about stakeholders and communications, and this is why many projects fail.
+And so I want to spend some time on these early.
+And so we'll talk about managing our stakeholders, managing our teams, how we communicate about our projects, what good communication is in project management.
+In session three, we'll talk about scope, deliverables, including quality and schedule planning.
+And then we'll bring it all together in session four.
+In the resources box, you should have a five key elements worksheet.
+This is a very simple planning worksheet that covers those five key elements that we've just talked about.
+It also has quality in there.
+And so if you want to follow along with this as we're moving throughout the series, if you have kind of a project idea, this could be a real project that you're working on or worked on in the past.
+You can think a little bit about the project life cycle.
+And so you could fill in those sections of this worksheet.
+So this is a worksheet you can use to follow along and kind of practice some planning as we're moving through these areas, or it's a worksheet that you can use with leadership or other key stakeholders to begin planning for today's session.
+In the resource box, you should also have a project assessment.
+And so this is a very simple assessment that includes some of those focus areas of consideration domains are sort of listed on the left there, like scope and stakeholders.
+And then you can really rank your project's approach or your project environment based on clarity, how strategic you are in these areas and how collaborative you are, and really use this as a way to have a conversation about how you can kind of get better in these different areas.
+All right, so we've only got a minute or two left.
+If you do have a key takeaway, feel free to put it in the Q and A.
+I'm happy to take any questions that you have.
+We do have plenty of time for questions over the next three sessions, but feel free to add any questions that you have to the Q and A, and I'm happy to try to take them in the few minutes that we have left.
+Also, feel free to reach out to me with questions that you have as well, either over the next couple of days via email or LinkedIn or even after this series is over, do feel free to connect with me on LinkedIn.
+I post a lot about project management and planning obviously, and so I'm often sharing tips there as well and so I'll give folks a moment to see if anyone has any questions.
+I'm currently not seeing anything in the Q and A, but I thank you all for your attention and engagement today.
+Thanks for engaging in the chat with me.
+I think today's session is very much an introduction and we really kind of get into the nitty gritty over the next three sessions and so it looks like we're almost at time.
+I'm not seeing any questions and so I looking forward to being with you tomorrow.
+You can bring any questions that you have tomorrow's session.
+So thanks everybody.
+I'll see you tomorrow.
+To conclude today's event, we'd like to thank our presenter for the valuable information to conclude today's event, we'd like to thank our presenter for the valuable information shared we hope that you now take the time to provide your valuable Mind survey.
+Today's session is a time to provide your valuable series that includes attendance.
+Today's session is a part of the final education series.
+That exam will not be available until as well as the final session of the series, the exam will not be we recommend purchasing our Second Chance Retake Insurance, which allows you to take the exam a second time without having to retake the course.
+Should you need to retake the exam without purchasing insurance beforehand, the retake fee has an upcharge.
+Please click on the Retake Insurance icon located at the bottom of the screen.
+Please note that this webinar window will be temporarily unavailable after the presentation has concluded, but if you purchased on demand access, the archive will be accessible after a few hours so you can access the Recording Resources, Survey and Exam link.
+If you have any questions, please email us directly@supportareerlearning.com for assistance.
+Thank you again for joining us and have a great rest of your day.
