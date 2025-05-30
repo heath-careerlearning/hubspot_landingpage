@@ -1,15 +1,15 @@
-{% layout none %}
+<!--
+  templateType: "page"
+  isAvailableForNewContent: true
+-->
 <!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
-    {% if content.html_title %}<title>{{ content.html_title }}</title>{% endif %}
+<title>{{ content.html_title }}</title>
     <meta name="description" content="{{ content.meta_description }}">
-    {% if brand_settings.primaryFavicon.src %}
-      <link rel="shortcut icon" href="{{ brand_settings.primaryFavicon.src }}" />
-    {% endif %}
-    {{ standard_header_includes }}
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/48261694.js"></script>
+    <link rel="shortcut icon" href="{{ brand_settings.primaryFavicon.src }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         /* Custom styles */
         :root {
@@ -18,7 +18,7 @@
             --text-color: #333333;
             --light-bg: #F5F8FA;
             --heading-color: rgb(74, 92, 154);
-            --page-margin: 1320px; /* Slightly reduced from 1440px for better margins */
+            --page-margin: 1000px; /* Slightly reduced from 1440px for better margins */
         }
         
         body {
@@ -48,11 +48,16 @@
         .logo-section {
             display: flex;
             align-items: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            justify-content: flex-start;
+            padding-left: 0;
         }
 
         .logo-section img {
-            height: 40px;
+            height: 70px;
             width: auto;
+            margin-left: 0;
         }
 
         .logo {
@@ -74,40 +79,6 @@
             gap: 2rem;
         }
 
-        .search-bar {
-            display: flex;
-            align-items: center;
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 4px;
-            padding: 0.5rem 1rem;
-            width: 300px;
-        }
-
-        .search-bar input {
-            border: none;
-            width: 100%;
-            font-size: 0.95rem;
-            color: var(--primary-color);
-            outline: none;
-        }
-
-        .search-bar svg {
-            width: 20px;
-            height: 20px;
-            color: #6b7280;
-            flex-shrink: 0;
-        }
-
-        .phone-number {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
         .account-links {
             display: flex;
             align-items: center;
@@ -124,19 +95,24 @@
         }
 
         .main-nav {
-            background: white;
+            background: #000;
             border-bottom: 1px solid #e5e7eb;
             padding: 1rem 0;
         }
 
         .nav-menu {
             max-width: var(--page-margin);
+            background-color: #000;
             margin: 0 auto;
-            padding: 0 1.5rem;  /* Slightly increased padding */
+            padding: 0 1.5rem;
             display: flex;
             gap: 2.5rem;
             list-style: none;
             justify-content: center;
+        }
+
+        .nav-menu li {
+            color: #fff;
         }
 
         .nav-link {
@@ -203,15 +179,30 @@
 
         .main-content {
             max-width: var(--page-margin);
-            margin: 0 auto;
+            margin: 0 auto; 
             padding: 2rem 1.5rem 0;
             display: grid;
-            grid-template-columns: 1.85fr 1.15fr;
-            gap: 8rem; 
+            grid-template-columns: 1.85fr 0.575fr; /* Make right column half as wide */
+            gap: 2rem;
             align-items: start;
             position: relative;
         }
 
+        .featured-section-header {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.95rem;
+            color: #b0b0b0;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 0.01em;
+            text-align: left;
+            padding: 0.7rem 1.5rem 0;
+        }
+        .featured-section-divider {
+            border: none;
+            border-top: 2px solid #ececec;
+            margin: 0 1.5rem 0.2rem 0;
+        }
         .content-left {
             padding-top: 0;
             background-image: url('https://careerlearning.com/cdn/shop/files/Art.svg?v=1688471716');
@@ -238,7 +229,7 @@
         .content-right {
             background: white;
             padding: 0;
-            border-radius: 24px;
+            border-radius: 0;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
             position: sticky;
             top: 2rem;
@@ -254,6 +245,7 @@
             border-radius: 24px 24px 0 0;
             aspect-ratio: 16/9;
             object-fit: cover;
+            object-position: left top;
         }
 
         .course-tags {
@@ -276,7 +268,7 @@
         .course-tag::after {
             content: "•";
             margin-left: 0.25rem;
-            color: #22c55e;
+            color: #22c55e;  /* Nice green color */
         }
 
         .course-tag:last-child::after {
@@ -355,7 +347,7 @@
         }
 
         .date-button.selected {
-            background: #22C55E !important;
+            background: #22C55E;
             color: white;
         }
 
@@ -520,33 +512,52 @@
             font-weight: 500;
             cursor: pointer;
             display: block;
-            margin: 2rem 0;
         }
 
-        .trusted-logos {
-            background: white;
-            margin: 2rem -100vw;
-            padding: 2rem calc(100vw - 50%);
-            position: relative;
-            left: 50%;
-            right: 50%;
+        /* Trusted logos row styles */
+        .trusted-logos-row {
             display: flex;
             align-items: center;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            gap: 4rem;
+            margin: 0;
+            background: none;
+            padding: 0;
+            box-sizing: border-box;
         }
-
+        
+        .trusted-logos {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            gap: 2.5rem;
+            padding: 0 2rem 0 0;
+            height: 72px;
+            margin: 0;
+            border-radius: 0;
+        }
         .trusted-logos img {
-            height: 30px;
+            max-height: 48px;
+            height: 48px;
             width: auto;
-            object-fit: contain;
-            opacity: 0.8;
-            transition: opacity 0.2s;
+            display: block;
+            margin: 0;
         }
-
-        .trusted-logos img:first-child {
-            height: 20px;
+        .trusted-logos img:first-of-type {
+            margin-left: 10px;
+        }
+        .as-seen-in-label {
+            background: var(--primary-color);
+            color: #fff;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 2rem;
+            padding: 0 2.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 72px;
+            border-radius: 0;
+            margin: 0;
+            white-space: nowrap;
         }
 
         .section-anchors {
@@ -634,6 +645,8 @@
         }
 
         .presenter-tag img {
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
             object-fit: cover;
         }
@@ -668,10 +681,10 @@
             margin: 1rem 0;
         }
 
-        .course-description {
+        .course-description, .story-block p {
             color: #4a5568;
             font-size: 1.1rem;
-            line-height: 1.7;
+            line-height: 2;
             margin: 2rem 0;
         }
 
@@ -907,8 +920,8 @@
             background: white;
             border-radius: 24px;
             padding: 3rem;
-            margin: 4rem 0;
-            width: 100%;
+            margin: 4rem auto;
+            max-width: 700px;
         }
 
         .benefits h2 {
@@ -998,8 +1011,7 @@
 
         .certification-badges {
             background: white;
-            margin: 4rem -100vw;
-            padding: 2rem calc(100vw - 50%);
+            
             position: relative;
             left: 50%;
             right: 50%;
@@ -1020,16 +1032,15 @@
             padding: 0;
             margin: 0;
             border-bottom: 1px solid rgba(74, 92, 154, 0.1);
-            margin-left: -5rem;
         }
 
         .badge-row:first-child {
-            margin-bottom: 1.5rem;  /* Add margin below first badge */
+            margin-bottom: 1.5rem;
         }
 
         .badge-row:last-child {
             border-bottom: none;
-            margin-top: -1rem;  /* Pull up the second row */
+            margin-top: -1rem;
         }
 
         .badge-row img {
@@ -1179,72 +1190,6 @@
             background: #333;
         }
 
-        .what-to-expect-box {
-            background: #fff;
-            border-radius: 20px;
-            padding: 2.5rem 2rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-        }
-        .what-to-expect-section {
-            max-width: 700px;
-            margin: 4rem auto;
-            background: #f5f8fa;
-            padding: 2.5rem 0;
-            border-radius: 20px;
-        }
-        .what-to-expect-point {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 2rem;
-            background: none;
-            border-radius: 0;
-            box-shadow: none;
-            padding: 0;
-        }
-        .what-to-expect-point:last-child {
-            margin-bottom: 0;
-        }
-        .what-to-expect-check {
-            color: #22c55e;
-            font-size: 1rem;
-            margin-right: 1rem;
-            margin-top: 0.2rem;
-            flex-shrink: 0;
-            align-self: flex-start;
-        }
-        .what-to-expect-title {
-            font-weight: 700;
-            color: var(--heading-color);
-            font-size: 1.1rem;
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-        .what-to-expect-box ul {
-            margin: 0 0 0 1.2rem;
-            padding: 0;
-            color: var(--text-color);
-            font-size: 1rem;
-            line-height: 1.7;
-        }
-        .what-to-expect-box li {
-            margin-bottom: 0.3rem;
-        }
-        .what-to-expect-intro {
-            color: var(--text-color);
-            font-size: 1.15rem;
-            margin-bottom: 2.5rem;
-            text-align: left;
-        }
-
-        .what-to-expect-heading, .resources-heading {
-            font-family: 'Raleway', sans-serif;
-            font-size: 2rem;
-            color: rgb(74, 92, 154);
-            margin-bottom: 2rem;
-            font-weight: 700;
-            text-align: left;
-        }
-        
         .social-links {
             display: flex;
             gap: 1.25rem;
@@ -1303,11 +1248,14 @@
 
         .stats-section {
             background: white;
-            margin: 4rem -100vw;
-            padding: 3rem calc(100vw - 50%);
+            margin: 4rem 0;
+            padding: 3rem 0;
             position: relative;
+            width: 100vw;
             left: 50%;
             right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
         }
 
         .stats-container {
@@ -1323,11 +1271,6 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 3rem;
-            margin-left: -9rem;  /* Increased negative margin from -5rem to -7rem */
-        }
-
-        .stats-sidebar {
-            /* Empty column to match main layout */
         }
 
         .stat-item {
@@ -1369,7 +1312,6 @@
             font-family: 'Raleway', sans-serif;
             font-size: 1.25rem;
             color: rgb(74, 92, 154);
-            text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 2rem;
             font-weight: 600;
@@ -1473,197 +1415,377 @@
             width: 38px;
             height: 24px;
         }
+
+        .testimonials-section {
+            margin: 4rem 0;
+            padding: 3rem;
+            background: white;
+        }
+
+        .testimonials-heading {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2rem;
+            color: rgb(74, 92, 154);
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .testimonials-grid {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .testimonial {
+            background: white;
+            border-bottom: 1px solid #eee;
+            padding: 2rem 0;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial:last-child {
+            border-bottom: none;
+        }
+
+        .testimonial-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-name {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.25rem;
+            color: rgb(17, 24, 39);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .verified-tag {
+            background: rgb(236, 253, 245);
+            color: rgb(6, 95, 70);
+            font-size: 0.875rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 100px;
+            font-weight: 500;
+        }
+
+        .testimonial-stars {
+            color: #FFB800;
+            font-size: 1.25rem;
+        }
+
+        .testimonial-content {
+            color: rgb(55, 65, 81);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 1rem 0;
+        }
+
+        .testimonial-date {
+            color: rgb(107, 114, 128);
+            font-size: 0.875rem;
+            margin-top: 1rem;
+        }
+
+        /* Add to the CSS section at the top */
+        .breadcrumb {
+            color: #b0b0b0;
+            font-size: 0.85rem;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 1rem;
+            letter-spacing: 0.01em;
+        }
+
+        /* Add to the CSS section at the top */
+        .author-block {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1.5rem 0 1rem 0;
+        }
+        .author-block-img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .author-block-details {
+            display: flex;
+            flex-direction: column;
+        }
+        .author-block-date {
+            color: #222;
+            font-size: 1.15rem;
+            font-weight: 500;
+            line-height: 1.1;
+        }
+        .author-block-byline {
+            color: #222;
+            font-size: 1.15rem;
+            font-weight: 500;
+            line-height: 1.1;
+        }
+        .author-block-check {
+            color: #22c55e;
+            font-size: 1.2em;
+            vertical-align: middle;
+        }
+        /* Add to the CSS section at the top */
+        .story-block p {
+            line-height: 2;
+        }
+
+        .what-to-expect-box {
+            background: #fff;
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .what-to-expect-section {
+            max-width: 700px;
+            margin: 4rem auto;
+            background: #f5f8fa;
+            padding: 2.5rem 0;
+            border-radius: 20px;
+        }
+        .what-to-expect-point {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            background: none;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0;
+        }
+        .what-to-expect-point:last-child {
+            margin-bottom: 0;
+        }
+        .what-to-expect-check {
+            color: #22c55e;
+            font-size: 1rem;
+            margin-right: 1rem;
+            margin-top: 0.2rem;
+            flex-shrink: 0;
+            align-self: flex-start;
+        }
+        .what-to-expect-title {
+            font-weight: 700;
+            color: var(--heading-color);
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .what-to-expect-box ul {
+            margin: 0 0 0 1.2rem;
+            padding: 0;
+            color: var(--text-color);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        .what-to-expect-box li {
+            margin-bottom: 0.3rem;
+        }
+        .what-to-expect-intro {
+            color: var(--text-color);
+            font-size: 1.15rem;
+            margin-bottom: 2.5rem;
+            text-align: left;
+        }
+
+        .what-to-expect-heading, .resources-heading {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2rem;
+            color: rgb(74, 92, 154);
+            margin-bottom: 2rem;
+            font-weight: 700;
+            text-align: left;
+        }
+        .featured-header {
+            font-weight: bold;
+            font-size: 1.35rem;
+            margin: 1rem 0 0.1rem 0;
+            text-align: center;
+            padding: 0;
+        }
+        .featured-stars {
+            color: #FFB800;
+            font-size: 1.3rem;
+            margin-bottom: 0.1rem;
+            text-align: center;
+        }
+        .featured-reviews {
+            color: #6B6B8A;
+            font-size: 1rem;
+            margin-bottom: 0.7rem;
+            text-align: center;
+        }
+        .content-right {
+            background: white;
+            padding: 1rem;
+            border-radius: 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            position: sticky;
+        }
+        .featured-section-header {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.95rem;
+            color: #b0b0b0;
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+            letter-spacing: 0.01em;
+            text-align: left;
+        }
+        .featured-section-divider {
+            border: none;
+            border-top: 2px solid #ececec;
+            width: 100%;
+        }
+
+        .benefit-check {
+          display: flex;
+          align-items: flex-start;
+          margin-top: 0.1em;
+          margin-right: 0.75rem;
+        }
     </style>
-    {{content_for_header}}
+    {{ standard_header_includes }}
   </head>
   <body>
     <header class="top-header">
         <div class="header-container">
-            <div class="logo-section">
-                <a href="https://www.careerlearning.com">
-                    <img src="https://www.careerlearning.com/cdn/shop/files/main-logo.png?v=1728661137&width=600" alt="CareerLearning logo" width="200" height="40">
-                </a>
-            </div>
             <div class="top-nav">
-                <a href="tel:8456225003" class="phone-number">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                    </svg>
-                    (845) 622-5003
-                </a>
-                <div class="account-links">
-                    <a href="https://www.careerlearning.com/account" class="account-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                        Account
-                    </a>
-                    <a href="https://www.careerlearning.com/checkout" class="account-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="9" cy="21" r="1"></circle>
-                            <circle cx="20" cy="21" r="1"></circle>
-                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                        </svg>
-                        Check out
-                    </a>
-                </div>
+                FREE DOWNLOAD – The 3 Most Common Payroll Mistakes and How to Avoid Them!
             </div>
         </div>
     </header>
 
     <nav class="main-nav">
       <ul class="nav-menu">
-        <li><a href="https://www.careerlearning.com/collections/human-resources" class="nav-link">Human Resources</a></li>
-        <li><a href="https://www.careerlearning.com/collections/education" class="nav-link">Education</a></li>
-        <li><a href="https://www.careerlearning.com/collections/nonprofits" class="nav-link">Nonprofits</a></li>
-        <li><a href="https://www.careerlearning.com/pages/project-management-institute" class="nav-link">Project Management Institute</a></li>        
+        <li>ADVERTORIAL</li>
       </ul>
     </nav>
 
     <main class="main-content">
         <div class="content-left">
-            <h1 class="main-heading">Payroll Processing and Compliance Certification</h1>
-            <h2 class="sub-heading">Master payroll production, ensure compliance, and deliver exceptional customer service</h2>
-            <div class="certification-credits">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M20 7h-3V4c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zM9 4h6v3H9V4zm11 14H4V9h16v9z"/>
-                    <path d="M12 12l-2 3h4l-2-3z"/>
-                </svg>
-                Approved for HRCI and SHRM recertification credits
+            <div class="logo-section">
+                <a href="https://www.careerlearning.com">
+                    <img src="https://www.careerlearning.com/cdn/shop/files/main-logo.png?v=1728661137&width=600" alt="CareerLearning logo">
+                </a>
             </div>
-            <div class="presenter-tag">
-                <img src="https://careerlearning.com/cdn/shop/files/Brian_Headshot_2_Final_1_1_8cb121b1-885b-4fd2-9051-4920bbd9d673_32x32.jpg?v=1704213838" alt="Brian Escobar" width="32" height="32">
-                <span>BRIAN ESCOBAR</span>
-            </div>
-            <div class="presenter-tag">
-                <img src="https://careerlearning.com/cdn/shop/files/Walt_Headshot_2-removebg-preview_3_32x32.png?v=1715794428" alt="Walter William Duncan III" width="32" height="32">
-                <span>WALTER WILLIAM DUNCAN III</span>
-            </div>
-            <div class="course-description">
-                Payroll experts Brian Escobar or Walter William Duncan III will explain the many payroll processing requirements and best practices. You will learn how to master payroll production, ensure compliance, and deliver exceptional customer service. Processing payroll is never straightforward. Even seasoned pros run into compliance issues and unusual situations. Mistakes can lead to inaccurate payments, fines, and lawsuits. You need to know the 2025 laws and regulations to avoid violations.
-            </div>
-            <button class="syllabus-button hs-cta-trigger-button hs-cta-trigger-button-189236676877">Download Syllabus</button>
+            <div class="breadcrumb">Home &gt; Trending &gt; Career Development</div>
+            <h1 class="main-heading">He Thought Payroll Was Just About Paying People</h1>
+            <h2 class="sub-heading">Then He Found Out What Simple Errors Could Really Cost</h2>
+            <!-- <img src="getimg_ai_img-BeLLDHU9hRxhaY88u8Xrp.jpeg" width="600px" alt="Main visual" /> -->
+            <img src="https://48261694.fs1.hubspotusercontent-na1.net/hubfs/48261694/Stock%20Photos/payroll-problems.png" alt="Preview of false-confidence" width="675px" alt="Main visual" />
 
-            <div class="trusted-logos">
-                <img src="https://www.careerlearning.com/cdn/shop/files/WebMD_logo_5_1.png?v=1726240159" alt="WebMD" width="100" height="30">
-                <img src="https://www.careerlearning.com/cdn/shop/files/Unknown4_5_1.png?v=1726240160" alt="Company Logo" width="100" height="30">
-                <img src="https://www.careerlearning.com/cdn/shop/files/United-States-Postal-Service-Logo_5_1.png?v=1726240159" alt="USPS" width="100" height="30">
-                <img src="https://www.careerlearning.com/cdn/shop/files/image_3_1.png?v=1726240160" alt="Company Logo" width="100" height="30">
-                <img src="https://www.careerlearning.com/cdn/shop/files/lululemon.png?v=1726240159" alt="Lululemon" width="100" height="30">
-                <img src="https://www.careerlearning.com/cdn/shop/files/ymca.png?v=1726240159" alt="YMCA" width="100" height="30">
-                <img src="https://www.careerlearning.com/cdn/shop/files/wells.png?v=1726240148" alt="Wells Fargo" width="100" height="30">
-            </div>
 
-            <div class="section-anchors">
-                <div class="section-anchors-heading">Jump to Section</div>
-                <a href="#course-date">Course Details</a>
-                <a href="#outline">Course Outline</a>
-                <a href="#who-should-attend">Who Should Attend</a>
-                <a href="#instructors">Your Instructors</a>
-            </div>
-
-            <h2 id="course-date" class="section-heading">Course Outcomes</h2>
-            <div class="learning-outcomes">
-                <ul>
-                    <li>Overview of payroll processing</li>
-                    <li>Introduction to payroll software</li>
-                    <li>Federal and state taxation</li>
-                    <li>Employee benefits overview</li>
-                    <li>Audit preparation and compliance checks</li>
-                    <li>One certification exam attempt is included</li>
-                </ul>
-            </div>
-
-            <div class="dates">
-                <h3>Course Dates</h3>
-                <p>June 23 - June 27, 2025</p>
-                <p>1:00 PM EST Daily</p>
-            </div>
-
-            <div class="format">
-                <h3>Format</h3>
-                <ul>
-                    <li>5 Live Sessions</li>
-                    <li>60 Minutes Each</li>
-                    <li>Q&A Included</li>
-                </ul>
-            </div>
-
-            <div class="certification-badges">
-                <div class="badge-container">
-                    
-                    <div class="badge-row">
-                        <img src="https://www.careerlearning.com/cdn/shop/files/2025_HRCI_Recertification_Provider_Seal.png?v=1739824049&width=540" alt="HRCI Certification" width="100" height="100">
-                        <div class="badge-content">
-                            <p>Earn 5 HRCI® recertification credits. Pre-approved for PHR®, SPHR®, and GPHR® credentials, helping you maintain your certification while mastering payroll compliance.</p>
-                        </div>
-                    </div>
-                    <div class="badge-row">
-                        <img src="https://www.careerlearning.com/cdn/shop/files/Shrm.png?v=1739824056&width=540" alt="SHRM Certification" width="100" height="100">
-                        <div class="badge-content">
-                            <p>Earn 5 SHRM PDCs towards your SHRM-CP® or SHRM-SCP® recertification while expanding your payroll expertise.</p>
-                        </div>
-                    </div>
+            <div class="trusted-logos-row">
+                <div class="as-seen-in-label">TRUSTED BY</div>
+                <div class="trusted-logos">
+                    <img src="https://www.careerlearning.com/cdn/shop/files/lululemon.png?v=1726240159" alt="Lululemon" />
+                    <img src="https://www.careerlearning.com/cdn/shop/files/wells.png?v=1726240148" alt="Wells Fargo" />
+                    <img src="https://www.careerlearning.com/cdn/shop/files/United-States-Postal-Service-Logo_5_1.png?v=1726240159" alt="USPS" />
+                    <img src="https://www.careerlearning.com/cdn/shop/files/ymca.png?v=1726240159" alt="YMCA" />
                 </div>
             </div>
 
-            <h2 id="outline" class="who-attend-heading">Outline</h2>
-
-            <p class="course-description">This comprehensive five-day course takes you through the complete payroll lifecycle. Starting with fundamental concepts, you'll progress through software implementation, tax regulations, benefits management, and advanced auditing techniques. Each session builds upon the previous, ensuring you develop a thorough understanding of payroll operations while gaining practical skills in compliance, processing, and problem-solving.</p>
-
-            <div class="session-block">
-                <h3>Session 1: Payroll Fundamentals</h3>
-                <ul>
-                    <li>Overview of payroll processing</li>
-                    <li>Understanding payroll taxes</li>
-                    <li>Wage and hour regulations</li>
-                    <li>Recordkeeping and compliance</li>
-                </ul>
+            <div class="author-block">
+                <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Sarah Chen" class="author-block-img">
+                <div class="author-block-details">
+                    <div class="author-block-date">May 27, 2025 | 10:40 AM EST</div>
+                    <div class="author-block-byline">by Sarah Chen <span class="author-block-check">&#10004;</span></div>
+                </div>
             </div>
+            <section class="story-block" id="story">
+                <p>Mark knew paying employees accurately and on time was critical.</p>
 
-            <div class="session-block">
-                <h3>Session 2: Payroll Software and Tools</h3>
-                <ul>
-                    <li>Introduction to payroll software</li>
-                    <li>Navigating payroll systems</li>
-                    <li>Data entry and processing</li>
-                    <li>Reporting and analytics</li>
-                </ul>
-            </div>
+                <p>He focused on data entry, ensuring hours and rates were correctly inputted.</p>
 
-            <div class="session-block">
-                <h3>Session 3: Taxation and Compliance</h3>
-                <ul>
-                    <li>Federal and state taxation</li>
-                    <li>Tax withholding calculations</li>
-                    <li>FICA, FUTA, and SUTA taxes</li>
-                    <li>Payroll tax filings and reporting</li>
-                </ul>
-            </div>
+                <p>Spreadsheets were updated, and payment runs scheduled.</p>
 
-            <div class="session-block">
-                <h3>Session 4: Benefits and Deductions</h3>
-                <ul>
-                    <li>Employee benefits overview</li>
-                    <li>Health insurance and retirement plans</li>
-                    <li>Deductions and garnishments</li>
-                    <li>Paid time off (PTO) management</li>
-                </ul>
-            </div>
+                <p>It appeared efficient.</p>
+                <img src="https://48261694.fs1.hubspotusercontent-na1.net/hubfs/48261694/Stock%20Photos/false-confidence.png" alt="Preview of false-confidence" style="max-width:90%;margin:1.5rem 0;" />
 
-            <div class="session-block">
-                <h3>Session 5: Payroll Auditing and Troubleshooting</h3>
-                <ul>
-                    <li>Audit preparation and compliance checks</li>
-                    <li>Common payroll errors and solutions</li>
-                    <li>Handling discrepancies and disputes</li>
-                    <li>Year-end reporting and reconciliation</li>
-                </ul>
-            </div>
+                <p>What he hadn't fully grasped were the subtle complexities lurking within payroll regulations.</p>
 
-            <div class="resources-section">
+                <p>Understanding the nuances of tax withholdings for different employee types?</p>
+
+                <p>Honestly, that seemed like something the software handled automatically.</p>
+                <img src="https://48261694.fs1.hubspotusercontent-na1.net/hubfs/48261694/Stock%20Photos/payroll-stress.png" alt="Preview of false-confidence" style="max-width:90%;margin:1rem 0;" />
+
+                <p>The specific rules for overtime calculations in varied scenarios?</p>
+
+                <p>That detail was overlooked in a software setup.</p>
+
+                <p>Ensuring correct deductions for benefits and other withholdings consistently?</p>
+
+                <p>Minor system misconfigurations went unnoticed.</p>
+
+                <p>The discrepancies started small, almost invisibly.</p>
+                <img src="https://48261694.fs1.hubspotusercontent-na1.net/hubfs/48261694/Stock%20Photos/avoidable-payroll-mistakes.png" alt="Preview of false-confidence" style="max-width:90%;margin:1rem 0;" />
+
+                <p>Then employees began asking questions about their pay stubs, sometimes confused, sometimes concerned.</p>
+
+                <p>Mistakes started accumulating with each payroll cycle.</p>
+
+                <p>His finance director started receiving concerned inquiries.</p>
+                
+                <img src="https://48261694.fs1.hubspotusercontent-na1.net/hubfs/48261694/Stock%20Photos/irs-bible.png" alt="Preview of false-confidence" style="max-width:90%;margin:1rem 0;" />
+
+                <p>She'd experienced how seemingly minor payroll errors could escalate into significant financial and legal issues.</p>
+
+                <p>She worried about compliance penalties, employee dissatisfaction, even audits triggered by inconsistent processing.</p>
+
+                <p>That concern over a small oversight leading to substantial financial or regulatory exposure?</p>
+
+                <p>It became a pressing reality.</p>
+
+                <p>It was an information gap, a risk in process understanding that was entirely preventable.</p>
+
+                <p>Not deeply understanding those common pitfalls in payroll management?</p>
+
+                <p>It created avoidable financial strain and operational vulnerability he hadn't foreseen.</p>
+
+                <p>Imagine if Mark had clear insight into the most frequent payroll errors.</p>
+
+                <p>A way to proactively identify and rectify issues before they impacted employees or the company's bottom line.</p>
+
+                <p>Having a focused understanding of common payroll mistakes can prevent these costly and time consuming problems.</p>
+
+                <p>It's about building confidence in your processes and reducing the risk of serious financial or compliance repercussions from everyday payroll functions.</p>
+
+                <p>You don't have to learn these lessons the hard way.</p>
+
+                <p>Ensure your payroll is consistently accurate, compliant, and efficient.</p>
+
+                <button  class="syllabus-button hs-cta-trigger-button hs-cta-trigger-button-190683805729" style="width: 100%; background: #22C55E; color: #fff; font-weight: bold; font-size: 1.1rem; border: none; border-radius: 16px; padding: 1rem 0; margin-top: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); cursor: pointer;">
+                    Download The 3 Most Common Payroll Mistakes and How to Avoid Them For Free!
+                </button>
+
+                <hr style="margin: 3rem 0; border: none; border-top: 2px solid #ececec;">
+                
+                <h2 style="font-family: 'Raleway', sans-serif; font-size: 2.5rem; color: rgb(74, 92, 154); margin: 0 0 2rem; line-height: 1.2;">Everything You'll Get In the Payroll Processing and Compliance Certification</h2>
+            </section>
+            
+            <div class="resources-section" id="resources">
                 <h2 class="resources-heading">Key Tools & Resources Included</h2>
+
+                <div class="resource-item">
+                    <div class="resource-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    <div class="resource-content">
+                        <h3>The 3 Most Common Payroll Mistakes and How to Avoid Them</h3>
+                        <p>Practical guide to identifying and preventing frequent payroll processing errors</p>
+                    </div>
+                </div>
                 
                 <div class="resource-item">
                     <div class="resource-icon">
@@ -1710,18 +1832,6 @@
                     <div class="resource-content">
                         <h3>5 Things to Know About FLSA Overtime Rules</h3>
                         <p>Essential guide to understanding and implementing FLSA overtime regulations</p>
-                    </div>
-                </div>
-
-                <div class="resource-item">
-                    <div class="resource-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                        </svg>
-                    </div>
-                    <div class="resource-content">
-                        <h3>The 3 Most Common Payroll Mistakes and How to Avoid Them</h3>
-                        <p>Practical guide to identifying and preventing frequent payroll processing errors</p>
                     </div>
                 </div>
             </div>
@@ -1774,103 +1884,58 @@
                 </div>    
             </section>
 
-            <h2 class="section-heading recommended">RECOMMENDED AUDIENCE</h2>
-            <h3 id="who-should-attend" class="who-attend-heading">Who Should Attend?</h3>
-            <div class="who-attend-list">
-                <ul>
-                    <li>Payroll specialists</li>
-                    <li>Payroll coordinators</li>
-                    <li>Payroll managers</li>
-                    <li>Payroll supervisors</li>
-                    <li>Payroll administrators</li>
-                    <li>Payroll leads</li>
-                    <li>Payroll processing staff</li>
-                    <li>Small business owners</li>
-                    <li>Human resources professionals</li>
-                    <li>Benefits managers and administrators</li>
-                    <li>Financial managers</li>
-                    <li>Financial staff</li>
-                </ul>
-            </div>
+            <a href="https://www.careerlearning.com/pages/payroll-certification" 
+                style="display: block; width: 100%; background: rgb(74, 92, 154); color: #fff; font-weight: bold; font-size: 1.1rem; border: none; border-radius: 16px; padding: 1rem 0; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); cursor: pointer; text-align: center; text-decoration: none; margin-top: 1rem;">
+                Check Out The Course Now!
+            </a>
 
-            <div class="stats-section">
-                <div class="stats-container">
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <div class="stat-number">4.9</div>
-                            <div class="stat-stars">★★★★★</div>
-                            <div class="stat-subtext">(40+)</div>
+
+            <!-- <div class="testimonials-section" id="testimonials">
+                <h2 class="testimonials-heading">CareerLearning's PM Certification for HR Has Helped Thousands Conquer Project Failure</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <div class="testimonial-header">
+                            <div class="testimonial-name">Lisa A Alicea <span class="verified-tag">Verified learner</span></div>
+                            <div class="testimonial-stars">★★★★★</div>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">70+</div>
-                            <div class="stat-text">people have taken this course</div>
+                        <div class="testimonial-content">
+                            <p>Excellent instructor! I recommend these classes for anyone interested in preparing for the Human Resource Manager Certification Exam.</p>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">100%</div>
-                            <div class="stat-text">found this course to be helpful in their workplace</div>
+                        <div class="testimonial-date">Posted March 29, 2024</div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-header">
+                            <div class="testimonial-name">Amy R. Guidry <span class="verified-tag">Verified learner</span></div>
+                            <div class="testimonial-stars">★★★★★</div>
                         </div>
+                        <div class="testimonial-content">
+                            <p>As someone new to the HR role, this course was very informative. The information covered was just right. Not too overwhelming, yet very informative.</p>
+                        </div>
+                        <div class="testimonial-date">Posted April 11, 2024</div>
                     </div>
-                    <div class="stats-sidebar"></div>
-                </div>
-            </div>
 
-            <h2 id="instructors" class="who-attend-heading">Your Instructors</h2>
-            <div class="instructor-profile">
-                <div class="instructor-header">
-                    <img src="https://careerlearning.com/cdn/shop/files/Brian_Headshot_2_Final_1_1_8cb121b1-885b-4fd2-9051-4920bbd9d673_146x146.jpg?v=1704213838" alt="Brian Escobar" class="instructor-image" width="146" height="146">
-                    <div class="instructor-name-section">
-                        <div class="instructor-about">ABOUT —</div>
-                        <h3 class="instructor-name">Expert Presenter<br>BRIAN ESCOBAR</h3>
+                    <div class="testimonial">
+                        <div class="testimonial-header">
+                            <div class="testimonial-name">Tina Harrell <span class="verified-tag">Verified learner</span></div>
+                            <div class="testimonial-stars">★★★★★</div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>I did the On-Demand class. It was convenient and worked with my schedule. I enjoyed the presenters and the pace of the classes. It's always great to learn new information.</p>
+                        </div>
+                        <div class="testimonial-date">Posted recently</div>
                     </div>
                 </div>
-                <div class="instructor-content">
-                    <div class="instructor-achievements">
-                        <ul>
-                            <li>Over 20 years of expertise in payroll, HR, and finance</li>
-                            <li>Career spanning the education, commercial real estate, construction, retail, staffing, and technology sectors</li>
-                            <li>Core competencies in team development, implementing systems, enhancing processes, and ensuring data accuracy</li>                            <li class="highlight">Co-host of a leading payroll podcast sharing industry insights</li>
-                        </ul>
-                    </div>
-                    <div class="instructor-bio">
-                        <p>Brian brings over 20 years of expertise in payroll, HR, and finance, with a career spanning across various sectors including education, commercial real estate, construction, retail, staffing, and technology. His core competencies are evident in areas such as team development, implementing systems, enhancing processes, and ensuring data accuracy.</p>
-                        <p>Brian is the co-host of a popular payroll podcast and harbors a deep passion for teaching. His extensive experience and practical approach make him an invaluable resource for anyone looking to master payroll processing and compliance.</p>
-                    </div>
-                </div>
-            </div>
+            </div> -->
 
-            <div class="instructor-profile">
-                <div class="instructor-header">
-                    <img src="https://www.careerlearning.com/cdn/shop/collections/Walt_Headshot_2-removebg-preview_3_5c17c18d-5b2c-42c3-bf0d-5337f379d97d_medium.png?v=1728571749" alt="Walter William Duncan III" class="instructor-image">
-                    <div class="instructor-name-section">
-                        <div class="instructor-about">ABOUT —</div>
-                        <h3 class="instructor-name">Expert Presenter<br>WALTER WILLIAM DUNCAN III</h3>
-                    </div>
-                </div>
-                <div class="instructor-content">
-                    <div class="instructor-achievements">
-                        <ul>
-                            <li>Over 20 years of payroll and financial operations expertise</li>
-                            <li>US Navy veteran bringing military precision to business processes</li>
-                            <li>Specializes in streamlining payroll systems from startups to major corporations</li>
-                            <li>Expert in compliance, process optimization, and team leadership</li>
-                            <li class="highlight">Co-host of a leading payroll podcast sharing industry insights</li>
-                        </ul>
-                    </div>
-                    <div class="instructor-bio">
-                        <p>Walter is a payroll veteran with over two decades of experience. From his time in the US Navy to optimizing business processes, Walter ensures financial operations run smoothly. His expertise spans across startups to major corporations, aiding businesses of all sizes. As a co-host of a renowned payroll podcast, he shares invaluable insights worldwide.</p>
-                        <p>But he's not just about numbers and spreadsheets. Walter knows that behind every successful business are people, and he's passionate about supporting them too. Whether it's providing services to startups, small businesses, or established entities, Walter is dedicated to helping them thrive.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="video-section">
+            <div class="video-section" id="video">
                 <h3 class="video-title">Watch Walter Explain Payroll Best Practices</h3>
                 <div class="video-container">
                     <iframe src="https://www.youtube.com/embed/cTaTcsbnvoE" title="Walter Duncan III discusses payroll best practices" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
-            <div class="certification-showcase">
+            <div class="certification-showcase" id="certification">
                 <div class="certificate-image">
                     <img src="https://cdn.shopify.com/s/files/1/0894/8760/6077/files/Accredible_Payroll_Certificate.png?v=1745352251" alt="Full Payroll Certificate"/>
                 </div>
@@ -1880,7 +1945,33 @@
                 </div>
             </div>
 
-            <div class="why-section">
+            <a href="https://www.careerlearning.com/pages/payroll-certification" 
+                style="display: block; width: 100%; background: rgb(74, 92, 154); color: #fff; font-weight: bold; font-size: 1.1rem; border: none; border-radius: 16px; padding: 1rem 0; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); cursor: pointer; text-align: center; text-decoration: none; margin-top: 1rem;">
+                Check Out The Course Now!
+            </a>
+
+
+            <div class="section-anchors">
+                <div class="section-anchors-heading">Jump to Section</div>
+                <a href="#story">The Story</a>
+                <a href="#resources">Key Tools & Resources</a>
+                <a href="#what-to-expect">What to Expect</a>
+                <a href="#testimonials">Student Success Stories</a>
+                <a href="#video">Watch Walter Explain</a>
+                <a href="#certification">Earn Your Certification</a>
+                <a href="#why-careerlearning">Why CareerLearning</a>
+            </div>
+
+            <!-- <div class="certification-badges">
+                <div class="badge-container">
+                    <div class="badge-row">
+                        <img src="https://www.careerlearning.com/cdn/shop/files/2025_HRCI_Recertification_Provider_Seal.png?v=1739824049&width=540" alt="HRCI Certification" />
+                        <img src="https://www.careerlearning.com/cdn/shop/files/Shrm.png?v=1739824056&width=540" alt="SHRM Certification" />
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="why-section" id="why-careerlearning">
                 <div class="benefits">
                     <h2>Why CareerLearning?</h2>
                     <ul class="benefits-list">
@@ -1917,67 +2008,46 @@
             </div>
         </div>
         <div class="content-right">
-            <div class="course-image-container">
-                <img src="https://careerlearning.com/cdn/shop/files/shutterstock_2353012835.jpg?height=600&v=1721315323&width=900" alt="Absent from work sign" class="course-image">
-                <div class="course-tags">
-                    <span class="course-tag">LIVE SESSION</span>
-                    <span class="course-tag">ON-DEMAND</span>
-                    <span class="course-tag">CERTIFICATION</span>
-                </div>
-            </div>
-            <div class="course-details">
-                <div class="session-info-container">
-                    <div class="date-options-label">Date Options</div>
-                    <div class="columns-container">
-                        <div class="session-info">
-                            <h3>5 Live Sessions</h3>
-                            <p>Each 60 Minutes</p>
-                            <p>Monday - Friday</p>
-                            <p>Q&A Included</p>
-                        </div>
-
-                        <div class="date-options">
-                            <div class="date-buttons">
-                                <button class="date-button selected">On Demand<br/>Learn at your own pace</button>
-                                <button class="date-button">Jun 23 - Jun 27, 2025<br />1:00 PM EST</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pricing">
-                    <div class="price">$1,053.00</div>
-                    <div class="quantity-selector">
-                        <span class="quantity-label">Qty</span>
-                        <div class="quantity-controls">
-                            <button class="quantity-btn">−</button>
-                            <input type="text" class="quantity-input" value="1" readonly>
-                            <button class="quantity-btn">+</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="add-on-options">
-                    <div class="add-on-option" data-price="54">
-                        <span class="add-on-text">Live Sessions With On Demand Recordings</span>
-                        <div class="add-on-price">
-                            <div class="toggle-switch active"></div>
-                            <span>$1053</span>
-                        </div>
-                    </div>
-
-                    <div class="add-on-option" data-price="999">
-                        <span class="add-on-text">On Demand Recordings only</span>
-                        <div class="add-on-price">
-                            <div class="toggle-switch"></div>
-                            <span>$999</span>
-                        </div>
-                    </div>
-                    <p class="recordings-only">(Available now)</p>
-                </div>
-
-                <button class="add-to-cart" onclick="window.location.href='/cart/add?id=49981747659069&quantity=' + document.querySelector('.quantity-input').value">Checkout</button>
-            </div>
+            <div class="featured-section-header">Featured</div>
+            <hr class="featured-section-divider" />
+            <div>
+                <div class="featured-header">Recommended</div>
+                <div class="featured-stars">★★★★★</div>
+                <div class="featured-reviews">4.9 | 43 Reviews</div>
+                <img src="https://www.careerlearning.com/cdn/shop/files/Performance_Management_Certification_Structuring_Reviews_PIPs_and_Disciplinary_Actions.jpg?v=1744631151" alt="Product" style="width: 100%; border-radius: 12px; margin-bottom: 1.25rem;">
+                <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0;">
+                  <li style="display: flex; align-items: flex-start; margin-bottom: 1rem;">
+                    <span class="benefit-check" aria-hidden="true">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" style="display:block" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="14" cy="14" r="12" stroke="#22c55e" stroke-width="2"/>
+                        <path d="M9 14.5l3.5 3L19 11" stroke="#22c55e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    <span>Spot red flags before they snowball into bigger issues.</span>
+                  </li>
+                  <li style="display: flex; align-items: flex-start; margin-bottom: 1rem;">
+                    <span class="benefit-check" aria-hidden="true">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" style="display:block" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="14" cy="14" r="12" stroke="#22c55e" stroke-width="2"/>
+                        <path d="M9 14.5l3.5 3L19 11" stroke="#22c55e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    <span>Sharpen your judgment on tricky classification calls.</span>
+                  </li>
+                  <li style="display: flex; align-items: flex-start;">
+                    <span class="benefit-check" aria-hidden="true">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" style="display:block" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="14" cy="14" r="12" stroke="#22c55e" stroke-width="2"/>
+                        <path d="M9 14.5l3.5 3L19 11" stroke="#22c55e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    <span>Get quick clarity on high-risk compliance blind spots.</span>
+                  </li>
+                </ul>
+                <button  class="syllabus-button hs-cta-trigger-button hs-cta-trigger-button-190683805729" style="width: 100%; background: #22C55E; color: #fff; font-weight: bold; font-size: 1.1rem; border: none; border-radius: 16px; padding: 1rem 0; margin-top: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); cursor: pointer;">
+                  Download The 3 Most Common Payroll Mistakes and How to Avoid Them For Free!
+                </button>
+              </div>
         </div>
     </main>
 
@@ -2084,7 +2154,7 @@
                                 <svg class="icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pi-paypal"><title id="pi-paypal">PayPal</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"/><path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"/><path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"/></svg>
                             </li>
                             <li class="payment-icons-item">
-                                <svg class="icon" viewBox="0 0 38 24" width="38" height="24" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pi-venmo"><title id="pi-venmo">Venmo</title><g fill="none" fill-rule="evenodd"><rect fill-opacity=".07" fill="#000" width="38" height="24" rx="3"/><path fill="#3D95CE" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path d="M24.675 8.36c0 3.064-2.557 7.045-4.633 9.84h-4.74L13.4 6.57l4.151-.402 1.005 8.275c.94-1.566 2.099-4.025 2.099-5.702 0-.918-.154-1.543-.394-2.058l3.78-.783c.437.738.634 1.499.634 2.46z" fill="#FFF" fill-rule="nonzero"/></g></svg>
+                                <svg class="icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pi-venmo"><title id="pi-venmo">Venmo</title><g fill="none" fill-rule="evenodd"><rect fill-opacity=".07" fill="#000" width="38" height="24" rx="3"/><path fill="#3D95CE" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path d="M24.675 8.36c0 3.064-2.557 7.045-4.633 9.84h-4.74L13.4 6.57l4.151-.402 1.005 8.275c.94-1.566 2.099-4.025 2.099-5.702 0-.918-.154-1.543-.394-2.058l3.78-.783c.437.738.634 1.499.634 2.46z" fill="#FFF" fill-rule="nonzero"/></g></svg>
                             </li>
                             <li class="payment-icons-item">
                                 <svg class="icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-visa"><title id="pi-visa">Visa</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"/></svg>
@@ -2095,111 +2165,115 @@
             </div>
         </div>
     </div>
-                                  
     {{ page.content }}
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const quantityInput = document.querySelector('.quantity-input');
             const decreaseBtn = document.querySelector('.quantity-controls .quantity-btn:first-child');
             const increaseBtn = document.querySelector('.quantity-controls .quantity-btn:last-child');
-            const checkoutBtn = document.querySelector('.add-to-cart');
             const dateButtons = document.querySelectorAll('.date-button');
             const addOnOptions = document.querySelectorAll('.add-on-option');
+            const checkoutBtn = document.querySelector('.add-to-cart');
             const priceElement = document.querySelector('.price');
-        
-            // Prices for each variant
-            const PRICES = {
-                live: 1053,
-                onDemand: 999
-            };
-        
-            // Variant IDs
-            const VARIANT_IDS = {
-                live: '50340345479485',
-                onDemand: '49938852446525'
-            };
-        
-            // State
-            let selectedVariant = 'onDemand'; // default
-            let quantity = parseInt(quantityInput.value);
-        
-            // Helper: update price display
-            function updatePrice() {
-                const price = PRICES[selectedVariant] * quantity;
-                priceElement.textContent = `$${price.toFixed(2)}`;
+            
+            let currentPrice = 769;
+            let selectedVariantId = '49899304517949';
+            let isLiveSession = true;
+
+            // Function to update quantity
+            function updateQuantity(change) {
+                let currentValue = parseInt(quantityInput.value);
+                let newValue = currentValue + change;
+                if (newValue < 1) newValue = 1;
+                quantityInput.value = newValue;
             }
-        
-            // Helper: update selected button and toggles
-            function selectVariant(variant) {
-                selectedVariant = variant;
-        
-                // Update date buttons
-                dateButtons.forEach(btn => {
-                    if (variant === 'onDemand' && btn.textContent.includes('On Demand')) {
-                        btn.classList.add('selected');
-                    } else if (variant === 'live' && !btn.textContent.includes('On Demand')) {
-                        btn.classList.add('selected');
-                    } else {
-                        btn.classList.remove('selected');
-                    }
+
+            // Function to update selected date
+            function updateSelectedDate(clickedButton) {
+                dateButtons.forEach(button => {
+                    button.classList.remove('selected');
                 });
-        
-                // Update add-on toggles
-                addOnOptions.forEach((option, idx) => {
+                clickedButton.classList.add('selected');
+                selectedVariantId = clickedButton.dataset.variantId;
+            }
+
+            // Function to update course option
+            function updateCourseOption(clickedOption) {
+                const isOnDemand = clickedOption === addOnOptions[1];
+                
+                addOnOptions.forEach(option => {
                     const toggle = option.querySelector('.toggle-switch');
-                    if ((variant === 'onDemand' && idx === 1) || (variant === 'live' && idx === 0)) {
-                        toggle.classList.add('active');
-                    } else {
-                        toggle.classList.remove('active');
-                    }
+                    toggle.classList.remove('active');
                 });
-        
-                updatePrice();
+                
+                clickedOption.querySelector('.toggle-switch').classList.add('active');
+                
+                if (isOnDemand) {
+                    selectedVariantId = clickedOption.dataset.variantId;
+                    currentPrice = 712;
+                    isLiveSession = false;
+                    dateButtons.forEach(button => {
+                        button.classList.remove('selected');
+                        button.disabled = true;
+                    });
+                } else {
+                    isLiveSession = true;
+                    currentPrice = 769;
+                    dateButtons.forEach((button, index) => {
+                        button.disabled = false;
+                        if (index === 0) {
+                            button.classList.add('selected');
+                            selectedVariantId = button.dataset.variantId;
+                        }
+                    });
+                }
+                
+                priceElement.textContent = `$${currentPrice.toFixed(2)}`;
             }
-        
-            // Qty controls
-            decreaseBtn.addEventListener('click', () => {
-                quantity = Math.max(1, quantity - 1);
-                quantityInput.value = quantity;
-                updatePrice();
-            });
-            increaseBtn.addEventListener('click', () => {
-                quantity = quantity + 1;
-                quantityInput.value = quantity;
-                updatePrice();
-            });
-        
-            // Date button selection
-            dateButtons.forEach(btn => {
-                btn.addEventListener('click', function() {
-                    if (this.textContent.includes('On Demand')) {
-                        selectVariant('onDemand');
-                    } else {
-                        selectVariant('live');
+
+            // Add event listeners
+            decreaseBtn.addEventListener('click', () => updateQuantity(-1));
+            increaseBtn.addEventListener('click', () => updateQuantity(1));
+
+            dateButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    if (!button.disabled) {
+                        updateSelectedDate(button);
                     }
                 });
             });
-        
-            // Add-on option selection
-            addOnOptions.forEach((option, idx) => {
+
+            addOnOptions.forEach(option => {
                 option.addEventListener('click', function() {
-                    if (idx === 1) {
-                        selectVariant('onDemand');
-                    } else {
-                        selectVariant('live');
-                    }
+                    updateCourseOption(option);
                 });
             });
-        
-            // Checkout button
+
+            // Update checkout button to use Shopify cart
             checkoutBtn.addEventListener('click', function(e) {
                 e.preventDefault();
-                const variantId = VARIANT_IDS[selectedVariant];
-                window.location.href = `/cart/add?id=${variantId}&quantity=${quantity}`;
+                const quantity = quantityInput.value;
+                
+                // Add to cart using Shopify AJAX API
+                fetch('/cart/add.js', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        id: selectedVariantId,
+                        quantity: quantity
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    window.location.href = '/cart';
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
             });
-        
-            // Initialize
-            selectVariant(selectedVariant);
         });
     </script>
     {{ standard_footer_includes }}

@@ -13,7 +13,6 @@
     <script type="text/javascript">
       hbspt.cta.load(48261694, '189236676877', {"useNewLoader": true});
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         /* Custom styles */
         :root {
@@ -359,7 +358,7 @@
         }
 
         .date-button.selected {
-            background: #22C55E;
+            background: #22C55E !important;
             color: white;
         }
 
@@ -1002,11 +1001,11 @@
 
         .certification-badges {
             background: white;
-            margin: 4rem -100vw;
-            padding: 2rem calc(100vw - 50%);  /* Reduced padding */
-            position: relative;
+            /* margin: 4rem -100vw;
+            padding: 2rem calc(100vw - 50%); */
+            /* position: relative;
             left: 50%;
-            right: 50%;
+            right: 50%; */
         }
 
         .badge-container {
@@ -1014,7 +1013,7 @@
             margin: 0 auto;
             padding: 0 1.5rem;
             display: grid;
-            gap: 1rem;  /* Reduced gap */
+            gap: 1rem;
         }
 
         .badge-row {
@@ -1024,7 +1023,7 @@
             padding: 0;
             margin: 0;
             border-bottom: 1px solid rgba(74, 92, 154, 0.1);
-            margin-left: -5rem;
+            <!-- margin-left: -5rem; -->
         }
 
         .badge-row:first-child {
@@ -1183,6 +1182,72 @@
             background: #333;
         }
 
+        .what-to-expect-box {
+            background: #fff;
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .what-to-expect-section {
+            max-width: 700px;
+            margin: 4rem auto;
+            background: #f5f8fa;
+            padding: 2.5rem 0;
+            border-radius: 20px;
+        }
+        .what-to-expect-point {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            background: none;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0;
+        }
+        .what-to-expect-point:last-child {
+            margin-bottom: 0;
+        }
+        .what-to-expect-check {
+            color: #22c55e;
+            font-size: 1rem;
+            margin-right: 1rem;
+            margin-top: 0.2rem;
+            flex-shrink: 0;
+            align-self: flex-start;
+        }
+        .what-to-expect-title {
+            font-weight: 700;
+            color: var(--heading-color);
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .what-to-expect-box ul {
+            margin: 0 0 0 1.2rem;
+            padding: 0;
+            color: var(--text-color);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        .what-to-expect-box li {
+            margin-bottom: 0.3rem;
+        }
+        .what-to-expect-intro {
+            color: var(--text-color);
+            font-size: 1.15rem;
+            margin-bottom: 2.5rem;
+            text-align: left;
+        }
+
+        .what-to-expect-heading, .resources-heading {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2rem;
+            color: rgb(74, 92, 154);
+            margin-bottom: 2rem;
+            font-weight: 700;
+            text-align: left;
+        }
+        
         .social-links {
             display: flex;
             gap: 1.25rem;
@@ -1241,8 +1306,8 @@
 
         .stats-section {
             background: white;
-            margin: 4rem -100vw;
-            padding: 3rem calc(100vw - 50%);
+            /* margin: 4rem -100vw;
+            padding: 3rem calc(100vw - 50%); */
             position: relative;
             left: 50%;
             right: 50%;
@@ -1664,6 +1729,54 @@
                 </div>
             </div>
 
+            <section class="what-to-expect-section" id="what-to-expect">
+                <a href="https://www.careerlearning.com/pages/payroll-certification" 
+                    style="display: block; width: 100%; background: rgb(74, 92, 154); color: #fff; font-weight: bold; font-size: 1.1rem; border: none; border-radius: 16px; padding: 1rem 0; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); cursor: pointer; text-align: center; text-decoration: none; margin-top: 1rem;">
+                    Check Out The Course Now!
+                </a>
+                
+                <h2 class="what-to-expect-heading">Here's What You Can Expect From the Course</h2>
+                <p class="what-to-expect-intro">The course is built for payroll professionals, HR staff, and team leads who want to reduce errors, navigate compliance confidently, and take a more strategic role in payroll operations. You'll gain tools, expert context, and a reliable system to manage payroll with fewer unknowns—and far less guesswork.</p>
+                <div class="what-to-expect-box">
+                    <div class="what-to-expect-point">
+                        <span class="what-to-expect-check">✅</span>
+                        <div>
+                            <span class="what-to-expect-title">Payroll Foundations that Hold Up</span>
+                            <ul>
+                                <li>Understand core tax, wage, and hour rules</li>
+                                <li>Handle garnishments and deductions correctly</li>
+                                <li>Avoid common setup and processing pitfalls</li>
+                                <li>Gain clarity on compliance standards that matter</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="what-to-expect-point">
+                        <span class="what-to-expect-check">✅</span>
+                        <div>
+                            <span class="what-to-expect-title">Systems, Tools, and Strategic Choices</span>
+                            <ul>
+                                <li>Evaluate software for your real-world needs</li>
+                                <li>Work smarter with time tracking and integrations</li>
+                                <li>Stay ahead of security and audit challenges</li>
+                                <li>Know what to automate—and what to double-check</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="what-to-expect-point">
+                        <span class="what-to-expect-check">✅</span>
+                        <div>
+                            <span class="what-to-expect-title">Credibility that Carries Weight</span>
+                            <ul>
+                                <li>Ask better questions in complex scenarios</li>
+                                <li>Support finance and HR with reliable insight</li>
+                                <li>Prepare for certification with confidence</li>
+                                <li>Access practical resources long after the course ends</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+
             <h2 class="section-heading recommended">RECOMMENDED AUDIENCE</h2>
             <h3 id="who-should-attend" class="who-attend-heading">Who Should Attend?</h3>
             <div class="who-attend-list">
@@ -1828,7 +1941,8 @@
 
                         <div class="date-options">
                             <div class="date-buttons">
-                                <button class="date-button selected">Jun 23 - Jun 27, 2025<br />1:00 PM EST</button>
+                                <button class="date-button selected">On Demand<br/>Learn at your own pace</button>
+                                <button class="date-button">Jun 23 - Jun 27, 2025<br />1:00 PM EST</button>
                             </div>
                         </div>
                     </div>
@@ -1992,79 +2106,97 @@
             const decreaseBtn = document.querySelector('.quantity-controls .quantity-btn:first-child');
             const increaseBtn = document.querySelector('.quantity-controls .quantity-btn:last-child');
             const checkoutBtn = document.querySelector('.add-to-cart');
-
-            // Function to update quantity
-            function updateQuantity(change) {
-                let currentValue = parseInt(quantityInput.value);
-                let newValue = currentValue + change;
-                
-                // Ensure quantity is at least 1
-                if (newValue < 1) newValue = 1;
-                
-                quantityInput.value = newValue;
-            }
-
-            // Add event listeners
-            decreaseBtn.addEventListener('click', () => updateQuantity(-1));
-            increaseBtn.addEventListener('click', () => updateQuantity(1));
-
-            // Update checkout button to include quantity
-            checkoutBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                const quantity = quantityInput.value;
-                window.location.href = `/cart/add?id=49981747659069&quantity=${quantity}`;
-            });
-        });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const priceElement = document.querySelector('.price');
+            const dateButtons = document.querySelectorAll('.date-button');
             const addOnOptions = document.querySelectorAll('.add-on-option');
-            let currentPrice = 1053; // Initial price with recordings
-
+            const priceElement = document.querySelector('.price');
+        
+            // Prices for each variant
+            const PRICES = {
+                live: 1053,
+                onDemand: 999
+            };
+        
+            // State
+            let selectedVariant = 'onDemand'; // default
+            let quantity = parseInt(quantityInput.value);
+        
+            // Helper: update price display
             function updatePrice() {
-                priceElement.textContent = `$${currentPrice.toFixed(2)}`;
+                const price = PRICES[selectedVariant] * quantity;
+                priceElement.textContent = `$${price.toFixed(2)}`;
             }
-
-            function toggleOptions(clickedOption) {
-                // Get the other option
-                const otherOption = clickedOption === addOnOptions[0] ? addOnOptions[1] : addOnOptions[0];
-                
-                // Toggle the clicked option
-                const clickedToggle = clickedOption.querySelector('.toggle-switch');
-                const otherToggle = otherOption.querySelector('.toggle-switch');
-                
-                // If the clicked option is already active, do nothing
-                if (clickedToggle.classList.contains('active')) {
-                    return;
-                }
-                
-                // Update toggles
-                clickedToggle.classList.add('active');
-                otherToggle.classList.remove('active');
-                
-                // Update price
-                currentPrice = clickedOption === addOnOptions[0] ? 1053 : 999;
+        
+            // Helper: update selected button and toggles
+            function selectVariant(variant) {
+                selectedVariant = variant;
+        
+                // Update date buttons
+                dateButtons.forEach(btn => {
+                    if (variant === 'onDemand' && btn.textContent.includes('On Demand')) {
+                        btn.classList.add('selected');
+                    } else if (variant === 'live' && !btn.textContent.includes('On Demand')) {
+                        btn.classList.add('selected');
+                    } else {
+                        btn.classList.remove('selected');
+                    }
+                });
+        
+                // Update add-on toggles
+                addOnOptions.forEach((option, idx) => {
+                    const toggle = option.querySelector('.toggle-switch');
+                    if ((variant === 'onDemand' && idx === 1) || (variant === 'live' && idx === 0)) {
+                        toggle.classList.add('active');
+                    } else {
+                        toggle.classList.remove('active');
+                    }
+                });
+        
                 updatePrice();
             }
-
-            addOnOptions.forEach(option => {
-                option.addEventListener('click', function() {
-                    toggleOptions(option);
+        
+            // Qty controls
+            decreaseBtn.addEventListener('click', () => {
+                quantity = Math.max(1, quantity - 1);
+                quantityInput.value = quantity;
+                updatePrice();
+            });
+            increaseBtn.addEventListener('click', () => {
+                quantity = quantity + 1;
+                quantityInput.value = quantity;
+                updatePrice();
+            });
+        
+            // Date button selection
+            dateButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    if (this.textContent.includes('On Demand')) {
+                        selectVariant('onDemand');
+                    } else {
+                        selectVariant('live');
+                    }
                 });
             });
-
-            // Add click handler for the On Demand Recordings only button
-            const onDemandButton = document.querySelector('.date-button');
-            if (onDemandButton) {
-                onDemandButton.addEventListener('click', function() {
-                    // Trigger the second add-on option (On Demand Recordings only)
-                    toggleOptions(addOnOptions[1]);
+        
+            // Add-on option selection
+            addOnOptions.forEach((option, idx) => {
+                option.addEventListener('click', function() {
+                    if (idx === 1) {
+                        selectVariant('onDemand');
+                    } else {
+                        selectVariant('live');
+                    }
                 });
-            }
-
-            // Initialize price
-            updatePrice();
+            });
+        
+            // Checkout button
+            checkoutBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                // You may need to update the variant ID logic here if you have different IDs for each variant
+                window.location.href = `/cart/add?id=49981747659069&quantity=${quantity}`;
+            });
+        
+            // Initialize
+            selectVariant(selectedVariant);
         });
     </script>
     {{ standard_footer_includes }}

@@ -10,6 +10,7 @@
     <meta name="description" content="Free Webinar Landing Page">
     <link rel="shortcut icon" href="https://www.careerlearning.com/cdn/shop/files/main-logo.png?v=1728661137&width=600" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    {{ standard_header_includes }}
     <style>
       :root {
         --primary-color: #2E475D;
@@ -392,8 +393,6 @@
         color: var(--secondary-color);
       }
     </style>
-    Error:
-	 	{{ standard_header_includes }}
   </head>
   <body>
     <header class="header">
@@ -405,7 +404,7 @@
             </a>
           </div>
           <nav class="nav">
-            <div class="nav-item nav-resources">
+            <!-- <div class="nav-item nav-resources">
               <a href="https://www.careerlearning.com/blogs/articles">Resources</a>
               <div class="dropdown-menu">
                 <a href="#">Payroll Certification Cheat Sheet</a>
@@ -414,46 +413,44 @@
                 <a href="#">5 Things About FLSA Overtime Rules</a>
                 <a href="#">3 Common Payroll Mistakes</a>
               </div>
-            </div>
+            </div> -->
             <a href="https://www.careerlearning.com/pages/about-us">About</a>
-            <a href="https://www.careerlearning.com/pages/student-spotlights">Student Spotlights</a>
+            <!-- <a href="https://www.careerlearning.com/pages/student-spotlights">Student Spotlights</a> -->
             <a href="https://www.careerlearning.com/pages/careers">Careers</a>
           </nav>
         </div>
-        <a href="#" class="cta">Let's Grow</a>
+        <a href="https://www.careerlearning.com/products/chatgpt-for-hr-certification" class="cta">Let's Grow</a>
       </div>
     </header>
     <main class="main">
-      <button class="webinar-series-btn">PAYROLL PROFESSIONAL SERIES</button>
-      <h1 class="main-heading">HOW TO ELEVATE YOUR<br>PAYROLL SKILLS</h1>
+      <button class="webinar-series-btn">HR PROFESSIONAL SERIES</button>
+      <h1 class="main-heading">How ChatGPT Automates <br />Your HR Tasks</h1>
       <div class="tab-nav">
-        <a href="#" class="tab active" data-video="https://www.youtube.com/embed/LuvfVFZ8dso">How to Grow as a Payroll Professional</a>
-        <a href="#" class="tab" data-video="https://www.youtube.com/embed/tdpoaZDFFFM">02 - Base Salary and Variable Pay Methodologies</a>
-        <a href="#" class="tab" data-video="https://www.youtube.com/embed/X7vWm8tiTC8">03 - WATCH THIS TO SEE How to Manage a Payroll Department</a>
+        <a href="#" class="tab active" data-video="https://www.youtube.com/embed/Lvl2XsBV6F4">How to Save 100 Hours With ChatGPT</a>
       </div>
       <div class="video-container">
-        <iframe id="webinar-video" src="https://www.youtube.com/embed/LuvfVFZ8dso" title="Webinar Video" allowfullscreen></iframe>
+        <iframe id="webinar-video" src="https://www.youtube.com/embed/Lvl2XsBV6F4" title="Webinar Video" allowfullscreen></iframe>
         <div class="video-logo">
           <img src="https://www.careerlearning.com/cdn/shop/files/main-logo.png?v=1728661137&width=600" alt="CareerLearning logo" style="height: 20px; width: auto;">
-          <span>25:08</span>
+          <span>31:00</span>
         </div>
       </div>
       <div class="webinar-desc">
-        Sharpen your grasp of complex payroll. Discover how strategic pay design and strong departmental oversight can create pathways for meaningful impact. Mastering operational best practices and new data security methods may enhance your profile as a go to expert. These refined skills often build professional confidence and could help shape a more significant role.
+        Unlock AI's power for your HR tasks. Discover how automating job descriptions, policies, and Q&A sessions  can free significant time for strategic work. Mastering ChatGPT prompts may boost your efficiency and highlight your tech-forward approach. These new abilities often build confidence and could position you for greater HR impact.
       </div>
-      <a href="https://www.careerlearning.com/products/chatgpt-for-hr-certification" class="cta-btn">Get The Payroll Certificate</a>
+      <button class="cta-btn">Get The ChatGPT for HR Certificate</button>
     </main>
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-section">
-          <h3>Resources</h3>
+          <!-- <h3>Resources</h3>
           <ul class="footer-nav">
             <li><a href="#">Payroll Certification Cheat Sheet</a></li>
             <li><a href="#">Payroll Compliance Resources</a></li>
             <li><a href="#">State Labor Offices</a></li>
             <li><a href="#">5 Things About FLSA Overtime Rules</a></li>
             <li><a href="#">3 Common Payroll Mistakes</a></li>
-          </ul>
+          </ul> -->
         </div>
         <div class="footer-section">
           <h3>Quick links</h3>
@@ -532,7 +529,6 @@
         </div>
       </div>
     </div>
-    {{ standard_footer_includes }}
     <script>
       // Tab click handler to switch video
       document.addEventListener('DOMContentLoaded', function() {
@@ -569,5 +565,6 @@
         });
       });
     </script>
+    {{ standard_footer_includes }}
   </body>
 </html>
